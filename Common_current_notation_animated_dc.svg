@@ -20,6 +20,14 @@
     <title
         id="title1">Common_current_notation_animated_dc.svg
     </title>
+    <rect
+        x="0"
+        y="0"
+        width="400"
+        height="300"
+        fill="white"
+        id="white background">
+    </rect>
     <defs id="defs1">
         <rect
             x="277"
