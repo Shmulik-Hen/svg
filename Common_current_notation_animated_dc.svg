@@ -208,12 +208,7 @@
 </tspan><tspan
                     x="277"
                     y="46.118816"
-                    id="tspan2829">carriers
-</tspan><tspan
-                    x="277"
-                    y="55.250667"
-                    id="tspan2831">            </tspan>
-            </text>
+                    id="tspan2829">carriers</tspan></text>
             <circle
                 cx="200px"
                 cy="150px"
@@ -241,12 +236,7 @@
 </tspan><tspan
                     x="277"
                     y="46.118816"
-                    id="tspan2835">carriers
-</tspan><tspan
-                    x="277"
-                    y="55.250667"
-                    id="tspan2837">            </tspan>
-            </text>
+                    id="tspan2835">carriers</tspan></text>
             <circle
                 cx="200px"
                 cy="150px"
@@ -333,8 +323,7 @@
                 transform="matrix(1.2227461,0,0,1,-308.80165,-3.7519748)"><tspan
                     x="277"
                     y="41.532182"
-                    id="tspan2839">Wire</tspan>
-            </text>
+                    id="tspan2839">Wire</tspan></text>
             <!-- Apparently the weird indenttions below are necessary for the text to align properly -->
             <text
                 xml:space="preserve"
@@ -343,8 +332,7 @@
                 transform="matrix(1.2227461,0,0,1,-308.70196,92.866548)"><tspan
                     x="277"
                     y="41.532182"
-                    id="tspan2841">DC</tspan>
-            </text>
+                    id="tspan2841">DC</tspan></text>
             <!-- Apparently the weird indenttions below are necessary for the text to align properly -->
             <text
                 xml:space="preserve"
@@ -353,8 +341,7 @@
                 transform="matrix(1.124503,0,0,1.1094632,26.534989,74.034014)"><tspan
                     x="277"
                     y="41.416744"
-                    id="tspan2843">Load</tspan>
-            </text>
+                    id="tspan2843">Load</tspan></text>
         </g>
     </g>
     <metadata
