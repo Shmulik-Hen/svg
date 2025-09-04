@@ -254,7 +254,7 @@
                 r="120px"
                 id="circle533"
                 style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3.00000001;stroke-dasharray:9, 9;stroke-dashoffset:0"
-                transform="rotate(1">
+                transform="rotate(1)">
                 <animateTransform
                     id="RotateCircle533"
                     attributeName="transform"
