@@ -200,8 +200,8 @@
             <text
                 xml:space="preserve"
                 id="text5054-90-2"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.30548px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#rect5056-4-9);display:inline;fill:#ff0c44;fill-opacity:1;stroke:none;stroke-width:1.30128;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(1.5931628,0,0,1.3381361,-334.64075,50.968146)"><tspan
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.30548px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#rect5056-4-9);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.30128;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                transform="matrix(1.5931628,0,0,1.3381361,-322.8157,51.271731)"><tspan
                     x="277"
                     y="36.986965"
                     id="tspan2827">Negative charge
@@ -214,6 +214,14 @@
                     y="55.250667"
                     id="tspan2831">            </tspan>
             </text>
+            <circle
+                cx="200px"
+                cy="150px"
+                r="100px"
+                id="circle5144"
+                style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3.00000001;stroke-dasharray:9, 9;stroke-dashoffset:0">
+                <!-- <animate attributeName="r" attributeType="XML" begin="1s" dur="2s" from="20px"to="50px"> -->
+            </circle>
         </g>
         <g
             inkscape:groupmode="layer"
@@ -225,8 +233,8 @@
             <text
                 xml:space="preserve"
                 id="text5054-90"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.30548px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#rect5056-4);display:inline;fill:#15ff0c;fill-opacity:1;stroke:none;stroke-width:1.30128;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(1.5931628,0,0,1.3381361,-406.83882,12.773374)"><tspan
+                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.30548px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#rect5056-4);display:inline;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1.30128;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                transform="matrix(1.5931628,0,0,1.3381361,-402.28997,6.709878)"><tspan
                     x="277"
                     y="36.986965"
                     id="tspan2833">Positive charge
@@ -239,6 +247,14 @@
                     y="55.250667"
                     id="tspan2837">            </tspan>
             </text>
+            <circle
+                cx="200px"
+                cy="150px"
+                r="120px"
+                id="circle533"
+                style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3.00000001;stroke-dasharray:9, 9;stroke-dashoffset:0">
+                <!-- <animate attributeName="r" attributeType="XML" begin="1s" dur="2s" from="20px"to="50px"> -->
+            </circle>
         </g>
         <g
             inkscape:groupmode="layer"
@@ -329,6 +345,7 @@
                     y="41.532182"
                     id="tspan2841">DC</tspan>
             </text>
+            <!-- Apparently the weird indenttions below are necessary for the text to align properly -->
             <text
                 xml:space="preserve"
                 id="text5054-2"
