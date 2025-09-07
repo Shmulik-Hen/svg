@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+    id="svg1"
     version="1.1"
     viewBox="0 0 800 600"
     preserveAspectRatio="xMidYMid"
     fill-rule="evenodd"
-    id="svg1"
     sodipodi:docname="Common_current_notation_animated_dc.svg"
     inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
     width="800"
@@ -16,54 +16,18 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:cc="http://creativecommons.org/ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <title
-        id="title1">Common_current_notation_animated_dc.svg
+    <title id="title1">
+        Common_current_notation_animated_dc.svg
     </title>
     <rect
+        id="white_bg"
         x="0"
         y="0"
         width="800"
         height="600"
-        fill="white"
-        id="white_bg">
+        fill="white">
     </rect>
-    <defs
-        id="defs1">
-        <rect
-            x="30"
-            y="30"
-            width="30"
-            height="30"
-            id="text_box_wire">
-        </rect>
-        <rect
-            x="30"
-            y="268"
-            width="30"
-            height="30"
-            id="text_box_dc">
-        </rect>
-        <rect
-            x="740"
-            y="245"
-            width="30"
-            height="30"
-            id="text_box_load">
-        </rect>
-        <rect
-            x="230"
-            y="140"
-            width="100"
-            height="50"
-            id="text_box_pos_carriers">
-        </rect>
-        <rect
-            x="160"
-            y="100"
-            width="100"
-            height="50"
-            id="text_box_neg_carriers">
-        </rect>
+    <defs id="defs1">
     </defs>
     <sodipodi:namedview
         id="namedview45"
@@ -90,8 +54,8 @@
         guidehicolor="#00ff24"
         guidehiopacity="0">
         <inkscape:grid
-            type="xygrid"
             id="grid251"
+            type="xygrid"
             snapvisiblegridlinesonly="true"
             empspacing="1"
             originx="0"
@@ -106,35 +70,36 @@
         id="page1"
         transform="matrix(1.4353696,0,0,1.3686552,-15.836653,-11.898483)"
         inkscape:label="page1">
-        <desc
-            id="desc1">Slide
+        <desc id="desc1">
+            Slide
         </desc>
         <g
-            inkscape:groupmode="layer"
             id="layer3"
+            inkscape:groupmode="layer"
             inkscape:label="Layer 3"
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
-                xml:space="preserve"
                 id="text_id_neg_carriers"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.0711px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#text_box_neg_carriers);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.383395;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(2.9191665,0,0,3.9463004,-248.43271,-250.47599)"><tspan
-                x="160"
-                y="106.7628"
-                id="tspan4303">Negative charge
-</tspan><tspan
-                x="160"
-                y="115.60168"
-                id="tspan4305">carriers</tspan></text>
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#ff0000">
+                <tspan
+                    x="240"
+                    y="150">Negative charge
+</tspan>
+                <tspan
+                    x="240"
+                    y="170">carriers</tspan>
+            </text>
             <circle
+                id="circle_neg_carriers"
                 cx="400px"
                 cy="300px"
                 r="240px"
-                id="circle_neg_carriers"
-                style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3.00000001;stroke-dasharray:9, 9;stroke-dashoffset:0"
-                transform="rotate(-1)">
+                style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
                     id="circle_neg_carriers_rotate"
                     attributeName="transform"
@@ -156,24 +121,25 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)">
             <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
-                xml:space="preserve"
                 id="text_id_pos_carriers"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.24056px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;white-space:pre;shape-inside:url(#text_box_pos_carriers);display:inline;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.392583;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(2.826662,0,0,3.8869035,-596.05597,-450.40667)"><tspan
-                x="230"
-                y="146.92488"
-                id="tspan4307">Positive charge
-</tspan><tspan
-                x="230"
-                y="155.97558"
-                id="tspan4309">carriers</tspan></text>
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan
+                    x="40"
+                    y="105">Positive charge
+</tspan>
+                <tspan
+                    x="40"
+                    y="125">carriers</tspan>
+            </text>
             <circle
+                id="circle_pos_carriers"
                 cx="400px"
                 cy="300px"
                 r="260px"
-                id="circle_pos_carriers"
-                style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3.0;stroke-dasharray:9, 9;stroke-dashoffset:0"
-                transform="rotate(1)">
+                style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
                     id="circle_pos_carriers_rotate"
                     attributeName="transform"
@@ -194,95 +160,98 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_horiz_top"
                 d="M 20.0,22.5 H 780.0"
-                id="wire_horiz_top">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_horiz_bottom"
                 d="M 20.0,577.5 H 780.0"
-                id="wire_horiz_bottom">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_vert_left_top"
                 d="M 22.5,25.0 V 290.0"
-                id="wire_vert_left_top">
+                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_vert_left_bottom"
                 d="M 22.5,310.0 V 575.0"
-                id="wire_vert_left_bottom">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_vert_right_top"
                 d="M 777.5,25.0 V 260.0"
-                id="wire_vert_right_top">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="wire_vert_right_bottom"
                 d="M 777.5,320.0 v 255.0"
-                id="wire_vert_right_bottom">
+                style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="cathode"
                 d="M 5.0,292.5 H 40.0"
-                id="cathode">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="anode"
                 d="M 10.0,307.5 H 35.0"
-                id="anode">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="plus_horiz"
                 d="M 4.0,284.0 H 12.0"
-                id="plus_horiz">
+                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="plus_vert"
                 d="M 8.0,280.0 V 288.0"
-                id="plus_vert">
+                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <path
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                id="minus"
                 d="M 4.0,316.0 H 12.0"
-                id="minus">
+                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
             </path>
             <rect
-                style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+                id="load"
                 x="768.5"
                 y="260.0"
                 width="15"
                 height="60"
-                id="load">
+                style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
             </rect>
-            <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
-                xml:space="preserve"
                 id="text_id_wire"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1068px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#text_box_wire);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.456195;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(1.9472819,0,0,2.0180595,-28.806812,-33.222796)"><tspan
                 x="30"
-                y="41.578963"
-                id="tspan4311">Wire</tspan></text>
-            <!-- Apparently the weird indentations below are necessary for the text to align properly -->
+                y="48"
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#000000">
+                <tspan>Wire</tspan>
+            </text>
             <text
-                xml:space="preserve"
                 id="text_id_dc"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.0241px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#text_box_dc);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.38254;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(2.5295186,0,0,2.2093862,-47.526965,-338.28111)"><tspan
                 x="30"
-                y="276.63066"
-                id="tspan4313">DC</tspan></text>
-            <!-- Apparently the weird indentations below are necessary for the text to align properly -->
+                y="275"
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#000000">
+                <tspan>DC</tspan>
+            </text>
             <text
-                xml:space="preserve"
                 id="text_id_load"
-                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.4379px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#text_box_load);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.304417;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                transform="matrix(1.8122829,0,0,2.4294406,-621.53896,-366.73728)"><tspan
-                x="740"
-                y="255.93921"
-                id="tspan4315">Load</tspan></text>
+                x="710"
+                y="255"
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#000000">
+                <tspan>Load</tspan>
+            </text>
         </g>
     </g>
     <metadata
