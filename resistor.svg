@@ -160,7 +160,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -188,7 +188,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
@@ -222,7 +222,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -250,11 +250,11 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
-                </g> <!--dc_in-->
+                </g> <!--dc_out-->
             </g> <!--dc-->
         </g> <!--layer2-->
         <g
@@ -294,7 +294,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -322,7 +322,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
@@ -356,7 +356,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -384,7 +384,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
@@ -428,7 +428,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -456,7 +456,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
@@ -490,7 +490,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>V</tspan>
+                                <tspan>T</tspan>
                             </text>
                         </g> <!--axis_x-->
                         <g
@@ -518,7 +518,7 @@
                                 font-size="14"
                                 font-weight="norm"
                                 fill="#000000">
-                                <tspan>A</tspan>
+                                <tspan>V</tspan>
                             </text>
                         </g> <!--axis_y-->
                     </g> <!--axis's-->
@@ -648,7 +648,7 @@
                         v -30 h 60 v 30"
                         style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
                     </path>
-                </g><!--wave_form_sqr_in-->
+                </g><!--wave_form_sqr_out-->
             </g><!--wave_form_sqr-->
         </g> <!--layer7-->
     </g> <!--page1-->
