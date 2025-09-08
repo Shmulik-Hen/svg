@@ -79,7 +79,7 @@
                 height="600"
                 fill="white">
             </rect>
-            <path
+            <!-- <path
                 id="horiz guide"
                 d="M 0,300 H 800"
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
@@ -88,7 +88,7 @@
                 id="vert guide"
                 d="M 400,0 V 600"
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
-            </path>
+            </path> -->
         </g>
         <g
             id="layer2"
