@@ -89,7 +89,7 @@
                 d="M 400,0 V 600"
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path> -->
-        </g> <!-- layer1 -->
+        </g> <!--layer1-->
         <g
             id="layer2"
             inkscape:groupmode="layer"
@@ -138,8 +138,7 @@
                     d="M 777.5,330.0 V 575.0"
                     style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
-            </g>
-            <!-- wire -->
+            </g> <!--wire-->
             <g
                 id="load">
                 <text
@@ -160,7 +159,7 @@
                     height="60"
                     style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
                 </rect>
-            </g> <!-- load -->
+            </g> <!--load-->
             <g
                 id="power_source">
                 <text
@@ -192,10 +191,8 @@
                        c 0,0 9,25 18,0"
                     style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1">
                 </path>
-            </g>
-            <!-- power_source -->
-        </g>
-        <!-- layer2 -->
+            </g> <!--power_source-->
+        </g> <!--layer2-->
         <g
             id="layer3"
             inkscape:groupmode="layer"
@@ -240,8 +237,8 @@
                     repeatCount="indefinite">
                 </animateTransform>
             </circle>
-        </g> <!-- layer3 -->
-    </g> <!-- page1 -->
+        </g> <!--layer3-->
+    </g> <!--page1-->
     <metadata
         id="metadata1">
         <rdf:RDF>
