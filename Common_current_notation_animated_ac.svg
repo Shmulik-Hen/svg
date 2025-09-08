@@ -20,17 +20,6 @@
         id="title1">
         Common_current_notation_animated_ac.svg
     </title>
-    <rect
-        id="white_bg"
-        x="0"
-        y="0"
-        width="800"
-        height="600"
-        fill="white">
-    </rect>
-    <defs
-        id="defs1">
-    </defs>
     <sodipodi:namedview
         id="namedview45"
         pagecolor="#ffffff"
@@ -82,72 +71,29 @@
             inkscape:label="Layer 1"
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
-            <g
-                id="guids">
-                <path
-                    id="horiz guide"
-                    d="M 0,300 H 800"
-                    style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
-                </path>
-                <path
-                    id="vert guide"
-                    d="M 400,0 V 600"
-                    style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
-                </path>
-            </g>
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+            <path
+                id="horiz guide"
+                d="M 0,300 H 800"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+            <path
+                id="vert guide"
+                d="M 400,0 V 600"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
         </g>
         <g
             id="layer2"
             inkscape:groupmode="layer"
             inkscape:label="Layer 2"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
-            style="display:inline">
-            <g
-                id="charge_carriers">
-                <text
-                    id="charge_carriers_text"
-                    x="80"
-                    y="105"
-                    font-family="Ubuntu"
-                    font-size="25"
-                    font-weight="bold"
-                    fill="#000000">
-                    <tspan>Charge carriers</tspan>
-                </text>
-                <circle
-                    id="charge_carriers_circle"
-                    cx="400px"
-                    cy="300px"
-                    r="240px"
-                    style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
-                    <animateTransform
-                        id="circle_carriers_rotate"
-                        attributeName="transform"
-                        attributeType="XML"
-                        type="rotate"
-                        values="10 400 300;
-                                20 400 300;
-                                30 400 300;
-                                20 400 300;
-                                10 400 300;
-                                0 400 300;
-                                -10 400 300;
-                                -20 400 300;
-                                -30 400 300;
-                                -20 400 300;
-                                -10 400 300;
-                                0 400 300"
-                        dur="2.75s"
-                        fill="freeze"
-                        repeatCount="indefinite">
-                    </animateTransform>
-                </circle>
-            </g>
-        </g>
-        <g
-            id="layer3"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 3"
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <g
@@ -194,26 +140,6 @@
                 </path>
             </g>
             <g
-                id="power_source_ac">
-                <text
-                    id="power_source_text"
-                    x="30"
-                    y="275"
-                    font-family="Ubuntu"
-                    font-size="25"
-                    font-weight="bold"
-                    fill="#000000">
-                    <tspan>AC</tspan>
-                </text>
-                <circle
-                    id="power_source_circle"
-                    cx="25.0px"
-                    cy="300px"
-                    r="22.5px"
-                    style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3">
-                </circle>
-            </g>
-            <g
                 id="load">
                 <text
                     id="load_text"
@@ -234,6 +160,71 @@
                     style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
                 </rect>
             </g>
+            <g
+                id="power_source_ac">
+                <text
+                    id="power_source_text"
+                    x="30"
+                    y="275"
+                    font-family="Ubuntu"
+                    font-size="25"
+                    font-weight="bold"
+                    fill="#000000">
+                    <tspan>AC</tspan>
+                </text>
+                <circle
+                    id="power_source_circle"
+                    cx="25.0px"
+                    cy="300px"
+                    r="22.5px"
+                    style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3">
+                </circle>
+            </g>
+        </g>
+        <g
+            id="layer3"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 3"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <text
+                id="charge_carriers_text"
+                x="80"
+                y="105"
+                font-family="Ubuntu"
+                font-size="25"
+                font-weight="bold"
+                fill="#000000">
+                <tspan>Charge carriers</tspan>
+            </text>
+            <circle
+                id="charge_carriers_circle"
+                cx="400px"
+                cy="300px"
+                r="240px"
+                style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
+                <animateTransform
+                    id="circle_carriers_rotate"
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    values="10 400 300;
+                                20 400 300;
+                                30 400 300;
+                                20 400 300;
+                                10 400 300;
+                                0 400 300;
+                                -10 400 300;
+                                -20 400 300;
+                                -30 400 300;
+                                -20 400 300;
+                                -10 400 300;
+                                0 400 300"
+                    dur="2.75s"
+                    fill="freeze"
+                    repeatCount="indefinite">
+                </animateTransform>
+            </circle>
         </g>
     </g>
     <metadata

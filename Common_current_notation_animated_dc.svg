@@ -16,19 +16,10 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:cc="http://creativecommons.org/ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <title id="title1">
+    <title
+        id="title1">
         Common_current_notation_animated_dc.svg
     </title>
-    <rect
-        id="white_bg"
-        x="0"
-        y="0"
-        width="800"
-        height="600"
-        fill="white">
-    </rect>
-    <defs id="defs1">
-    </defs>
     <sodipodi:namedview
         id="namedview45"
         pagecolor="#ffffff"
@@ -70,9 +61,144 @@
         id="page1"
         transform="matrix(1.4353696,0,0,1.3686552,-15.836653,-11.898483)"
         inkscape:label="page1">
-        <desc id="desc1">
+        <desc
+            id="desc1">
             Slide
         </desc>
+        <g
+            id="layer1"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 1"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+            <path
+                id="horiz guide"
+                d="M 0,300 H 800"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+            <path
+                id="vert guide"
+                d="M 400,0 V 600"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+        </g>
+        <g
+            id="layer2"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 2"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <g
+                id="wire">
+                <text
+                    id="wire_text"
+                    x="30"
+                    y="48"
+                    font-family="Ubuntu"
+                    font-size="25"
+                    font-weight="bold"
+                    fill="#000000">
+                    <tspan>Wire</tspan>
+                </text>
+                <path
+                    id="wire_horiz_top"
+                    d="M 22.5,22.5 H 780.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="wire_horiz_bottom"
+                    d="M 22.5,577.5 H 780.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="wire_vert_left_top"
+                    d="M 25.0,25.0 V 277.5"
+                    style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="wire_vert_left_bottom"
+                    d="M 25.0,322.5 V 575.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="wire_vert_right_top"
+                    d="M 777.5,25.0 V 270.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="wire_vert_right_bottom"
+                    d="M 777.5,330.0 V 575.0"
+                    style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+            </g>
+            <g
+                id="load">
+                <text
+                    id="load_text"
+                    x="710"
+                    y="255"
+                    font-family="Ubuntu"
+                    font-size="25"
+                    font-weight="bold"
+                    fill="#000000">
+                    <tspan>Load</tspan>
+                </text>
+                <rect
+                    id="load_rect"
+                    x="768.5"
+                    y="270.0"
+                    width="15"
+                    height="60"
+                    style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
+                </rect>
+            </g>
+            <g
+                id="power_source_dc">
+                <text
+                    id="power_source_text"
+                    x="30"
+                    y="275"
+                    font-family="Ubuntu"
+                    font-size="25"
+                    font-weight="bold"
+                    fill="#000000">
+                    <tspan>DC</tspan>
+                </text>
+                <path
+                    id="cathode"
+                    d="M 5.0,292.5 H 40.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="anode"
+                    d="M 10.0,307.5 H 35.0"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="plus_horiz"
+                    d="M 4.0,284.0 H 12.0"
+                    style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="plus_vert"
+                    d="M 8.0,280.0 V 288.0"
+                    style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+                <path
+                    id="minus"
+                    d="M 4.0,316.0 H 12.0"
+                    style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                </path>
+            </g>
+        </g>
         <g
             id="layer3"
             inkscape:groupmode="layer"
@@ -81,7 +207,7 @@
             style="display:inline">
             <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
-                id="text_id_neg_carriers"
+                id="neg_charge_carriers_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
@@ -95,13 +221,13 @@
                     y="170">carriers</tspan>
             </text>
             <circle
-                id="circle_neg_carriers"
+                id="neg_charge_carriers_circle"
                 cx="400px"
                 cy="300px"
                 r="240px"
                 style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
-                    id="circle_neg_carriers_rotate"
+                    id="neg_charge_carriers_circle_rotate_ccw"
                     attributeName="transform"
                     attributeType="XML"
                     type="rotate"
@@ -114,14 +240,14 @@
             </circle>
         </g>
         <g
+            id="layer4"
             inkscape:groupmode="layer"
-            id="layer2"
-            inkscape:label="Layer 2"
-            style="display:inline"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)">
+            inkscape:label="Layer 4"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
             <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
-                id="text_id_pos_carriers"
+                id="pos_charge_carries_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
@@ -135,13 +261,13 @@
                     y="125">carriers</tspan>
             </text>
             <circle
-                id="circle_pos_carriers"
+                id="pos_charge_carries_circle"
                 cx="400px"
                 cy="300px"
                 r="260px"
                 style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
-                    id="circle_pos_carriers_rotate"
+                    id="pos_charge_carries_rotate_cw"
                     attributeName="transform"
                     attributeType="XML"
                     type="rotate"
@@ -152,106 +278,6 @@
                     repeatCount="indefinite">
                 </animateTransform>
             </circle>
-        </g>
-        <g
-            inkscape:groupmode="layer"
-            id="layer1"
-            inkscape:label="Layer 1"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
-            style="display:inline">
-            <path
-                id="wire_horiz_top"
-                d="M 20.0,22.5 H 780.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="wire_horiz_bottom"
-                d="M 20.0,577.5 H 780.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="wire_vert_left_top"
-                d="M 22.5,25.0 V 290.0"
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="wire_vert_left_bottom"
-                d="M 22.5,310.0 V 575.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="wire_vert_right_top"
-                d="M 777.5,25.0 V 260.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="wire_vert_right_bottom"
-                d="M 777.5,320.0 v 255.0"
-                style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="cathode"
-                d="M 5.0,292.5 H 40.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="anode"
-                d="M 10.0,307.5 H 35.0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="plus_horiz"
-                d="M 4.0,284.0 H 12.0"
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="plus_vert"
-                d="M 8.0,280.0 V 288.0"
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <path
-                id="minus"
-                d="M 4.0,316.0 H 12.0"
-                style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
-            </path>
-            <rect
-                id="load"
-                x="768.5"
-                y="260.0"
-                width="15"
-                height="60"
-                style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
-            </rect>
-            <text
-                id="text_id_wire"
-                x="30"
-                y="48"
-                font-family="Ubuntu"
-                font-size="25"
-                font-weight="bold"
-                fill="#000000">
-                <tspan>Wire</tspan>
-            </text>
-            <text
-                id="text_id_dc"
-                x="30"
-                y="275"
-                font-family="Ubuntu"
-                font-size="25"
-                font-weight="bold"
-                fill="#000000">
-                <tspan>DC</tspan>
-            </text>
-            <text
-                id="text_id_load"
-                x="710"
-                y="255"
-                font-family="Ubuntu"
-                font-size="25"
-                font-weight="bold"
-                fill="#000000">
-                <tspan>Load</tspan>
-            </text>
         </g>
     </g>
     <metadata
