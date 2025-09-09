@@ -366,7 +366,7 @@
                    s 50 70, 80 0
                    s 50 -70, 80 0
                    s 50 70, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
             </path>
             <text
                 id="voltage_text"
@@ -405,6 +405,15 @@
                 fill="#000000">
                 <tspan>Resistor</tspan>
             </text>
+            <path
+                id="reference_wave"
+                d="M 450 100
+                   c 30 -70, 50 -70, 80 0
+                   s 50 70, 80 0
+                   s 50 -70, 80 0
+                   s 50 70, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+            </path>
         </g> <!--layer7-->
         <g
             id="layer8"
@@ -432,6 +441,15 @@
                 fill="#000000">
                 <tspan>Load</tspan>
             </text>
+            <path
+                id="reference_wave"
+                d="M 450 300
+                   c 30 -70, 50 -70, 80 0
+                   s 50 70, 80 0
+                   s 50 -70, 80 0
+                   s 50 70, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+            </path>
         </g> <!--layer8-->
         <g
             id="layer9"
@@ -459,6 +477,15 @@
                 fill="#000000">
                 <tspan>Current</tspan>
             </text>
+            <path
+                id="reference_wave"
+                d="M 450 500
+                   c 30 -70, 50 -70, 80 0
+                   s 50 70, 80 0
+                   s 50 -70, 80 0
+                   s 50 70, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+            </path>
         </g> <!--layer9-->
         <g
             id="layer10"
