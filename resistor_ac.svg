@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    sodipodi:docname="temp.svg"
+    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+    width="800"
+    height="600"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <title
+        id="title1">
+        resistor_ac.svg
+    </title>
+    <sodipodi:namedview
+        id="namedview45"
+        pagecolor="#ffffff"
+        bordercolor="#000000"
+        borderopacity="0.25"
+        inkscape:showpageshadow="2"
+        inkscape:pageopacity="0.0"
+        inkscape:pagecheckerboard="0"
+        inkscape:deskcolor="#d1d1d1"
+        showgrid="true"
+        inkscape:zoom="0"
+        inkscape:cx="400"
+        inkscape:cy="300"
+        inkscape:window-width="1536"
+        inkscape:window-height="839"
+        inkscape:window-x="0"
+        inkscape:window-y="0"
+        inkscape:window-maximized="1"
+        inkscape:current-layer="layer1"
+        showguides="true"
+        guidecolor="#e50027"
+        guideopacity="0"
+        guidehicolor="#00ff24"
+        guidehiopacity="0">
+        <inkscape:grid
+            id="grid251"
+            type="xygrid"
+            snapvisiblegridlinesonly="true"
+            empspacing="1"
+            originx="0"
+            originy="0"
+            empcolor="#0017e5"
+            empopacity="0.30196078"
+            color="#00c8e5"
+            opacity="0.14901961">
+        </inkscape:grid>
+    </sodipodi:namedview>
+    <g
+        id="page1"
+        transform="matrix(1.4353696,0,0,1.3686552,-15.836653,-11.898483)"
+        inkscape:label="page1">
+        <desc
+            id="desc1">
+            Slide
+        </desc>
+        <g
+            id="layer1"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 1"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!--Background-->
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+            <path
+                id="horiz guide 1"
+                d="M 0,200 H 800"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+            <path
+                id="horiz guide 2"
+                d="M 400,400 H 800"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+            <path
+                id="vert guide"
+                d="M 400,0 V 600"
+                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 2"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage input axis -->
+            <g
+                id="axis_x">
+                <path
+                    id="axis_x_line"
+                    d="M 25,100 H 375"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_x_text"
+                    x="25"
+                    y="115"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>x</tspan>
+                </text>
+                <text
+                    id="axis_x_unit"
+                    x="380"
+                    y="105"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>T</tspan>
+                </text>
+            </g> <!--axis_x-->
+            <g
+                id="axis_y">
+                <path
+                    id="axis_y_line"
+                    d="M 50,20 V 180"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_y_text"
+                    x="40"
+                    y="55"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>y</tspan>
+                </text>
+                <text
+                    id="axis_y_unit"
+                    x="45"
+                    y="15"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>V</tspan>
+                </text>
+            </g> <!--axis_y-->
+        </g> <!--layer2-->
+        <g
+            id="layer3"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 3"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage resistor axis -->
+            <g
+                id="axis_x">
+                <path
+                    id="axis_x_line"
+                    d="M 425,100 H 775"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_x_text"
+                    x="425"
+                    y="115"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>x</tspan>
+                </text>
+                <text
+                    id="axis_x_unit"
+                    x="780"
+                    y="105"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>T</tspan>
+                </text>
+            </g> <!--axis_x-->
+            <g
+                id="axis_y">
+                <path
+                    id="axis_y_line"
+                    d="M 450,20 V 180"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_y_text"
+                    x="440"
+                    y="55"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>y</tspan>
+                </text>
+                <text
+                    id="axis_y_unit"
+                    x="445"
+                    y="15"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>V</tspan>
+                </text>
+            </g> <!--axis_y-->
+        </g> <!--layer3-->
+        <g
+            id="layer4"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 4"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage load axis -->
+            <g
+                id="axis_x">
+                <path
+                    id="axis_x_line"
+                    d="M 425,300 H 775"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_x_text"
+                    x="425"
+                    y="315"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>x</tspan>
+                </text>
+                <text
+                    id="axis_x_unit"
+                    x="780"
+                    y="305"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>T</tspan>
+                </text>
+            </g> <!--axis_x-->
+            <g
+                id="axis_y">
+                <path
+                    id="axis_y_line"
+                    d="M 450,220 V 380"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_y_text"
+                    x="440"
+                    y="255"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>y</tspan>
+                </text>
+                <text
+                    id="axis_y_unit"
+                    x="445"
+                    y="215"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>V</tspan>
+                </text>
+            </g> <!--axis_y-->
+        </g> <!--layer4-->
+        <g
+            id="layer5"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 5"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Current axis -->
+            <g
+                id="axis_x">
+                <path
+                    id="axis_x_line"
+                    d="M 425,500 H 775"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_x_text"
+                    x="425"
+                    y="515"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>x</tspan>
+                </text>
+                <text
+                    id="axis_x_unit"
+                    x="780"
+                    y="505"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>T</tspan>
+                </text>
+            </g> <!--axis_x-->
+            <g
+                id="axis_y">
+                <path
+                    id="axis_y_line"
+                    d="M 450,420 V 580"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path>
+                <text
+                    id="axis_y_text"
+                    x="440"
+                    y="455"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>y</tspan>
+                </text>
+                <text
+                    id="axis_y_unit"
+                    x="445"
+                    y="415"
+                    font-family="Ubuntu"
+                    font-size="14"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>A</tspan>
+                </text>
+            </g> <!--axis_y-->
+        </g> <!--layer5-->
+        <g
+            id="layer6"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 6"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage input-->
+            <path
+                id="wave_form_ac_line"
+                d="M 50 100
+                   c 30 -70, 50 -70, 80 0
+                   s 50 70, 80 0
+                   s 50 -70, 80 0
+                   s 50 70, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+            </path>
+            <text
+                id="voltage_text"
+                x="70"
+                y="25"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Input</tspan>
+            </text>
+        </g> <!--layer6-->
+        <g
+            id="layer7"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 7"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage resistor-->
+            <path
+                d="M 450 100
+                   c 30 -40, 50 -40, 80 0
+                   s 50 40, 80 0
+                   s 50 -40, 80 0
+                   s 50 40, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+            </path>
+            <text
+                id="voltage_text"
+                x="470"
+                y="25"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Resistor</tspan>
+            </text>
+        </g> <!--layer7-->
+        <g
+            id="layer8"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 8"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Voltage load-->
+            <path
+                d="M 450 300
+                   c 30 -40, 50 -40, 80 0
+                   s 50 40, 80 0
+                   s 50 -40, 80 0
+                   s 50 40, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
+            </path>
+            <text
+                id="voltage_text"
+                x="470"
+                y="225"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Load</tspan>
+            </text>
+        </g> <!--layer8-->
+        <g
+            id="layer9"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 9"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Current -->
+            <path
+                d="M 450 500
+                   c 30 -40, 50 -40, 80 0
+                   s 50 40, 80 0
+                   s 50 -40, 80 0
+                   s 50 40, 80 0"
+                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
+            </path>
+            <text
+                id="voltage_text"
+                x="470"
+                y="425"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Current</tspan>
+            </text>
+        </g> <!--layer9-->
+        <g
+            id="layer10"
+            inkscape:groupmode="layer"
+            inkscape:label="Layer 10"
+            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
+            style="display:inline">
+            <!-- Circuit -->
+            <text
+                id="circuit_text"
+                x="150"
+                y="225"
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Resistor</tspan>
+            </text>
+            <g
+                id="circuit_elements">
+                <path
+                    id="symbol"
+                    d="M 150,350
+                       l 2,-10
+                       l 4,20
+                       l 4,-20
+                       l 4,20
+                       l 4,-20
+                       l 4,20
+                       l 4,-20
+                       l 4,20
+                       l 4,-20
+                       l 4,20
+                       l 2,-10"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path> <!-- symbol -->
+                <text
+                    id="symbol_text"
+                    x="165"
+                    y="375"
+                    font-family="Ubuntu"
+                    font-size="20"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>R</tspan>
+                </text>
+                <rect
+                    id="load"
+                    x="277.5"
+                    y="412.5"
+                    width="25"
+                    height="75"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </rect>
+                <text
+                    id="load_text"
+                    x="225"
+                    y="450"
+                    font-family="Ubuntu"
+                    font-size="20"
+                    font-weight="norm"
+                    fill="#000000">
+                    <tspan>Load</tspan>
+                </text>
+                <path
+                    id="lines"
+                    d="M 50,350
+                       h 100
+                       m 40,0
+                       h 100
+                       v 65
+                       m 0,75
+                       v 50
+                       h -100
+                       m -40,0
+                       h -100
+                       M 100,350
+                       v -50
+                       h 50
+                       m 40,0
+                       h 50
+                       v 50
+                       M 290,375
+                       h 50
+                       v 50
+                       m 0,40
+                       v 50
+                       h -50"
+                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                </path> <!-- lines -->
+                <g
+                    id="points">
+                    <circle
+                        cx="47.5" cy="350" r="4"
+                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                    </circle>
+                    <circle
+                        cx="47.5" cy="540" r="4"
+                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                    </circle>
+                    <circle
+                        cx="100" cy="350" r="2"
+                        style="fill:#000000;">
+                    </circle>
+                    <circle
+                        cx="240" cy="350" r="2"
+                        style="fill:#000000;">
+                    </circle>
+                    <circle
+                        cx="290" cy="375" r="2"
+                        style="fill:#000000;">
+                    </circle>
+                    <circle
+                        cx="290" cy="515" r="2"
+                        style="fill:#000000;">
+                    </circle>
+                </g> <!-- points -->
+                <g
+                    id="meters">
+                    <circle
+                        id="voltmeter1"
+                        cx="170" cy="300" r="20"
+                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                    </circle>
+                    <circle
+                        id="voltmeter2"
+                        cx="340" cy="445" r="20"
+                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                    </circle>
+                    <circle
+                        id="ampermeter"
+                        cx="170" cy="540" r="20"
+                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                    </circle>
+                    <text
+                        id="voltmeter1_text"
+                        x="163.5"
+                        y="305.5"
+                        font-family="Ubuntu"
+                        font-size="20"
+                        font-weight="norm"
+                        fill="#0000ff">
+                        <tspan>V</tspan>
+                    </text>
+                    <text
+                        id="voltmeter2_text"
+                        x="333.5"
+                        y="450.5"
+                        font-family="Ubuntu"
+                        font-size="20"
+                        font-weight="norm"
+                        fill="#00ff00">
+                        <tspan>V</tspan>
+                    </text>
+                    <text
+                        id="ampermeter_text"
+                        x="163.5"
+                        y="545.5"
+                        font-family="Ubuntu"
+                        font-size="20"
+                        font-weight="norm"
+                        fill="#ff0000">
+                        <tspan>A</tspan>
+                    </text>
+                </g> <!--meters-->
+            </g> <!--
+            circuit_elements -->
+        </g> <!--layer10-->
+    </g> <!--page1-->
+    <metadata
+        id="metadata1">
+        <rdf:RDF>
+            <cc:Work
+                rdf:about="">
+                <cc:license
+                    rdf:resource="http://creativecommons.org/licenses/by/4.0/"></cc:license>
+                <dc:title>Common_current_notation_animated_dc.svg
+                </dc:title>
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>Shmulik Hen</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+            </cc:Work>
+            <cc:License
+                rdf:about="http://creativecommons.org/licenses/by/4.0/">
+                <cc:permits
+                    rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+                <cc:permits
+                    rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
+                <cc:requires
+                    rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
+                <cc:requires
+                    rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
+                <cc:permits
+                    rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+            </cc:License>
+        </rdf:RDF>
+    </metadata>
+</svg>
