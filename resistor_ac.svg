@@ -360,7 +360,7 @@
             style="display:inline">
             <!-- Voltage input-->
             <path
-                id="wave_form_ac_line"
+                id="voltage_line"
                 d="M 50 100
                    c 30 -70, 50 -70, 80 0
                    s 50 70, 80 0
@@ -387,6 +387,7 @@
             style="display:inline">
             <!-- Voltage resistor-->
             <path
+                id="voltage_line"
                 d="M 450 100
                    c 30 -40, 50 -40, 80 0
                    s 50 40, 80 0
@@ -413,6 +414,7 @@
             style="display:inline">
             <!-- Voltage load-->
             <path
+                id="voltage_line"
                 d="M 450 300
                    c 30 -40, 50 -40, 80 0
                    s 50 40, 80 0
@@ -439,6 +441,7 @@
             style="display:inline">
             <!-- Current -->
             <path
+                id="current"
                 d="M 450 500
                    c 30 -40, 50 -40, 80 0
                    s 50 40, 80 0
