@@ -359,16 +359,6 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage input-->
-            <path
-                id="voltage_line"
-                d="M 50,100
-                   v -60 h 60
-                   v 60 h 60
-                   v -60 h 60
-                   v 60 h 60
-                   v -60 h 60 v 60"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
-            </path>
             <text
                 id="voltage_text"
                 x="70"
@@ -379,6 +369,16 @@
                 fill="#000000">
                 <tspan>Input</tspan>
             </text>
+            <path
+                id="voltage_line"
+                d="M 50,100
+                   v -60 h 60
+                   v 60 h 60
+                   v -60 h 60
+                   v 60 h 60
+                   v -60 h 60 v 60"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+            </path>
         </g> <!--layer6-->
         <g
             id="layer7"
@@ -387,16 +387,6 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage resistor-->
-            <path
-                id="voltage_line"
-                d="M 450,100
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60 v 30"
-                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
-            </path>
             <text
                 id="voltage_text"
                 x="470"
@@ -407,6 +397,16 @@
                 fill="#000000">
                 <tspan>Resistor</tspan>
             </text>
+            <path
+                id="voltage_line"
+                d="M 450,100
+                   v -30 h 60
+                   v 30 h 60
+                   v -30 h 60
+                   v 30 h 60
+                   v -30 h 60 v 30"
+                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+            </path>
             <path
                 id="reference_wave"
                 d="M 450,100
@@ -425,16 +425,6 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage load-->
-            <path
-                id="voltage_line"
-                d="M 450,300
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60 v 30"
-                style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
-            </path>
             <text
                 id="voltage_text"
                 x="470"
@@ -445,6 +435,16 @@
                 fill="#000000">
                 <tspan>Load</tspan>
             </text>
+            <path
+                id="voltage_line"
+                d="M 450,300
+                   v -30 h 60
+                   v 30 h 60
+                   v -30 h 60
+                   v 30 h 60
+                   v -30 h 60 v 30"
+                style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
+            </path>
             <path
                 id="reference_wave"
                 d="M 450,300
@@ -463,16 +463,6 @@
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Current -->
-            <path
-                id="current"
-                d="M 450,500
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60
-                   v 30 h 60
-                   v -30 h 60 v 30"
-                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
-            </path>
             <text
                 id="voltage_text"
                 x="470"
@@ -483,6 +473,14 @@
                 fill="#000000">
                 <tspan>Current</tspan>
             </text>
+            <path
+                id="current"
+                d="M 450,500
+                   v -30 h 60 v 30 h 60
+                   v -30 h 60 v 30 h 60
+                   v -30 h 60 v 30"
+                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
+            </path>
             <path
                 id="reference_wave"
                 d="M 450,500
@@ -516,17 +514,9 @@
                 <path
                     id="symbol"
                     d="M 150,350
-                       l 2,-10
-                       l 4,20
-                       l 4,-20
-                       l 4,20
-                       l 4,-20
-                       l 4,20
-                       l 4,-20
-                       l 4,20
-                       l 4,-20
-                       l 4,20
-                       l 2,-10"
+                       l 2,-10 l 4,20 l 4,-20 l 4,20
+                       l 4,-20 l 4,20 l 4,-20 l 4,20
+                       l 4,-20 l 4,20 l 2,-10"
                     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
                 </path> <!-- symbol -->
                 <text
@@ -560,15 +550,12 @@
                 <path
                     id="lines"
                     d="M 50,350
-                       h 100 m 40,0 h 100
-                       v 65 m 0,75 v 50
-                       h -100 m -40,0 h -100
+                       h 100 m 40,0 h 100 v 65 m 0,75
+                       v 50 h -100 m -40,0 h -100
                        M 100,350
-                       v -50 h 50 m 40,0
-                       h 50 v 50
+                       v -50 h 50 m 40,0 h 50 v 50
                        M 290,375
-                       h 50 v 50 m 0,40
-                       v 50 h -50"
+                       h 50 v 50 m 0,40 v 50 h -50"
                     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
                 </path> <!-- lines -->
                 <g

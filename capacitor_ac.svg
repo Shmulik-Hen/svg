@@ -91,9 +91,14 @@
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
-                id="vert guide"
+                id="vert guide 1"
                 d="M 400,0 V 600"
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+            </path>
+            <path
+                id="vert guide 2"
+                d="M 470,0 V 600"
+                style="fill:none;fill-opacity:1;stroke:#ffc000;stroke-width:1;stroke-opacity:1">
             </path>
         </g> <!--layer1-->
         <g
@@ -166,7 +171,7 @@
             inkscape:label="Layer 3"
             transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
-            <!-- Voltage resistor axis -->
+            <!-- Voltage capacitor axis -->
             <g
                 id="axis_x">
                 <path
@@ -398,11 +403,11 @@
             </text>
             <path
                 id="voltage_line"
-                d="M 480 100
-                   c 30 -70, 50 -70, 80 0
-                   s 50 70, 80 0
-                   s 50 -70, 80 0
-                   s 50 70, 80 0"
+                d="M 470 100
+                   c 30 -40, 50 -40, 80 0
+                   s 50 40, 80 0
+                   s 50 -40, 80 0
+                   s 50 40, 80 0"
                 style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
             </path>
             <path
@@ -509,9 +514,7 @@
                 <path
                     id="symbol"
                     d="M 165,350
-                       m 0,-10 v 20
-                       m 10,-20 v 20
-                       m 0,-10"
+                       m 0,-10 v 20 m 10,-20 v 20 m 0,-10"
                     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
                 </path> <!-- symbol -->
                 <text
@@ -545,9 +548,8 @@
                 <path
                     id="lines"
                     d="M 50,350
-                       h 115 m 10,0 h 115
-                       v 65 m 0,75 v 50
-                       h -100 m -40,0 h -100
+                       h 115 m 10,0 h 115 v 65 m 0,75
+                       v 50 h -100 m -40,0 h -100
                        M 100,350
                        v -50 h 50 m 40,0 h 50 v 50
                        M 290,375
