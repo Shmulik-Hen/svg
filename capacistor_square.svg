@@ -405,8 +405,7 @@
                    c 0 0, 0 -60, 25 -60 h 35
                    c 0 0, 0 60, 25 60 h 35
                    c 0 0, 0 -60, 25 -60 h 35
-                   c 0 0, 0 60, 25 60
-                   "
+                   c 0 0, 0 60, 25 60"
                 style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
             </path>
             <path
