@@ -5,73 +5,15 @@
     viewBox="0 0 800 600"
     preserveAspectRatio="xMidYMid"
     fill-rule="evenodd"
-    sodipodi:docname="temp.svg"
-    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
     width="800"
     height="600"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <title
-        id="title1">
-        capacitor_square.svg
-    </title>
-    <sodipodi:namedview
-        id="namedview45"
-        pagecolor="#ffffff"
-        bordercolor="#000000"
-        borderopacity="0.25"
-        inkscape:showpageshadow="2"
-        inkscape:pageopacity="0.0"
-        inkscape:pagecheckerboard="0"
-        inkscape:deskcolor="#d1d1d1"
-        showgrid="true"
-        inkscape:zoom="0"
-        inkscape:cx="400"
-        inkscape:cy="300"
-        inkscape:window-width="1536"
-        inkscape:window-height="839"
-        inkscape:window-x="0"
-        inkscape:window-y="0"
-        inkscape:window-maximized="1"
-        inkscape:current-layer="layer1"
-        showguides="true"
-        guidecolor="#e50027"
-        guideopacity="0"
-        guidehicolor="#00ff24"
-        guidehiopacity="0">
-        <inkscape:grid
-            id="grid251"
-            type="xygrid"
-            snapvisiblegridlinesonly="true"
-            empspacing="1"
-            originx="0"
-            originy="0"
-            empcolor="#0017e5"
-            empopacity="0.30196078"
-            color="#00c8e5"
-            opacity="0.14901961">
-        </inkscape:grid>
-    </sodipodi:namedview>
+    xmlns:svg="http://www.w3.org/2000/svg">
     <g
-        id="page1"
-        transform="matrix(1.4353696,0,0,1.3686552,-15.836653,-11.898483)"
-        inkscape:label="page1">
-        <desc
-            id="desc1">
-            Slide
-        </desc>
+        id="page1">
         <g
             id="layer1"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 1"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
-            <!--Background-->
             <rect
                 id="white_background"
                 x="0"
@@ -91,16 +33,13 @@
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
-                id="vert guide"
+                id="vert guide 1"
                 d="M 400,0 V 600"
                 style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
         </g> <!--layer1-->
         <g
             id="layer2"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 2"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage input axis -->
             <g
@@ -162,11 +101,8 @@
         </g> <!--layer2-->
         <g
             id="layer3"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 3"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
-            <!-- Voltage resistor axis -->
+            <!-- Voltage element axis -->
             <g
                 id="axis_x">
                 <path
@@ -226,9 +162,6 @@
         </g> <!--layer3-->
         <g
             id="layer4"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 4"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage load axis -->
             <g
@@ -290,9 +223,6 @@
         </g> <!--layer4-->
         <g
             id="layer5"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 5"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Current axis -->
             <g
@@ -354,9 +284,6 @@
         </g> <!--layer5-->
         <g
             id="layer6"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 6"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage input-->
             <text
@@ -382,11 +309,8 @@
         </g> <!--layer6-->
         <g
             id="layer7"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 7"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
-            <!-- Voltage capacitor-->
+            <!-- Voltage element-->
             <text
                 id="voltage_text"
                 x="470"
@@ -421,9 +345,6 @@
         </g> <!--layer7-->
         <g
             id="layer8"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 8"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Voltage load-->
             <text
@@ -460,9 +381,6 @@
         </g> <!--layer8-->
         <g
             id="layer9"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 9"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Current -->
             <text
@@ -499,9 +417,6 @@
         </g> <!--layer9-->
         <g
             id="layer10"
-            inkscape:groupmode="layer"
-            inkscape:label="Layer 10"
-            transform="matrix(0.69668467,0,0,0.73064421,11.033153,8.6935577)"
             style="display:inline">
             <!-- Circuit -->
             <text
@@ -521,7 +436,7 @@
                     d="M 165,350
                        m 0,-10 v 20 m 10,-20 v 20 m 0,-10"
                     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path> <!-- symbol -->
+                </path> <!--symbol-->
                 <text
                     id="symbol_text"
                     x="165"
@@ -560,7 +475,7 @@
                        M 290,375
                        h 50 v 50 m 0,40 v 50 h -50"
                     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path> <!-- lines -->
+                </path> <!--lines-->
                 <g
                     id="points">
                     <circle
@@ -587,7 +502,7 @@
                         cx="290" cy="515" r="2"
                         style="fill:#000000;">
                     </circle>
-                </g> <!-- points -->
+                </g> <!--points-->
                 <g
                     id="meters">
                     <circle
@@ -636,38 +551,7 @@
                         <tspan>A</tspan>
                     </text>
                 </g> <!--meters-->
-            </g> <!--
-            circuit_elements -->
+            </g> <!--circuit_elements-->
         </g> <!--layer10-->
     </g> <!--page1-->
-    <metadata
-        id="metadata1">
-        <rdf:RDF>
-            <cc:Work
-                rdf:about="">
-                <cc:license
-                    rdf:resource="http://creativecommons.org/licenses/by/4.0/"></cc:license>
-                <dc:title>Common_current_notation_animated_dc.svg
-                </dc:title>
-                <dc:creator>
-                    <cc:Agent>
-                        <dc:title>Shmulik Hen</dc:title>
-                    </cc:Agent>
-                </dc:creator>
-            </cc:Work>
-            <cc:License
-                rdf:about="http://creativecommons.org/licenses/by/4.0/">
-                <cc:permits
-                    rdf:resource="http://creativecommons.org/ns#Reproduction"></cc:permits>
-                <cc:permits
-                    rdf:resource="http://creativecommons.org/ns#Distribution"></cc:permits>
-                <cc:requires
-                    rdf:resource="http://creativecommons.org/ns#Notice"></cc:requires>
-                <cc:requires
-                    rdf:resource="http://creativecommons.org/ns#Attribution"></cc:requires>
-                <cc:permits
-                    rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
-            </cc:License>
-        </rdf:RDF>
-    </metadata>
 </svg>
