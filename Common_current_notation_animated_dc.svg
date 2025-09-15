@@ -142,20 +142,14 @@
         <g
             id="layer3"
             style="display:inline">
-            <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
                 id="neg_charge_carriers_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
                 fill="#ff0000">
-                <tspan
-                    x="240"
-                    y="150">Negative charge
-</tspan>
-                <tspan
-                    x="240"
-                    y="170">carriers</tspan>
+                <tspan x="240" y="150">Negative charge</tspan>
+                <tspan x="240" y="170">carriers</tspan>
             </text>
             <circle
                 id="neg_charge_carriers_circle"
@@ -179,20 +173,14 @@
         <g
             id="layer4"
             style="display:inline">
-            <!-- Apparently the weird indentations below are necessary for the text to align properly -->
             <text
                 id="pos_charge_carries_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
                 fill="#0000ff">
-                <tspan
-                    x="40"
-                    y="105">Positive charge
-</tspan>
-                <tspan
-                    x="40"
-                    y="125">carriers</tspan>
+                <tspan x="40" y="105">Positive charge</tspan>
+                <tspan x="40" y="125">carriers</tspan>
             </text>
             <circle
                 id="pos_charge_carries_circle"
