@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0px 0px 800px 600px"
+    width="800px"
+    height="600px"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <marker
+            id="arrow_head"
+            style="overflow:visible"
+            viewBox="0 0 4 6"
+            markerWidth="4"
+            markerHeight="6"
+            refX="left"
+            refY="center"
+            orient="auto-start-reverse"
+            preserveAspectRatio="xMidYMid">
+            <path
+                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+                d="M -3,-3 L 0,0 L -3,3">
+            </path>
+        </marker>
+        <g
+            id="tub">
+            <polyline
+                id="container"
+                points="0,0 40,70 120,70 160,0"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-opacity:1">
+            </polyline>
+            <path
+                id="waves"
+                d="M 3,3
+                   q 3,-3 6,0
+                   t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
+                   t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
+                   t 6,0 6,0 6,0 6,0 6,0"
+                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:3;stroke-opacity:1">
+            </path>
+            <path
+                id="water"
+                d="M 3,4
+                   q 3,-3 6,0
+                   t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
+                   t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
+                   t 6,0 6,0 6,0 6,0 6,0 m -2,0 l -36,65 h -81 l -37,-65"
+                style="fill:#0000ff;fill-opacity:0.25;stroke:none;stroke-width:2;stroke-opacity:1">
+            </path>
+        </g>
+        <g
+            id="ground">
+            <path
+                d="M 1,0 h 400"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                d="M 20,1 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
+                   m 40,-20 l -20,20 m 40,-20 l -20,20"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1">
+            </path>
+        </g>
+        <g
+            id="battery">
+            <rect
+                x="60"
+                y="0"
+                width="30"
+                height="15"
+                style="fill:#000000;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-linejoin:round">
+            </rect>
+            <rect
+                x="0"
+                y="15"
+                width="150"
+                height="300"
+                style="fill:none;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-linejoin:round">
+            </rect>
+            <rect
+                x="25"
+                y="315"
+                width="100"
+                height="2"
+                style="fill:none;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-linejoin:round">
+            </rect>
+        </g>
+        <path
+            id="gnd"
+            d="M 0,0 v 47 h -80 v 50 m -30,0 h 60 m -50,10 h 40 m -30,10 h 20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </path>
+        <text
+            id="pos_chrg"
+            font-family="Ubuntu"
+            font-size="30"
+            font-weight="norm"
+            fill="#0000ff">
+            <tspan x="0" y="0">+</tspan>
+            <tspan x="20" y="0">+</tspan>
+            <tspan x="40" y="0">+</tspan>
+            <tspan x="60" y="0">+</tspan>
+            <tspan x="80" y="0">+</tspan>
+            <tspan x="100" y="0">+</tspan>
+            <tspan x="120" y="0">+</tspan>
+            <tspan x="10" y="20">+</tspan>
+            <tspan x="30" y="20">+</tspan>
+            <tspan x="50" y="20">+</tspan>
+            <tspan x="70" y="20">+</tspan>
+            <tspan x="90" y="20">+</tspan>
+            <tspan x="110" y="20">+</tspan>
+            <tspan x="0" y="40">+</tspan>
+            <tspan x="20" y="40">+</tspan>
+            <tspan x="40" y="40">+</tspan>
+            <tspan x="60" y="40">+</tspan>
+            <tspan x="80" y="40">+</tspan>
+            <tspan x="100" y="40">+</tspan>
+            <tspan x="120" y="40">+</tspan>
+        </text>
+        <text
+            id="neg_chrg"
+            font-family="Ubuntu"
+            font-size="22"
+            font-weight="norm"
+            fill="#ff0000">
+            <tspan x="0" y="0">_</tspan>
+            <tspan x="20" y="0">_</tspan>
+            <tspan x="40" y="0">_</tspan>
+            <tspan x="60" y="0">_</tspan>
+            <tspan x="80" y="0">_</tspan>
+            <tspan x="100" y="0">_</tspan>
+            <tspan x="120" y="0">_</tspan>
+            <tspan x="10" y="20">_</tspan>
+            <tspan x="30" y="20">_</tspan>
+            <tspan x="50" y="20">_</tspan>
+            <tspan x="70" y="20">_</tspan>
+            <tspan x="90" y="20">_</tspan>
+            <tspan x="110" y="20">_</tspan>
+            <tspan x="0" y="40">_</tspan>
+            <tspan x="20" y="40">_</tspan>
+            <tspan x="40" y="40">_</tspan>
+            <tspan x="60" y="40">_</tspan>
+            <tspan x="80" y="40">_</tspan>
+            <tspan x="100" y="40">_</tspan>
+            <tspan x="120" y="40">_</tspan>
+        </text>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#tub" x="10" y="500"></use>
+            <use xlink:href="#tub" x="220" y="100"></use>
+            <use xlink:href="#ground" x="10" y="573"></use>
+            <use xlink:href="#battery" x="500" y="160"></use>
+            <use xlink:href="#gnd" x="575" y="477"></use>
+            <use xlink:href="#pos_chrg" x="510" y="200"></use>
+            <use xlink:href="#neg_chrg" x="510" y="420"></use>
+            <text
+                id="headline"
+                x="100"
+                y="30"
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Voltage = difference between potential energies</tspan>
+            </text>
+            <text
+                x="170"
+                y="560"
+                font-family="Ubuntu"
+                font-size="16"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>E = 0</tspan>
+            </text>
+            <text
+                x="370"
+                y="160"
+                font-family="Ubuntu"
+                font-size="16"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>E > 0</tspan>
+            </text>
+            <text
+                x="200"
+                y="350"
+                font-family="Ubuntu"
+                font-size="24"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>h</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="13" y="170">Additional</tspan>
+                <tspan x="30" y="190">Energy</tspan>
+                <tspan x="10" y="210">(mechanical)</tspan>
+            </text>
+            <text
+                x="160"
+                y="85"
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Charge (Q) = Amount of water</tspan>
+            </text>
+            <text
+                x="670"
+                y="470"
+                font-family="Ubuntu"
+                font-size="16"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>E = 0</tspan>
+            </text>
+            <text
+                x="670"
+                y="190"
+                font-family="Ubuntu"
+                font-size="16"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>E > 0</tspan>
+            </text>
+            <text
+                x="460"
+                y="130"
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Charge (Q) = Amount of carriers</tspan>
+            </text>
+            <text
+                x="480"
+                y="330"
+                font-family="Ubuntu"
+                font-size="24"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>v</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="660" y="300">Additional</tspan>
+                <tspan x="673" y="320">Energy</tspan>
+                <tspan x="662" y="340">(chemical)</tspan>
+            </text>
+            <path
+                id="divider"
+                d="M 440,40 V 600"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+            </path>
+            <path
+                d="M 220,572 v -400 h 200"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-opacity:1">
+            </path>
+            <path
+                d="M 100,480 q 0,-370 120,-360"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;marker-end:url(#arrow_head)">
+            </path>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
