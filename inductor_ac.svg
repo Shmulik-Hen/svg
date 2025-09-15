@@ -3,12 +3,202 @@
     id="svg1"
     version="1.1"
     viewBox="0 0 800 600"
-    preserveAspectRatio="xMidYMid"
-    fill-rule="evenodd"
     width="800"
     height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:svg="http://www.w3.org/2000/svg">
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <marker
+            id="arrow_head"
+            style="overflow:visible"
+            viewBox="0 0 4 6"
+            markerWidth="4"
+            markerHeight="6"
+            refX="left"
+            refY="center"
+            orient="auto-start-reverse"
+            preserveAspectRatio="xMidYMid">
+            <path
+                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+                d="M -3,-3 L 0,0 L -3,3"
+                id="path5759">
+            </path>
+        </marker>
+        <circle
+            id="big_contact"
+            cx="0" cy="0" r="4"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+        </circle>
+        <circle
+            id="small_contact"
+            cx="0" cy="0" r="2"
+            style="fill:#000000;">
+        </circle>
+        <circle
+            id="meter"
+            cx="0" cy="0" r="20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+        </circle>
+        <g
+            id="coordinate_system">
+            <path
+                id="axis_x_line"
+                d="M 25,100 H 375"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+            </path>
+            <path
+                id="axis_y_line"
+                d="M 50,20 V 180"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
+            </path>
+            <text
+                id="axis_x_text"
+                x="25"
+                y="115"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>x</tspan>
+            </text>
+            <text
+                id="axis_y_text"
+                x="40"
+                y="55"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>y</tspan>
+            </text>
+            <text
+                id="axis_x_unit"
+                x="380"
+                y="105"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>T</tspan>
+            </text>
+            <text
+                id="zero_value"
+                x="10"
+                y="105"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>0</tspan>
+            </text>
+            <text
+                id="plus_value"
+                x="10"
+                y="30"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>+</tspan>
+            </text>
+            <text
+                id="minus_value"
+                x="10"
+                y="180"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>-</tspan>
+            </text>
+        </g><!-- coordinate_system -->
+        <path
+            id="reference_wave"
+            d="m 1 0
+               c 30 -70, 50 -70, 80 0
+               s 50 70, 80 0
+               s 50 -70, 80 0
+               s 50 70, 80 0"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+        </path>
+        <g
+            id="circuit_elements">
+            <text
+                id="load_text"
+                x="200"
+                y="200"
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>Load</tspan>
+            </text>
+            <rect
+                id="load"
+                x="262"
+                y="164.5"
+                width="25"
+                height="75"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            </rect>
+            <path
+                id="conductors"
+                d="M 4,100 h 85 m 70,0 h 115 v 65
+                   m 0,75 v 50 h -115 m -40,0 h -115
+                   M 55,100 v -50 h 50 m 40,0 h 50 v 50
+                   M 275,125 h 50 v 50 m 0,40 v 50 h -50"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            </path> <!--conductors-->
+            <g
+                id="contact_points">
+                <use xlink:href="#big_contact" x="0" y="100"></use>
+                <use xlink:href="#big_contact" x="0" y="290"></use>
+                <use xlink:href="#small_contact" x="55" y="100"></use>
+                <use xlink:href="#small_contact" x="195" y="100"></use>
+                <use xlink:href="#small_contact" x="274" y="125"></use>
+                <use xlink:href="#small_contact" x="274" y="265"></use>
+            </g> <!--contact_points-->
+            <g
+                id="meters">
+                <use xlink:href="#meter" x="125" y="50"></use>
+                <use xlink:href="#meter" x="325" y="195"></use>
+                <use xlink:href="#meter" x="139" y="290"></use>
+                <text
+                    id="voltmeter1_letter"
+                    x="118"
+                    y="57"
+                    font-family="Ubuntu"
+                    font-size="20"
+                    font-weight="norm"
+                    fill="#0000ff">
+                    <tspan>V</tspan>
+                </text>
+                <text
+                    id="voltmeter2_letter"
+                    x="318"
+                    y="203"
+                    font-family="Ubuntu"
+                    font-size="20"
+                    font-weight="norm"
+                    fill="#00ff00">
+                    <tspan>V</tspan>
+                </text>
+                <text
+                    id="ampermeter_letter"
+                    x="133"
+                    y="296"
+                    font-family="Ubuntu"
+                    font-size="20"
+                    font-weight="norm"
+                    fill="#ff0000">
+                    <tspan>A</tspan>
+                </text>
+            </g> <!--meters-->
+        </g> <!--circuit_elements-->
+    </defs>
     <g
         id="page1">
         <g
@@ -46,251 +236,71 @@
         <g
             id="layer2"
             style="display:inline">
-            <!-- Voltage input axis -->
-            <g
-                id="axis_x">
-                <path
-                    id="axis_x_line"
-                    d="M 25,100 H 375"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_x_text"
-                    x="25"
-                    y="115"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>x</tspan>
-                </text>
-                <text
-                    id="axis_x_unit"
-                    x="380"
-                    y="105"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>T</tspan>
-                </text>
-            </g> <!--axis_x-->
-            <g
-                id="axis_y">
-                <path
-                    id="axis_y_line"
-                    d="M 50,20 V 180"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_y_text"
-                    x="40"
-                    y="55"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>y</tspan>
-                </text>
-                <text
-                    id="axis_y_unit"
-                    x="45"
-                    y="15"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>V</tspan>
-                </text>
-            </g> <!--axis_y-->
+            <!-- Input Voltage -->
+            <use xlink:href="#coordinate_system" x="0" y="0"></use>
+            <text
+                id="axis_y_unit"
+                x="45"
+                y="15"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>V</tspan>
+            </text>
         </g> <!--layer2-->
         <g
             id="layer3"
             style="display:inline">
-            <!-- Voltage element axis -->
-            <g
-                id="axis_x">
-                <path
-                    id="axis_x_line"
-                    d="M 425,100 H 775"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_x_text"
-                    x="425"
-                    y="115"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>x</tspan>
-                </text>
-                <text
-                    id="axis_x_unit"
-                    x="780"
-                    y="105"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>T</tspan>
-                </text>
-            </g> <!--axis_x-->
-            <g
-                id="axis_y">
-                <path
-                    id="axis_y_line"
-                    d="M 450,20 V 180"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_y_text"
-                    x="440"
-                    y="55"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>y</tspan>
-                </text>
-                <text
-                    id="axis_y_unit"
-                    x="445"
-                    y="15"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>V</tspan>
-                </text>
-            </g> <!--axis_y-->
+            <!-- Element Voltage -->
+            <use xlink:href="#coordinate_system" x="400" y="0"></use>
+            <text
+                id="axis_y_unit"
+                x="445"
+                y="15"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>V</tspan>
+            </text>
         </g> <!--layer3-->
         <g
             id="layer4"
             style="display:inline">
-            <!-- Voltage load axis -->
-            <g
-                id="axis_x">
-                <path
-                    id="axis_x_line"
-                    d="M 425,300 H 775"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_x_text"
-                    x="425"
-                    y="315"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>x</tspan>
-                </text>
-                <text
-                    id="axis_x_unit"
-                    x="780"
-                    y="305"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>T</tspan>
-                </text>
-            </g> <!--axis_x-->
-            <g
-                id="axis_y">
-                <path
-                    id="axis_y_line"
-                    d="M 450,220 V 380"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_y_text"
-                    x="440"
-                    y="255"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>y</tspan>
-                </text>
-                <text
-                    id="axis_y_unit"
-                    x="445"
-                    y="215"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>V</tspan>
-                </text>
-            </g> <!--axis_y-->
+            <!-- Load voltage -->
+            <use xlink:href="#coordinate_system" x="400" y="200"></use>
+            <text
+                id="axis_y_unit"
+                x="445"
+                y="215"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>V</tspan>
+            </text>
         </g> <!--layer4-->
         <g
             id="layer5"
             style="display:inline">
-            <!-- Current axis -->
-            <g
-                id="axis_x">
-                <path
-                    id="axis_x_line"
-                    d="M 425,500 H 775"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_x_text"
-                    x="425"
-                    y="515"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>x</tspan>
-                </text>
-                <text
-                    id="axis_x_unit"
-                    x="780"
-                    y="505"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>T</tspan>
-                </text>
-            </g> <!--axis_x-->
-            <g
-                id="axis_y">
-                <path
-                    id="axis_y_line"
-                    d="M 450,420 V 580"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path>
-                <text
-                    id="axis_y_text"
-                    x="440"
-                    y="455"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>y</tspan>
-                </text>
-                <text
-                    id="axis_y_unit"
-                    x="445"
-                    y="415"
-                    font-family="Ubuntu"
-                    font-size="14"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>A</tspan>
-                </text>
-            </g> <!--axis_y-->
+            <!-- Current -->
+            <use xlink:href="#coordinate_system" x="400" y="400"></use>
+            <text
+                id="axis_y_unit"
+                x="445"
+                y="415"
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>A</tspan>
+            </text>
         </g> <!--layer5-->
         <g
             id="layer6"
             style="display:inline">
-            <!-- Voltage input-->
+            <!-- Input signal-->
             <text
                 id="voltage_text"
                 x="70"
@@ -302,8 +312,8 @@
                 <tspan>Input</tspan>
             </text>
             <path
-                id="voltage_line"
-                d="M 50 100
+                id="voltage_wave"
+                d="M 51,100
                    c 30 -70, 50 -70, 80 0
                    s 50 70, 80 0
                    s 50 -70, 80 0
@@ -314,7 +324,7 @@
         <g
             id="layer7"
             style="display:inline">
-            <!-- Voltage element-->
+            <!-- Element Voltage -->
             <text
                 id="voltage_text"
                 x="470"
@@ -326,28 +336,20 @@
                 <tspan>Inductor</tspan>
             </text>
             <path
-                id="voltage_line"
-                d="M 430 100
+                id="voltage_wave"
+                d="M 431,100
                    c 30 -40, 50 -40, 80 0
                    s 50 40, 80 0
                    s 50 -40, 80 0
                    s 50 40, 80 0"
                 style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
             </path>
-            <path
-                id="reference_wave"
-                d="M 450 100
-                   c 30 -70, 50 -70, 80 0
-                   s 50 70, 80 0
-                   s 50 -70, 80 0
-                   s 50 70, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
-            </path>
+            <use xlink:href="#reference_wave" x="450" y="100"></use>
         </g> <!--layer7-->
         <g
             id="layer8"
             style="display:inline">
-            <!-- Voltage load-->
+            <!-- Load voltage -->
             <text
                 id="voltage_text"
                 x="470"
@@ -359,30 +361,22 @@
                 <tspan>Load</tspan>
             </text>
             <path
-                id="voltage_line"
-                d="M 470 300
+                id="voltage_wave"
+                d="M 471,300
                    c 30 -40, 50 -40, 80 0
                    s 50 40, 80 0
                    s 50 -40, 80 0
                    s 50 40, 80 0"
                 style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
             </path>
-            <path
-                id="reference_wave"
-                d="M 450 300
-                   c 30 -70, 50 -70, 80 0
-                   s 50 70, 80 0
-                   s 50 -70, 80 0
-                   s 50 70, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
-            </path>
+            <use xlink:href="#reference_wave" x="450" y="300"></use>
         </g> <!--layer8-->
         <g
             id="layer9"
             style="display:inline">
             <!-- Current -->
             <text
-                id="voltage_text"
+                id="current_text"
                 x="470"
                 y="425"
                 font-family="Ubuntu"
@@ -392,28 +386,21 @@
                 <tspan>Current (scaled)</tspan>
             </text>
             <path
-                id="current"
-                d="M 470 500
+                id="current_wave"
+                d="M 471,500
                    c 30 -65, 50 -65, 80 0
                    s 50 65, 80 0
                    s 50 -65, 80 0
                    s 50 65, 80 0"
                 style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
             </path>
-            <path
-                id="reference_wave"
-                d="M 450 500
-                   c 30 -70, 50 -70, 80 0
-                   s 50 70, 80 0
-                   s 50 -70, 80 0
-                   s 50 70, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
-            </path>
+            <use xlink:href="#reference_wave" x="450" y="500"></use>
         </g> <!--layer9-->
         <g
             id="layer10"
             style="display:inline">
             <!-- Circuit -->
+            <use xlink:href="#circuit_elements" x="30" y="250"></use>
             <text
                 id="circuit_text"
                 x="150"
@@ -424,141 +411,35 @@
                 fill="#000000">
                 <tspan>Inductor</tspan>
             </text>
-            <g
-                id="circuit_elements">
-                <path
-                    id="symbol"
-                    d="M 147,350
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0
-                       c -1 12.5, -2 12.5, -3 0
-                       c 3 -12.5, 6 -12.5, 9 0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path> <!--symbol-->
-                <text
-                    id="symbol_text"
-                    x="165"
-                    y="375"
-                    font-family="Ubuntu"
-                    font-size="20"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>L</tspan>
-                </text>
-                <rect
-                    id="load"
-                    x="277.5"
-                    y="412.5"
-                    width="25"
-                    height="75"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </rect>
-                <text
-                    id="load_text"
-                    x="225"
-                    y="450"
-                    font-family="Ubuntu"
-                    font-size="20"
-                    font-weight="norm"
-                    fill="#000000">
-                    <tspan>Load</tspan>
-                </text>
-                <path
-                    id="lines"
-                    d="M 50,350
-                       h 97 m 44,0 h 100 v 65 m 0,75
-                       v 50 h -100 m -40,0 h -100
-                       M 100,350
-                       v -50 h 50 m 40,0 h 50 v 50
-                       M 290,375
-                       h 50 v 50 m 0,40 v 50 h -50"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                </path> <!--lines-->
-                <g
-                    id="points">
-                    <circle
-                        cx="47.5" cy="350" r="4"
-                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                    </circle>
-                    <circle
-                        cx="47.5" cy="540" r="4"
-                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                    </circle>
-                    <circle
-                        cx="100" cy="350" r="2"
-                        style="fill:#000000;">
-                    </circle>
-                    <circle
-                        cx="240" cy="350" r="2"
-                        style="fill:#000000;">
-                    </circle>
-                    <circle
-                        cx="290" cy="375" r="2"
-                        style="fill:#000000;">
-                    </circle>
-                    <circle
-                        cx="290" cy="515" r="2"
-                        style="fill:#000000;">
-                    </circle>
-                </g> <!--points-->
-                <g
-                    id="meters">
-                    <circle
-                        id="voltmeter1"
-                        cx="170" cy="300" r="20"
-                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                    </circle>
-                    <circle
-                        id="voltmeter2"
-                        cx="340" cy="445" r="20"
-                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                    </circle>
-                    <circle
-                        id="ampermeter"
-                        cx="170" cy="540" r="20"
-                        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-                    </circle>
-                    <text
-                        id="voltmeter1_text"
-                        x="163.5"
-                        y="305.5"
-                        font-family="Ubuntu"
-                        font-size="20"
-                        font-weight="norm"
-                        fill="#0000ff">
-                        <tspan>V</tspan>
-                    </text>
-                    <text
-                        id="voltmeter2_text"
-                        x="333.5"
-                        y="450.5"
-                        font-family="Ubuntu"
-                        font-size="20"
-                        font-weight="norm"
-                        fill="#00ff00">
-                        <tspan>V</tspan>
-                    </text>
-                    <text
-                        id="ampermeter_text"
-                        x="163.5"
-                        y="545.5"
-                        font-family="Ubuntu"
-                        font-size="20"
-                        font-weight="norm"
-                        fill="#ff0000">
-                        <tspan>A</tspan>
-                    </text>
-                </g> <!--meters-->
-            </g> <!--circuit_elements-->
+            <path
+                id="symbol"
+                d="M 119,350 h 15
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   c -1 12.5, -2 12.5, -3 0
+                   c 3 -12.5, 6 -12.5, 9 0
+                   h 10"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            </path> <!--symbol-->
+            <text
+                id="symbol_letter"
+                x="147"
+                y="380"
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="norm"
+                fill="#000000">
+                <tspan>L</tspan>
+            </text>
         </g> <!--layer10-->
     </g> <!--page1-->
 </svg>
