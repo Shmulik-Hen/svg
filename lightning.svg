@@ -283,7 +283,31 @@
             <use xlink:href="#tree" x="0" y="0"></use>
             <use xlink:href="#house" x="130" y="115"></use>
             <use xlink:href="#pole" x="400" y="-106"></use>
-        </g>
+        </g> <!--landscape-->
+        <g
+            id="lightning">
+            <path
+                style="fill:#e4f40b;stroke:none;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+                d="M 85.942916,4.984023 127.2246,3.4810984 63.427481,183.60864 164.74897,85.288941 100.36307,409.63609 127.97606,151.33638 26.654571,231.64536 Z">
+            </path>
+            <path
+                style="fill:none;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+                d="M 112.43916,6.416946 44.417515,206.80852 148.74079,118.61934 105.96025,375.55649">
+            </path>
+            <path
+                style="fill:#f10f20;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+                d="M 45.954009,203.86706 95.830701,6.6210058 112.30687,6.1711211">
+            </path>
+            <path
+                style="fill:#f10f20;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+                d="m 105.85222,375.53925 33.4309,-248.45103 9.04543,-7.61242">
+            </path>
+        </g> <!--lightning-->
+        <path
+            id="divider"
+            d="m 0,40 v 600"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+        </path>
     </defs>
     <g
         id="page1">
@@ -302,20 +326,17 @@
         <g
             id="layer2"
             style="display:inline">
-            <path
-                id="divider"
-                d="M 400,40 V 600"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
-            </path>
+            <use xlink:href="#divider" x="400" y="0"></use>
             <use xlink:href="#ground" x="5" y="573"></use>
             <use xlink:href="#ground" x="405" y="573"></use>
             <use xlink:href="#cloud"></use>
             <use xlink:href="#cloud" x="400"></use>
             <use xlink:href="#wind" transform="scale(0.6,0.6)" x="115" y="100"></use>
-            <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="50"></use>
-            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="300"></use>
+            <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="310"></use>
+            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="40"></use>
             <use xlink:href="#landscape" x="50" y="522"></use>
             <use xlink:href="#landscape" x="450" y="522"></use>
+            <use xlink:href="#lightning" transform="scale(0.7,0.7)" x="685" y="311"></use>
         </g> <!--layer2-->
     </g> <!--page1-->
 </svg>
