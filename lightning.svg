@@ -285,22 +285,15 @@
             <use xlink:href="#pole" x="400" y="-106"></use>
         </g> <!--landscape-->
         <g
-            id="lightning">
+            id="lightning"
+            transform="scale(0.41,0.41)">
             <path
-                style="fill:#e4f40b;stroke:none;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
-                d="M 85.942916,4.984023 127.2246,3.4810984 63.427481,183.60864 164.74897,85.288941 100.36307,409.63609 127.97606,151.33638 26.654571,231.64536 Z">
+                style="fill:#e4f40b;stroke-width:15.694;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:12;-inkscape-stroke:none;paint-order:markers stroke fill"
+                d="m 75.602395,-525.04346 -1.149822,0.9142 -87.223038,378.66425 1.918282,1.15341 143.509843,-124.13852 -37.783558,431.42599 2.328318,0.30801 98.85603,-555.902 -2.02438,-1.00596 -142.893351,155.01177 85.958521,-284.86488 -1.12688,-1.51712 z m 2.130469,3.8567 h 0.9319 l -0.934768,0.01 z m 53.181426,0.0426 h 1.45376 l -0.0631,0.20643 c -0.14977,-0.0765 -0.67405,-0.14287 -1.39068,-0.20643 z m -63.208678,43.48534 h 25.76347 25.777808 l -0.0201,0.0655 H 93.463347 l -25.772072,0.003 z m 122.953548,93.37995 -0.12043,0.67173 c -0.21046,0.033 -2.98377,2.86268 -7.36059,7.4447 z M 35.289805,-336.94011 H 56.04395 76.783758 l -0.329749,1.09443 -20.702532,0.31129 -20.857372,0.31128 z">
             </path>
             <path
-                style="fill:none;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
-                d="M 112.43916,6.416946 44.417515,206.80852 148.74079,118.61934 105.96025,375.55649">
-            </path>
-            <path
-                style="fill:#f10f20;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
-                d="M 45.954009,203.86706 95.830701,6.6210058 112.30687,6.1711211">
-            </path>
-            <path
-                style="fill:#f10f20;stroke:#f10f20;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
-                d="m 105.85222,375.53925 33.4309,-248.45103 9.04543,-7.61242">
+                style="fill:#ff1000;stroke-width:15.694;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:12;-inkscape-stroke:none;paint-order:markers stroke fill"
+                d="m 90.335028,-518.28359 -1.138352,0.88472 -52.418698,201.7345 -0.0057,0.01 -36.37280166,145.03743 1.90394486,1.17962 144.8890488,-124.17456 -39.828,355.753429 -0.006,0.03604 -6.12187,54.685171 -0.003,0.0328 2.33405,0.29163 0.003,-0.0295 7.61291,-54.498403 55.33769,-396.247117 -1.95269,-1.03872 -136.02882,122.71969 86.52052,-304.87908 -1.12975,-1.49746 z m -59.429458,283.92118 -0.140502,0.49807 c -0.455786,-0.0879 -2.675144,-0.006 -5.657354,0.2523 l -5.046601,0.43581 0.27527,-1.09443 5.275991,-0.0459 z">
             </path>
         </g> <!--lightning-->
         <path
@@ -326,17 +319,44 @@
         <g
             id="layer2"
             style="display:inline">
+            <polygon
+                id="frame"
+                points="401,0 800,0 800,600 401,600"
+                stroke="none"
+                fill="white"
+                stroke-width="0">
+            </polygon>
             <use xlink:href="#divider" x="400" y="0"></use>
             <use xlink:href="#ground" x="5" y="573"></use>
             <use xlink:href="#ground" x="405" y="573"></use>
-            <use xlink:href="#cloud"></use>
-            <use xlink:href="#cloud" x="400"></use>
+            <use id="cloud1" xlink:href="#cloud"></use>
+            <use id="cloud2" xlink:href="#cloud" x="400"></use>
             <use xlink:href="#wind" transform="scale(0.6,0.6)" x="115" y="100"></use>
-            <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="310"></use>
-            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="40"></use>
+            <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="40"></use>
+            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="310">
+                <animate
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="visible"
+                    to="hidden"
+                    dur="0.001s"
+                    begin="lightning_anim.end"
+                    fill="freeze">
+            </animate>
+            </use>
             <use xlink:href="#landscape" x="50" y="522"></use>
             <use xlink:href="#landscape" x="450" y="522"></use>
-            <use xlink:href="#lightning" transform="scale(0.7,0.7)" x="685" y="311"></use>
+            <use xlink:href="#lightning" x="511" y="436" visibility="hidden">
+                <animate
+                    id="lightning_anim"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    dur="0.1s"
+                    begin="frame.click"
+                    repeatCount="2">
+                </animate>
+            </use>
         </g> <!--layer2-->
     </g> <!--page1-->
 </svg>
