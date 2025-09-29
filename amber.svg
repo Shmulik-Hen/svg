@@ -11,6 +11,144 @@
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
+        <marker
+            id="arrow_head"
+            style="overflow:visible"
+            viewBox="0 0 4 6"
+            markerWidth="4"
+            markerHeight="6"
+            refX="left"
+            refY="center"
+            orient="auto-start-reverse"
+            preserveAspectRatio="xMidYMid">
+            <path
+                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+                d="M -3,-3 L 0,0 L -3,3"
+                id="path5759">
+            </path>
+        </marker> <!--arrow_head-->
+        <rect
+            id="white_background"
+            x="0"
+            y="0"
+            width="800"
+            height="600"
+            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+        </rect> <!--white_background-->
+        <rect
+            id="grey_background"
+            width="50"
+            height="600"
+            style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+        </rect> <!--grey_background-->
+        <path
+            id="divider"
+            d="m 0,40 v 600"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
+        </path> <!--divider-->
+        <polygon
+            id="clickable_frame_1"
+            points="50,0 399,0 399,600 50,600"
+            stroke="none"
+            fill="red"
+            opacity="0"
+            stroke-width="0">
+        </polygon> <!--clickable_frame_1-->
+        <polygon
+            id="clickable_frame_2"
+            points="401,0 749,0 749,600 401,600"
+            stroke="none"
+            fill="green"
+            opacity="0"
+            stroke-width="0">
+        </polygon> <!--clickable_frame_2-->
+        <g
+            id="headline">
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan>Amber</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="18"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="85" y="5">(Eng)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="140" y="0">=</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="170" y="0">Elektron</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="18"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="285" y="5">(Greek)</tspan>
+            </text>
+        </g> <!--headline-->
+        <path
+            id="arrow"
+            d="m 0,0 l -50,0"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+        </path> <!--arrow-->
+        <text
+            id="wool_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Wool</tspan>
+        </text> <!--wool_text-->
+        <text
+            id="metal_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Metal</tspan>
+        </text> <!--metal_text-->
+        <text
+            id="amber_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Amber</tspan>
+        </text> <!--amber_text-->
+        <text
+            id="chrg_amber_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Charged amber</tspan>
+        </text> <!--chrg_amber_text-->
+        <rect
+            id="wool_patterned_block"
+            style="fill:url(#wool_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.01;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+            width="50"
+            height="600">
+        </rect> <!--wool_patterned_block-->
+        <rect
+            id="metal_patterned_block"
+            style="fill:url(#metal_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
+            width="50"
+            height="600">
+        </rect> <!--metal_patterned_block-->
         <ellipse
             id="amber"
             style="opacity:0.55;mix-blend-mode:normal;fill:#ffc000;fill-opacity:1;stroke:#ffc000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
@@ -19,7 +157,7 @@
             rx="100"
             ry="25"
             transform="rotate(-90)">
-        </ellipse>
+        </ellipse> <!--amber-->
         <text
             id="neg_chrg"
             font-family="Ubuntu"
@@ -59,7 +197,7 @@
             <tspan x="8.3" y="70">_</tspan>
             <tspan x="7.0" y="75">_</tspan>
             <tspan x="5.5" y="80">_</tspan>
-        </text>
+        </text> <!--neg_chrg-->
         <g
             id="charged_amber">
             <use xlink:href="#amber"></use>
@@ -74,13 +212,13 @@
                     fill="freeze">
                 </animate>
             </use>
-        </g>
+        </g> <!--charged_amber-->
         <path-effect
             id="path_effect_1"
             effect="spiro"
             is_visible="true"
             lpeversion="1">
-        </path-effect>
+        </path-effect> <!--path_effect_1-->
         <filter
             id="filter_1"
             collect="always"
@@ -94,7 +232,7 @@
                 stdDeviation="0.00094107435"
                 id="feGaussianBlur2311">
             </feGaussianBlur>
-        </filter>
+        </filter> <!--filter_1-->
         <clipPath
             id="clip_path_1"
             clipPathUnits="userSpaceOnUse">
@@ -105,7 +243,7 @@
                 x="0.74780279"
                 y="0.93743813">
             </rect>
-        </clipPath>
+        </clipPath> <!--clip_path_1-->
         <clipPath
             id="clip_path_2"
             clipPathUnits="userSpaceOnUse">
@@ -117,7 +255,7 @@
                 x="0.063456431"
                 y="0.063456431">
             </rect>
-        </clipPath>
+        </clipPath> <!--clip_path_2-->
         <pattern
             id="wool_pattern"
             patternUnits="userSpaceOnUse"
@@ -166,7 +304,7 @@
                     </path>
                 </g>
             </g>
-        </pattern>
+        </pattern> <!--wool_pattern-->
         <pattern
             id="metal_pattern"
             patternUnits="userSpaceOnUse"
@@ -227,20 +365,7 @@
                     </path>
                 </g>
             </g>
-        </pattern>
-        <path
-            id="divider"
-            d="m 0,40 v 600"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
-        </path>
-        <rect
-            id="white_background"
-            x="0"
-            y="0"
-            width="750"
-            height="600"
-            fill="#ffffff">
-        </rect>
+        </pattern> <!--metal_pattern-->
         <g
             id="lightning"
             transform="scale(0.05,0.05) rotate(-90)">
@@ -265,49 +390,40 @@
             id="layer2"
             style="display:inline">
             <use xlink:href="#divider" x="400"></use>
-            <rect
-                id="wool_patterned_block"
-                style="fill:url(#wool_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.01;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
-                x="0"
-                y="0"
-                width="50"
-                height="600">
-            </rect>
-            <rect
-                id="metal_patterned_object"
-                style="fill:url(#metal_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
-                x="750"
-                y="0"
-                width="50"
-                height="600">
-            </rect>
-            <polygon
-                id="frame_1"
-                points="50,0 399,0 399,600 50,600"
-                stroke="none"
-                fill="white"
-                stroke-width="0">
-            </polygon>
-            <polygon
-                id="frame_2"
-                points="401,0 750,0 750,600 401,600"
-                stroke="none"
-                fill="white"
-                stroke-width="0">
-            </polygon>
+            <use xlink:href="#grey_background" x="750" y="0"></use>
+            <use xlink:href="#clickable_frame_1"></use>
+            <use xlink:href="#clickable_frame_2"></use>
+            <use xlink:href="#headline" x="250" y="30"></use>
+            <use xlink:href="#wool_text" x="110" y="80"></use>
+            <use xlink:href="#metal_text" x="670" y="80"></use>
+            <use xlink:href="#amber_text" x="110" y="300"></use>
+            <use xlink:href="#arrow" x="105" y="72"></use>
+            <use xlink:href="#wool_patterned_block"></use>
+            <use xlink:href="#metal_patterned_block" x="750"></use>
             <use id="amber_1" xlink:href="#amber" x="50" y="200">
                 <animateTransform
                     attributeName="transform"
                     attributeType="XML"
                     type="translate"
                     values="0,0;0,190;0,0;0,-190;0,0"
-                    begin="frame_1.click"
+                    begin="clickable_frame_1.click"
                     dur="0.5s"
                     repeatDur="3.5s"
                     fill="freeze">
                 </animateTransform>
             </use>
             <use id="amber_2" xlink:href="#charged_amber" x="420" y="200" visibility="hidden">
+                <animate
+                    id="amber_2_vis_anim"
+                    xlink:href="#amber_2"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="hidden"
+                    to="visible"
+                    begin="clickable_frame_2.click"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
                 <animateTransform
                     id="amber_2_anim"
                     attributeName="transform"
@@ -320,27 +436,27 @@
                     fill="freeze">
                 </animateTransform>
             </use>
+            <use xlink:href="#chrg_amber_text" x="480" y="180" visibility="hidden">
+                <animate
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="amber_2_vis_anim.end"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
+            </use>
             <use xlink:href="#lightning" x="745" y="300" visibility="hidden">
                 <animate
                     id="lightning_anim"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    dur="0.1s"
                     begin="amber_2_anim.end"
+                    dur="0.1s"
                     repeatCount="2">
                 </animate>
             </use>
-            <animate
-                xlink:href="#amber_2"
-                attributeName="visibility"
-                attributeType="XML"
-                from="hidden"
-                to="visible"
-                dur="0.001s"
-                begin="frame_2.click"
-                fill="freeze">
-            </animate>
         </g> <!--layer2-->
     </g> <!--page1-->
 </svg>
