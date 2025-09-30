@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0px 0px 800px 600px"
+    width="800px"
+    height="600px"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path
+            id="divider"
+            d="m 0,40 v 600"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
+        </path> <!--divider-->
+        <g
+            id="headline">
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="0" y="0">Analogy: Switch </tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="220" y="0">=</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="250" y="0">Water tap</tspan>
+            </text>
+        </g> <!--headline-->
+        <text
+            id="pipe_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Pipe</tspan>
+        </text> <!--pipe_text-->
+        <text
+            id="tap_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Tap</tspan>
+        </text> <!--tap_text-->
+        <text
+            id="wire_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Wire</tspan>
+        </text> <!--wire_text-->
+        <text
+            id="switch_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Switch</tspan>
+        </text> <!--switch_text-->
+        <text
+            id="bulb_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Bulb</tspan>
+        </text> <!--bulb_text-->
+        <g
+            id="pipe_top">
+            <path
+                d="m 0,0 h 140 v 255"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                d="m 0,60 h 80 v 195"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+        </g>
+        <g
+            id="pipe_bottom">
+            <path
+                d="m 0,0 v 220"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                d="m 60,0 v 220"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+        </g>
+        <polyline
+            id="water_top"
+            points="0,2.5 137.5,2.5 137.5,255 82.5,255 82.5,175 82.5,57.5 0,57.5"
+            style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
+        </polyline>
+        <polyline
+            id="water_bottom"
+            points="2.5,0 57.5,0 57.5,270, 2.5,270"
+            style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
+        </polyline>
+        <g
+            id="full_pipe_top">
+            <use xlink:href="#pipe_top"></use>
+            <use xlink:href="#water_top"></use>
+        </g>
+        <g
+            id="full_pipe_bottom">
+            <use xlink:href="#pipe_bottom"></use>
+            <use id="water_bottom_anim" xlink:href="#water_bottom" visibility="visible">
+                <animate
+                    id="water_bottom_anim_1"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="tap_2_anim.end"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="water_bottom_anim_2"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap_1_anim_2.end"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
+            </use>
+        </g>
+        <g
+            id="tap_open">
+            <circle
+                id="circle"
+                cx="30"
+                cy="30"
+                r="27.5"
+                style="fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+            </circle>
+            <path
+                id="axis"
+                d="m 57,30 h 25"
+                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:5;stroke-opacity:1">
+            </path>
+            <circle
+                id="handle"
+                cx="84.5"
+                cy="30"
+                r="7.5"
+                style="fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+            </circle>
+        </g>
+        <g
+            id="tap_closed">
+            <path
+                id="circle"
+                d="m 2.55,30 h 55"
+                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                id="axis"
+                d="m 57.5,30 h 25"
+                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                id="handle"
+                d="m 84.5,10 v 41 m -7.5,2.5 h 15 m -15,-45 h 15"
+                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:5;stroke-opacity:1">
+            </path>
+        </g>
+        <g
+            id="circuit">
+            <path
+                id="wire"
+                d="m 0,0 v 110 m 0,60 v 110 m 0,60 v 110"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+        </g>
+        <circle
+            id="contact_point"
+            cx="0"
+            cy="0"
+            r="5"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle>
+        <path
+            id="contact_wire"
+            d="m 0,0 l 0,40"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path>
+        <g
+            id="contact">
+            <use xlink:href="#contact_wire" x="0" y="0"></use>
+            <use xlink:href="#contact_point" x="0" y="45"></use>
+        </g>
+        <g
+            id="switch_closed">
+            <use xlink:href="#contact_point" x="0" y="0"></use>
+            <use xlink:href="#contact_point" x="0" y="50"></use>
+            <use xlink:href="#contact" x="0" y="5"></use>
+        </g>
+        <g
+            id="switch_open">
+            <use xlink:href="#contact_point" x="0" y="0"></use>
+            <use xlink:href="#contact_point" x="0" y="50"></use>
+            <use xlink:href="#contact" x="0" y="5" transform="rotate(-45)"></use>
+        </g>
+        <circle
+            id="bulb_shape"
+            cx="0"
+            cy="0"
+            r="30"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle>
+        <circle
+            id="bulb_light"
+            cx="0"
+            cy="0"
+            r="40"
+            style="fill:#e4f40b;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+        </circle>
+        <path
+            id="bulb_line"
+            d="m 0,0 l 60,0"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path>
+        <g
+            id="bulb_on">
+            <use xlink:href="#bulb_light" x="0" y="0"></use>
+            <use xlink:href="#bulb_shape" x="0" y="0"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
+        </g>
+        <g
+            id="bulb_off">
+            <use xlink:href="#bulb_shape" x="0" y="0"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
+        </g>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#divider" x="400"></use>
+            <use xlink:href="#headline" x="170" y="30"></use>
+            <use xlink:href="#pipe_text" x="110" y="70"></use>
+            <use xlink:href="#tap_text" x="230" y="300"></use>
+            <use xlink:href="#wire_text" x="570" y="70"></use>
+            <use xlink:href="#switch_text" x="500" y="240"></use>
+            <use xlink:href="#bulb_text" x="500" y="420"></use>
+            <use xlink:href="#full_pipe_top" x="80" y="80"></use>
+            <use xlink:href="#full_pipe_bottom" x="160" y="335"></use>
+            <use id="tap1" xlink:href="#tap_open" x="160" y="305" visibility="visible">
+                <animate
+                    id="tap_1_anim_1"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin=".click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="tap_1_anim_2"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use id="tap2" xlink:href="#tap_closed" x="160" y="305" visibility="hidden">
+                <animate
+                    id="tap_2_anim"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="tap_2_anim"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#circuit" x="600" y="100"></use>
+            <use xlink:href="#switch_closed" x="600" y="215" visibility="visible">
+                <animate
+                    id="switch_closed_anim_1"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="tap1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="switch_closed_anim_2"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#switch_open" x="600" y="215" visibility="hidden">
+                <animate
+                    id="switch_open_anim_1"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="switch_open_anim_2"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#bulb_on" x="600" y="410" visibility="visible">
+                <animate
+                    id="bulb_on_anim_1"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="tap1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="bulb_on_anim_2"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#bulb_off" x="600" y="410" visibility="hidden">
+                <animate
+                    id="bulb_off_anim_1"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="bulb_off_anim_2"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="water_top.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
