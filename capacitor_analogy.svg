@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0px 0px 800px 600px"
+    width="800px"
+    height="600px"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path
+            id="divider"
+            d="m 0,40 v 600"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
+        </path> <!--divider-->
+        <g
+            id="headline">
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="0" y="0">Analogy: Capacitor </tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="255" y="0">=</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="28"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="280" y="0">Membrane</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="18"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="425" y="0">(Flexible,non-permiable)</tspan>
+            </text>
+        </g> <!--headline-->
+        <text
+            id="pipe_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Pipe</tspan>
+        </text> <!--pipe_text-->
+        <text
+            id="membrane_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Membrane</tspan>
+        </text> <!--membrane_text-->
+        <text
+            id="wire_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Wire</tspan>
+        </text> <!--wire_text-->
+        <text
+            id="capacitor_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Capacitor</tspan>
+        </text> <!--capacitor_text-->
+        <text
+            id="bulb_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Bulb</tspan>
+        </text> <!--bulb_text-->
+        <g
+            id="pipe">
+            <path
+                d="m 0,0 v 220"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+            <path
+                d="m 150,0 v 220"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+        </g> <!--pipe-->
+        <polyline
+            id="water"
+            points="2.5,0 147.5,0 147.5,220 2.5,220"
+            style="fill:#0000ff;fill-opacity:0.2;stroke:none;stroke-width:1;stroke-opacity:1">
+        </polyline> <!--water-->
+        <g
+            id="full_pipe">
+            <use xlink:href="#pipe"></use>
+            <use xlink:href="#water" opacity="0.5"></use>
+        </g> <!--full_pipe-->
+        <g
+            id="membrane">
+            <path
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
+                d="m 0,0 h 150">
+            </path>
+            <path
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;stroke-dasharray:1,1"
+                d="m 0,0 a 100,35 0 0 1 150,0">
+            </path>
+            <path
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;stroke-dasharray:1,1"
+                d="m 0,0 a 100,35 0 0 1 150,0"
+                transform="scale(1,-1)">
+            </path>
+            <path
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;stroke-dasharray:1,3"
+                d="m 0,0 a 100,58 0 0 1 150,0">
+            </path>
+            <path
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;stroke-dasharray:1,3"
+                d="m 0,0 a 100,58 0 0 1 150,0"
+                transform="scale(1,-1)">
+            </path>
+        </g> <!--membrane-->
+        <path
+            id="wire"
+            d="m 0,0 v 90 m 0,100 v 90 m 0,60 v 110"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path>
+        <circle
+            id="contact_point"
+            cx="0"
+            cy="0"
+            r="5"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle> <!--contact_point-->
+        <g
+            id="circuit">
+            <use xlink:href="#wire" x="0" y="0"></use>
+            <use xlink:href="#contact_point" x="0" y="95"></use>
+            <use xlink:href="#contact_point" x="0" y="185"></use>
+        </g> <!--circuit-->
+        <circle
+            id="bulb_shape"
+            cx="0"
+            cy="0"
+            r="30"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle> <!--bulb_shape-->
+        <circle
+            id="bulb_light"
+            cx="0"
+            cy="0"
+            r="40"
+            style="fill:#e4f40b;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+        </circle> <!--bulb_light-->
+        <path
+            id="bulb_line"
+            d="m 0,0 l 60,0"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path> <!--bulb_line-->
+        <g
+            id="bulb">
+            <!-- <use xlink:href="#bulb_light" x="0" y="0"></use> -->
+            <use xlink:href="#bulb_shape" x="0" y="0"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
+            <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
+        </g> <!--bulb-->
+        <path
+            id="symbol"
+            d="m 0,0 h 20 m 0,-10 v 20 m 10,-20 v 20 m 0,-10 h 25"
+            transform="rotate(90) scale(1.5,1.5)"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </path> <!--symbol-->
+        <text
+            id="symbol_letter"
+            font-family="Ubuntu"
+            font-size="20"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>C</tspan>
+        </text> <!--symbol_letter-->
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#divider" x="400"></use>
+            <use xlink:href="#headline" x="135" y="30"></use>
+            <use xlink:href="#pipe_text" x="110" y="70"></use>
+            <use xlink:href="#membrane_text" x="240" y="355"></use>
+            <use xlink:href="#wire_text" x="570" y="70"></use>
+            <use xlink:href="#capacitor_text" x="460" y="245"></use>
+            <use xlink:href="#bulb_text" x="500" y="420"></use>
+            <use xlink:href="#full_pipe" x="80" y="80"></use>
+            <use xlink:href="#pipe" x="80" y="-520" transform="scale(1,-1)"></use>
+            <use xlink:href="#membrane" x="80" y="300"></use>
+            <use xlink:href="#bulb" x="600" y="410"></use>
+            <use xlink:href="#circuit" x="600" y="100"></use>
+            <use xlink:href="#symbol" x="600" y="200"></use>
+            <use xlink:href="#symbol_letter" x="625" y="245"></use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
