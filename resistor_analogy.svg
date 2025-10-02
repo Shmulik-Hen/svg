@@ -81,55 +81,36 @@
             <tspan>Bulb</tspan>
         </text> <!--bulb_text-->
         <g
-            id="pipe_top">
+            id="pipe">
             <path
-                d="m 0,0 h 140 v 255"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                d="m 0,0 v 197 a 8,8 0 0 0 8,8 h 33 a 8,8 0 0 1 8,8 v 50"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-opacity:1;stroke-linejoin:round">
             </path>
             <path
-                d="m 0,60 h 80 v 195"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                d="m 150,0 v 197 a 8,8 0 0 1 -8,8 h -33 a 8,8 0 0 0 -8,8 v 50"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-opacity:1">
             </path>
-        </g> <!--pipe_top-->
-        <g
-            id="pipe_bottom">
-            <path
-                d="m -2.5,0 h 22.5 v 40 h -20 v 180"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-            <path
-                d="m 62.5,0 h -22.5 v 40 h 20 v 180"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-        </g> <!--pipe_bottom-->
+        </g> <!--pipe-->
         <polyline
             id="water_top"
-            points="0,2.5 137.5,2.5 137.5,255 82.5,255 82.5,175 82.5,57.5 0,57.5"
+            points="0,0 145.5,0 145.5,203 0,203"
             style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
         </polyline> <!--water_top-->
         <polyline
             id="water_bottom"
-            points="22.5,0 38,0 38,250 22.5,250"
+            points="50,0 100,0 100,310 50,310"
             style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
         </polyline> <!--water_bottom-->
         <g
             id="full_pipe_top">
-            <use xlink:href="#pipe_top"></use>
-            <use xlink:href="#water_top"></use>
+            <use xlink:href="#pipe"></use>
+            <use xlink:href="#water_top" x="2"></use>
         </g> <!--full_pipe_top-->
         <g
             id="full_pipe_bottom">
-            <use xlink:href="#pipe_bottom"></use>
-            <use xlink:href="#water_bottom"></use>
+            <use xlink:href="#pipe" transform="scale(1,-1)"></use>
+            <use xlink:href="#water_bottom" y="-297"></use>
         </g> <!--full_pipe_bottom-->
-        <g
-            id="circuit">
-            <path
-                id="wire"
-                d="m 0,0 v 110 m 0,60 v 110 m 0,60 v 110"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-        </g> <!--circuit-->
         <circle
             id="contact_point"
             cx="0"
@@ -137,6 +118,16 @@
             r="5"
             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </circle> <!--contact_point-->
+        <g
+            id="circuit">
+            <path
+                id="wire"
+                d="m 0,0 v 90 m 0,100 v 90 m 0,60 v 110"
+                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            </path>
+            <use xlink:href="#contact_point" x="0" y="95"></use>
+            <use xlink:href="#contact_point" x="0" y="185"></use>
+        </g> <!--circuit-->
         <circle
             id="bulb_shape"
             cx="0"
@@ -158,7 +149,7 @@
         </path> <!--bulb_line-->
         <g
             id="bulb">
-            <use xlink:href="#bulb_light" x="0" y="0"></use>
+            <use xlink:href="#bulb_light" x="0" y="0" opacity="0.3"></use>
             <use xlink:href="#bulb_shape" x="0" y="0"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
@@ -170,7 +161,7 @@
                l 4,-20 l 4,20 l 4,-20 l 4,20
                l 4,-20 l 4,20 l 2,-10 h 15"
             transform="rotate(90) scale(1.2,1.2)"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
         </path> <!--symbol-->
         <text
             id="symbol_letter"
@@ -180,6 +171,61 @@
             fill="#000000">
             <tspan>R</tspan>
         </text> <!--symbol_letter-->
+        <text
+            id="pos_chrg"
+            font-family="Ubuntu"
+            font-size="26"
+            font-weight="bold"
+            fill="#0000ff">
+            <tspan x="0" y="0">+</tspan>
+            <tspan x="20" y="0">+</tspan>
+            <tspan x="40" y="0">+</tspan>
+            <tspan x="60" y="0">+</tspan>
+            <tspan x="80" y="0">+</tspan>
+            <tspan x="100" y="0">+</tspan>
+            <tspan x="120" y="0">+</tspan>
+            <tspan x="0" y="22">+</tspan>
+            <tspan x="20" y="22">+</tspan>
+            <tspan x="40" y="22">+</tspan>
+            <tspan x="60" y="22">+</tspan>
+            <tspan x="80" y="22">+</tspan>
+            <tspan x="100" y="22">+</tspan>
+            <tspan x="120" y="22">+</tspan>
+            <tspan x="0" y="44">+</tspan>
+            <tspan x="20" y="44">+</tspan>
+            <tspan x="40" y="44">+</tspan>
+            <tspan x="60" y="44">+</tspan>
+            <tspan x="80" y="44">+</tspan>
+            <tspan x="100" y="44">+</tspan>
+            <tspan x="120" y="44">+</tspan>
+        </text> <!--pos_chrg-->
+        <text
+            id="neg_chrg"
+            font-family="Ubuntu"
+            font-size="30"
+            font-weight="bold"
+            fill="#ff0000">
+            <tspan x="0" y="0">_</tspan>
+            <tspan x="20" y="0">_</tspan>
+            <tspan x="40" y="0">_</tspan>
+            <tspan x="60" y="0">_</tspan>
+            <tspan x="80" y="0">_</tspan>
+            <tspan x="100" y="0">_</tspan>
+            <tspan x="120" y="0">_</tspan>
+            <tspan x="10" y="20">_</tspan>
+            <tspan x="30" y="20">_</tspan>
+            <tspan x="50" y="20">_</tspan>
+            <tspan x="70" y="20">_</tspan>
+            <tspan x="90" y="20">_</tspan>
+            <tspan x="110" y="20">_</tspan>
+            <tspan x="0" y="40">_</tspan>
+            <tspan x="20" y="40">_</tspan>
+            <tspan x="40" y="40">_</tspan>
+            <tspan x="60" y="40">_</tspan>
+            <tspan x="80" y="40">_</tspan>
+            <tspan x="100" y="40">_</tspan>
+            <tspan x="120" y="40">_</tspan>
+        </text> <!--neg_chrg-->
     </defs>
     <g
         id="page1">
@@ -206,11 +252,15 @@
             <use xlink:href="#resistor_text" x="480" y="240"></use>
             <use xlink:href="#bulb_text" x="500" y="420"></use>
             <use xlink:href="#full_pipe_top" x="80" y="80"></use>
-            <use xlink:href="#full_pipe_bottom" x="160" y="335"></use>
+            <use xlink:href="#full_pipe_bottom" x="80" y="580"></use>
+            <use xlink:href="#bulb" x="600" y="410"></use>
             <use xlink:href="#circuit" x="600" y="100"></use>
-            <use xlink:href="#bulb" x="600" y="410" opacity="0.4"></use>
-            <use xlink:href="#symbol" x="600" y="197"></use>
+            <use xlink:href="#symbol" x="600" y="197.5"></use>
             <use xlink:href="#symbol_letter" x="620" y="250"></use>
+            <use xlink:href="#pos_chrg" x="610" y="120"></use>
+            <use xlink:href="#pos_chrg" x="620" y="130"></use>
+            <use xlink:href="#neg_chrg" x="610" y="500"></use>
+            <use xlink:href="#pos_chrg" x="680" y="340" transform="scale(0.9)"></use>
         </g> <!--layer2-->
     </g> <!--page1-->
 </svg>
