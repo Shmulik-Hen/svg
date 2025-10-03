@@ -87,6 +87,15 @@
             fill="#000000">
             <tspan>Bulb</tspan>
         </text> <!--bulb_text-->
+        <text
+            id="waves_text"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Pressure</tspan>
+            <tspan x="0" y="30">Waves</tspan>
+        </text> <!--wave_text-->
         <g
             id="pipe">
             <path
@@ -101,13 +110,19 @@
         <polyline
             id="water"
             points="2.5,0 147.5,0 147.5,220 2.5,220"
-            style="fill:#0000ff;fill-opacity:0.2;stroke:none;stroke-width:1;stroke-opacity:1">
+            style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
         </polyline> <!--water-->
         <g
-            id="full_pipe">
+            id="full_pipe_top">
+            <use xlink:href="#pipe"></use>
+            <use xlink:href="#water" opacity="0.3"></use>
+        </g> <!--full_pipe_top-->
+        <g
+            id="full_pipe_bottom"
+            transform="scale(1,-1)">
             <use xlink:href="#pipe"></use>
             <use xlink:href="#water" opacity="0.5"></use>
-        </g> <!--full_pipe-->
+        </g> <!--full_pipe_bottom-->
         <g
             id="membrane">
             <path
@@ -133,6 +148,27 @@
                 transform="scale(1,-1)">
             </path>
         </g> <!--membrane-->
+        <path
+            id="wave"
+            style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+            d="m 0,0 v 10 a 100,35 0 0 1 150,0 v -10 m -150,0 a 100,35 0 0 1 150,0"
+            transform="scale(1,-1)">
+        </path>
+        <g
+            id="waves">
+            <use xlink:href="#wave" y="0"></use>
+            <use xlink:href="#wave" y="30"></use>
+            <use xlink:href="#wave" y="60"></use>
+            <use xlink:href="#wave" y="90"></use>
+            <use xlink:href="#wave" y="120"></use>
+            <use xlink:href="#wave" y="150"></use>
+            <use xlink:href="#wave" y="230"></use>
+            <use xlink:href="#wave" y="260"></use>
+            <use xlink:href="#wave" y="290"></use>
+            <use xlink:href="#wave" y="320"></use>
+            <use xlink:href="#wave" y="350"></use>
+            <use xlink:href="#wave" y="380"></use>
+        </g>
         <path
             id="wire"
             d="m 0,0 v 90 m 0,100 v 90 m 0,60 v 110"
@@ -212,13 +248,15 @@
             <use xlink:href="#divider" x="400"></use>
             <use xlink:href="#headline" x="135" y="30"></use>
             <use xlink:href="#pipe_text" x="110" y="70"></use>
-            <use xlink:href="#membrane_text" x="240" y="355"></use>
+            <use xlink:href="#membrane_text" x="240" y="305"></use>
+            <use xlink:href="#waves_text" x="240" y="180"></use>
             <use xlink:href="#wire_text" x="570" y="70"></use>
             <use xlink:href="#capacitor_text" x="460" y="245"></use>
             <use xlink:href="#bulb_text" x="500" y="420"></use>
-            <use xlink:href="#full_pipe" x="80" y="80"></use>
-            <use xlink:href="#pipe" x="80" y="-520" transform="scale(1,-1)"></use>
+            <use xlink:href="#full_pipe_top" x="80" y="80"></use>
+            <use xlink:href="#full_pipe_bottom" x="80" y="520"></use>
             <use xlink:href="#membrane" x="80" y="300"></use>
+            <use xlink:href="#waves" x="80" y="110"></use>
             <use xlink:href="#bulb" x="600" y="410"></use>
             <use xlink:href="#circuit" x="600" y="100"></use>
             <use xlink:href="#symbol" x="600" y="200"></use>
