@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Electricity</title>
+        <style>
+            :root { --pad: 18px; }
+            html, body { height: 100%; margin: 0; font-family: system-ui, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
+            a { color: #79b8ff; }
+            .screen { height: 100%; display: none; }
+            .screen.active { display: flex; }
+            #toc { flex-direction: column; padding: 2rem max(2rem, 6vw); gap: 1rem; }
+            #toc h1 { margin: 0 0 .5rem 0; font-size: clamp(1.4rem, 2.5vw, 2rem); }
+            #toc ol { margin: 0; padding-left: 1.5rem; line-height: 1.9; font-size: clamp(1rem, 1.6vw, 1.25rem); }
+            #viewer { flex-direction: column; }
+            #stageWrap { position: relative; flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; }
+            #stage {
+                width: 100%; height: 100%;
+                display: flex; align-items: center; justify-content: center;
+                padding: var(--pad);
+                box-sizing: border-box;
+            }
+            /* Use <object> to preserve SVG animation & interactivity */
+            #slideObj {
+                width: 100%; height: 100%; border: 0; background:#111;
+                box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset;
+            }
+            /* Controls bar */
+            #controls {
+                display: flex; gap: .5rem; padding: .5rem;
+                align-items: center; justify-content: space-between;
+                background: rgba(255,255,255,0.04);
+                border-top: 1px solid rgba(255,255,255,0.08);
+            }
+            .left, .right { display: flex; gap: .5rem; align-items: center; }
+            button {
+                background: rgba(255,255,255,0.08); color: #e8e8e8; border: 1px solid rgba(255,255,255,0.14);
+                padding: .45rem .75rem; border-radius: .5rem; cursor: pointer; font-size: 0.95rem;
+            }
+            button:disabled { opacity: .45; cursor: not-allowed; }
+            #title { opacity: .8; font-size: .95rem; }
+            #hint { opacity: .6; font-size: .85rem; }
+            /* Small “Back to TOC” floating button for mouse users */
+            #backFloat {
+                position: fixed; top: .75rem; left: .75rem; z-index: 10; display: none;
+            }
+            #viewer.active #backFloat { display: inline-block; }
+        </style>
+    </head>
+
+    <body>
+        <!-- TOC SCREEN -->
+        <section id="toc" class="screen active" aria-labelledby="tocTitle">
+            <h1 id="tocTitle">Basic Electricity</h1>
+            <p id="hint">Tip: use ← / → to navigate slides, <kbd>Home</kbd>/<kbd>End</kbd> to jump, <kbd>B</kbd> or <kbd>Esc</kbd> to return here, <kbd>F</kbd> for fullscreen.</p>
+            <ol id="tocList"></ol>
+        </section>
+
+        <!-- VIEWER SCREEN -->
+        <section id="viewer" class="screen" aria-labelledby="slideTitle">
+            <button id="backFloat" title="Back to TOC (B / Esc)">Back</button>
+            <div id="stageWrap">
+                <div id="stage" aria-live="polite">
+                    <object id="slideObj" type="image/svg+xml" data="" tabindex="0" aria-label="Slide viewer"></object>
+                </div>
+ current           </div>
+            <div id="controls">
+                <div class="left">
+                    <button id="backBtn" title="Back to TOC (B / Esc)">Back</button>
+                    <button id="prevBtn" title="Previous (← / PageUp)">Prev</button>
+                    <button id="nextBtn" title="Next (→ / Space / PageDown)">Next</button>
+                </div>
+            <div id="title" role="heading" aria-level="2"></div>
+                <div class="right">
+                    <button id="fsBtn" title="Fullscreen (F)">Fullscreen</button>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // 1) LIST YOUR SLIDES HERE (order = presentation order):
+            const slides = [
+                { title: "Amber",               file: "electricity/static/amber.svg" },
+                { title: "Lightning",           file: "electricity/static/lightning.svg" },
+                { title: "Voltage analogy",     file: "electricity/dynamic/voltage.svg" },
+                { title: "Current analogy",     file: "electricity/dynamic/current.svg" },
+                { title: "Switch analogy",      file: "electricity/dynamic/switch_analogy.svg" },
+                { title: "Resistor analogy",    file: "electricity/dynamic/resistor_analogy.svg" },
+                { title: "Capacitor analogy",   file: "electricity/dynamic/capacitor_analogy.svg" },
+                { title: "Inductor analogy",    file: "electricity/dynamic/inductor_analogy.svg" },
+                { title: "Direct current",      file: "electricity/dynamic/Common_current_notation_animated_dc.svg" },
+                { title: "Alternating current", file: "electricity/dynamic/Common_current_notation_animated_ac.svg" },
+                { title: "Resistor DC",         file: "electricity/dynamic/resistor_dc.svg" },
+                { title: "Resistor AC",         file: "electricity/dynamic/resistor_ac.svg" },
+                { title: "Resistor square",     file: "electricity/dynamic/resistor_square.svg" },
+                { title: "Capacitor DC",        file: "electricity/dynamic/capacitor_dc.svg" },
+                { title: "Capacitor AC",        file: "electricity/dynamic/capacitor_ac.svg" },
+                { title: "Capacitor square",    file: "electricity/dynamic/capacitor_square.svg" },
+                { title: "Inductor DC",         file: "electricity/dynamic/inductor_dc.svg" },
+                { title: "Inductor AC",         file: "electricity/dynamic/inductor_ac.svg" },
+                { title: "Inductor square",     file: "electricity/dynamic/inductor_square.svg" },
+            ];
+
+            // --- Basic state & helpers ---
+            let current = -1;
+            const $ = sel => document.querySelector(sel);
+            const toc = $("#toc"), viewer = $("#viewer"), tocList = $("#tocList");
+            const slideObj = $("#slideObj"), titleEl = $("#title");
+            const prevBtn = $("#prevBtn"), nextBtn = $("#nextBtn");
+            const backBtn = $("#backBtn"), backFloat = $("#backFloat"), fsBtn = $("#fsBtn");
+
+            function buildTOC() {
+                tocList.innerHTML = "";
+                slides.forEach((s, i) => {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+                    a.href = `#slide=${i}`;
+                    a.textContent = s.title ? `${s.title}` : `${s.file}`;
+                    a.addEventListener("click", e => { e.preventDefault(); showSlide(i); });
+                    li.appendChild(a); tocList.appendChild(li);
+
+                    // Preload next few SVGs lightly (helps on slow disks/servers)
+                    const link = document.createElement("link");
+                    link.rel = "preload"; link.as = "image"; link.href = s.file;
+                    document.head.appendChild(link);
+                });
+            }
+
+            function showTOC() {
+                current = -1;
+                slideObj.removeAttribute("data"); // some browsers
+                slideObj.data = ""; // others
+                toggleScreens("toc");
+                history.replaceState(null, "", location.pathname + "#toc");
+            }
+
+            function showSlide(idx) {
+                if (idx < 0 || idx >= slides.length) return;
+                current = idx;
+                const s = slides[idx];
+                slideObj.data = s.file; // <object> src
+                titleEl.textContent = `Slide ${idx+1}/${slides.length} — ${s.title || s.file}`;
+                toggleScreens("viewer");
+                updateNavButtons();
+                history.replaceState(null, "", `#slide=${idx}`);
+                // focus for keyboard users
+                slideObj.focus({ preventScroll: false });
+            }
+
+            function toggleScreens(which) {
+                toc.classList.toggle("active", which === "toc");
+                viewer.classList.toggle("active", which === "viewer");
+            }
+
+            function updateNavButtons() {
+                prevBtn.disabled = (current <= 0);
+                nextBtn.disabled = (current >= slides.length - 1);
+            }
+
+            function nextSlide() { if (current < slides.length - 1) showSlide(current + 1); }
+            function prevSlide() { if (current > 0) showSlide(current - 1); }
+
+            // --- Keyboard controls ---
+            window.addEventListener("keydown", (e) => {
+                const inViewer = viewer.classList.contains("active");
+                const key = e.key;
+                if (inViewer) {
+                    if (key === "ArrowRight" || key === "PageDown" || key === " ") { e.preventDefault(); nextSlide(); }
+                    else if (key === "ArrowLeft" || key === "PageUp") { e.preventDefault(); prevSlide(); }
+                    else if (key === "Home") { e.preventDefault(); showSlide(0); }
+                    else if (key === "End") { e.preventDefault(); showSlide(slides.length - 1); }
+                    else if (key === "Escape" || key.toLowerCase() === "b") { e.preventDefault(); showTOC(); }
+                    else if (key.toLowerCase() === "f") { e.preventDefault(); toggleFullscreen(); }
+                } else {
+                    // From TOC: right arrow or Enter goes to first slide
+                    if (key === "ArrowRight" || key === "Enter") { e.preventDefault(); showSlide(0); }
+                }
+            });
+
+            // --- Buttons ---
+            backBtn.addEventListener("click", showTOC);
+            backFloat.addEventListener("click", showTOC);
+            prevBtn.addEventListener("click", prevSlide);
+            nextBtn.addEventListener("click", nextSlide);
+            fsBtn.addEventListener("click", toggleFullscreen);
+
+            // --- Fullscreen ---
+            function toggleFullscreen() {
+                const el = document.documentElement;
+                if (!document.fullscreenElement) {
+                    (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen)?.call(el);
+                } else {
+                    (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
+                }
+            }
+
+            // --- Hash support & initial route ---
+            function handleHash() {
+                const m = location.hash.match(/#slide=(\d+)/);
+                if (m) {
+                    const idx = parseInt(m[1], 10);
+                    if (!Number.isNaN(idx)) { showSlide(idx); return; }
+                }
+                showTOC();
+            }
+
+            window.addEventListener("hashchange", handleHash);
+
+            // Build UI and route on load
+            buildTOC();
+            handleHash();
+        </script>
+    </body>
+</html>
