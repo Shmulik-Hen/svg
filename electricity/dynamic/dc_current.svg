@@ -153,9 +153,9 @@
             </text>
             <circle
                 id="neg_charge_carriers_circle"
-                cx="400px"
-                cy="300px"
-                r="240px"
+                cx="400"
+                cy="300"
+                r="240"
                 style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
                     id="neg_charge_carriers_circle_rotate_ccw"
@@ -184,9 +184,9 @@
             </text>
             <circle
                 id="pos_charge_carries_circle"
-                cx="400px"
-                cy="300px"
-                r="260px"
+                cx="400"
+                cy="300"
+                r="260"
                 style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
                     id="pos_charge_carries_rotate_cw"
