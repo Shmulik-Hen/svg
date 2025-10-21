@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="48"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="180" y="120">Dynamic Electricity</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="30"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="50" y="200">A field of electricity dealing with</tspan>
+                <tspan x="490" y="200" font-weight="bold">continuous flow</tspan>
+                <tspan x="50" y="240">of</tspan>
+                <tspan x="90" y="240" font-weight="bold">electric charges</tspan>
+                <tspan x="315" y="240">, also known as an</tspan>
+                <tspan x="560" y="240" font-weight="bold">electric</tspan>
+                <tspan x="50" y="280" font-weight="bold">current</tspan>
+                <tspan x="155" y="280">, through a</tspan>
+                <tspan x="310" y="280" font-weight="bold">conductor</tspan>
+                <tspan x="450" y="280">.</tspan>
+                <tspan x="50" y="320">Flow can be either uni-directional (DC), or</tspan>
+                <tspan x="50" y="360">bi-directional (AC).</tspan>
+                <!--
+                -->
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

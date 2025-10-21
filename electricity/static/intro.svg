@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="48"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="220" y="120">Static Electricity</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="30"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="50" y="200">A field of electricity dealing with charges</tspan>
+                <tspan x="600" y="200" font-weight="bold">fixed</tspan>
+                <tspan x="50" y="240" font-weight="bold">in place</tspan>
+                <tspan x="160" y="240">, either</tspan>
+                <tspan x="260" y="240" font-weight="bold">in</tspan>
+                <tspan x="290" y="240">or</tspan>
+                <tspan x="325" y="240" font-weight="bold">on</tspan>
+                <tspan x="360" y="240">, an insulated body.</tspan>
+                <tspan x="50" y="300">For example:</tspan>
+                <tspan x="50" y="340">Rubbing an inflated balloon against the fur of a cat,</tspan>
+                <tspan x="50" y="380">causes a transfer of one type of the charges (negative</tspan>
+                <tspan x="50" y="420">or positive) from the fur to the surface of the balloon,</tspan>
+                <tspan x="50" y="460">while leaving the other charge type on the fur. Such</tspan>
+                <tspan x="50" y="500">separation creates an electric attraction between</tspan>
+                <tspan x="50" y="540">the two objects - ballon "glued" to the cat.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
