@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle
+            id="point"
+            cx="0"
+            cy="0"
+            r="1.5"
+            style="fill-opacity:1;stroke:none">
+        </circle>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+            <g
+                id="guides"
+                style="fill:none;fill-opacity:1;stroke:#0000c0;stroke-width:0.3;stroke-opacity:1">
+                <path
+                    id="horiz guides"
+                    d="M 0,100 H 800
+                       M 0,200 H 800
+                       M 0,300 H 800
+                       M 0,400 H 800
+                       M 0,500 H 800">
+                </path>
+                <path
+                    id="vert guides"
+                    d="M 100,0 V 600
+                       M 200,0 V 600
+                       M 300,0 V 600
+                       M 400,0 V 600
+                       M 500,0 V 600
+                       M 600,0 V 600
+                       M 700,0 V 600">
+                </path>
+            </g>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+
+            <path
+                d="M 10,10 C 10,90 90,90 90,10"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="10" y="10" fill="#ff0000"></use>
+            <use xlink:href="#point" x="10" y="90" fill="#00ff00"></use>
+            <line x1="10" y1="10" x2="10" y2="90" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="90" y="90" fill="#0000ff"></use>
+            <use xlink:href="#point" x="90" y="10" fill="#ff00ff"></use>
+            <line x1="90" y1="10" x2="90" y2="90" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 110,90 C 110,10 190,10 190,90"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="110" y="90" fill="#ff0000"></use>
+            <use xlink:href="#point" x="110" y="10" fill="#00ff00"></use>
+            <line x1="110" y1="90" x2="110" y2="10" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="190" y="10" fill="#0000ff"></use>
+            <use xlink:href="#point" x="190" y="90" fill="#ff00ff"></use>
+            <line x1="190" y1="10" x2="190" y2="90" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 210,10 C 290,10 290,90 210,90"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="210" y="10" fill="#ff0000"></use>
+            <use xlink:href="#point" x="290" y="10" fill="#00ff00"></use>
+            <line x1="210" y1="10" x2="290" y2="10" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="290" y="90" fill="#0000ff"></use>
+            <use xlink:href="#point" x="210" y="90" fill="#ff00ff"></use>
+            <line x1="290" y1="90" x2="210" y2="90" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 390,10 C 310,10 310,90 390,90"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="390" y="10" fill="#ff0000"></use>
+            <use xlink:href="#point" x="310" y="10" fill="#00ff00"></use>
+            <line x1="390" y1="10" x2="310" y2="10" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="310" y="90" fill="#0000ff"></use>
+            <use xlink:href="#point" x="390" y="90" fill="#ff00ff"></use>
+            <line x1="310" y1="90" x2="390" y2="90" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 10,110 C 10,190 90,110 90,190"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="10" y="110" fill="#ff0000"></use>
+            <use xlink:href="#point" x="10" y="190" fill="#00ff00"></use>
+            <line x1="10" y1="110" x2="10" y2="190" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="90" y="190" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="90" y="110" fill="#0000ff"></use>
+            <line x1="90" y1="190" x2="90" y2="110" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 110,190 C 110,110 190,190 190,110"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="110" y="190" fill="#ff0000"></use>
+            <use xlink:href="#point" x="110" y="110" fill="#00ff00"></use>
+            <line x1="110" y1="190" x2="110" y2="110" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="190" y="190" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="190" y="110" fill="#0000ff"></use>
+            <line x1="190" y1="190" x2="190" y2="110" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 210,110 C 290,110 210,190 290,190"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="210" y="110" fill="#ff0000"></use>
+            <use xlink:href="#point" x="290" y="110" fill="#00ff00"></use>
+            <line x1="210" y1="110" x2="290" y2="110" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="210" y="190" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="290" y="190" fill="#0000ff"></use>
+            <line x1="210" y1="190" x2="290" y2="190" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 390,110 C 310,110 390,190 310,190"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="390" y="110" fill="#ff0000"></use>
+            <use xlink:href="#point" x="310" y="110" fill="#00ff00"></use>
+            <line x1="390" y1="110" x2="310" y2="110" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="390" y="190" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="310" y="190" fill="#0000ff"></use>
+            <line x1="390" y1="190" x2="310" y2="190" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 10,210 C 10,270 30,290 90,290"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="10" y="210" fill="#ff0000"></use>
+            <use xlink:href="#point" x="10" y="270" fill="#00ff00"></use>
+            <line x1="10" y1="210" x2="10" y2="270" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="30" y="290" fill="#0000ff"></use>
+            <use xlink:href="#point" x="90" y="290" fill="#ff00ff"></use>
+            <line x1="30" y1="290" x2="90" y2="290" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 110,290 C 110,230 130,210 190,210"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="110" y="290" fill="#ff0000"></use>
+            <use xlink:href="#point" x="110" y="230" fill="#00ff00"></use>
+            <line x1="110" y1="290" x2="110" y2="230" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="130" y="210" fill="#0000ff"></use>
+            <use xlink:href="#point" x="190" y="210" fill="#ff00ff"></use>
+            <line x1="130" y1="210" x2="190" y2="210" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 210,210 C 270,210 290,230 290,290"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="210" y="210" fill="#ff0000"></use>
+            <use xlink:href="#point" x="270" y="210" fill="#00ff00"></use>
+            <line x1="210" y1="210" x2="270" y2="210" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="290" y="230" fill="#0000ff"></use>
+            <use xlink:href="#point" x="290" y="290" fill="#ff00ff"></use>
+            <line x1="290" y1="230" x2="290" y2="290" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 390,210 C 390,270 370,290 310,290"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="390" y="210" fill="#ff0000"></use>
+            <use xlink:href="#point" x="390" y="270" fill="#00ff00"></use>
+            <line x1="390" y1="210" x2="390" y2="270" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="370" y="290" fill="#0000ff"></use>
+            <use xlink:href="#point" x="310" y="290" fill="#ff00ff"></use>
+            <line x1="370" y1="290" x2="310" y2="290" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 10,310 C 40,390 60,390 90,310"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="10" y="310" fill="#ff0000"></use>
+            <use xlink:href="#point" x="40" y="390" fill="#00ff00"></use>
+            <line x1="10" y1="310" x2="40" y2="390" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="60" y="390" fill="#0000ff"></use>
+            <use xlink:href="#point" x="90" y="310" fill="#ff00ff"></use>
+            <line x1="60" y1="390" x2="90" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 110,390 C 140,310 160,310 190,390"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="110" y="390" fill="#ff0000"></use>
+            <use xlink:href="#point" x="140" y="310" fill="#00ff00"></use>
+            <line x1="110" y1="390" x2="140" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="160" y="310" fill="#0000ff"></use>
+            <use xlink:href="#point" x="190" y="390" fill="#ff00ff"></use>
+            <line x1="160" y1="310" x2="190" y2="390" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 210,310 C 290,340 290,360 210,390"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="210" y="310" fill="#ff0000"></use>
+            <use xlink:href="#point" x="290" y="340" fill="#00ff00"></use>
+            <line x1="210" y1="310" x2="290" y2="340" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="290" y="360" fill="#0000ff"></use>
+            <use xlink:href="#point" x="210" y="390" fill="#ff00ff"></use>
+            <line x1="290" y1="360" x2="210" y2="390" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 390,310 C 310,340 310,360 390,390"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="390" y="310" fill="#ff0000"></use>
+            <use xlink:href="#point" x="310" y="340" fill="#00ff00"></use>
+            <line x1="390" y1="310" x2="310" y2="340" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="310" y="360" fill="#0000ff"></use>
+            <use xlink:href="#point" x="390" y="390" fill="#ff00ff"></use>
+            <line x1="310" y1="360" x2="390" y2="390" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 410,340 C 490,310 490,390 410,360"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="410" y="340" fill="#ff0000"></use>
+            <use xlink:href="#point" x="490" y="310" fill="#00ff00"></use>
+            <line x1="410" y1="340" x2="490" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="490" y="390" fill="#0000ff"></use>
+            <use xlink:href="#point" x="410" y="360" fill="#ff00ff"></use>
+            <line x1="490" y1="390" x2="410" y2="360" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <path
+                d="M 510,350 C 590,310 590,390 510,350"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="510" y="350" fill="#ff0000"></use>
+            <use xlink:href="#point" x="590" y="310" fill="#00ff00"></use>
+            <line x1="510" y1="350" x2="590" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="590" y="390" fill="#0000ff"></use>
+            <use xlink:href="#point" x="510" y="350" fill="#ff00ff"></use>
+            <line x1="590" y1="390" x2="510" y2="350" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <!--1-->
+            <path
+                d="M 650,310 C 690,390 610,390 650,310"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="650" y="310" fill="#ff0000"></use>
+            <use xlink:href="#point" x="690" y="390" fill="#00ff00"></use>
+            <line x1="650" y1="310" x2="690" y2="390" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="610" y="390" fill="#0000ff"></use>
+            <use xlink:href="#point" x="650" y="310" fill="#ff00ff"></use>
+            <line x1="610" y1="390" x2="650" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <!--1/2-->
+            <path
+                d="M 650,310 C 670,350 630,350 650,310"
+                style="fill:none;stroke:#ff00ff;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="670" y="350" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="630" y="350" fill="#ff00ff"></use>
+
+            <!--2/3-->
+            <path
+                d="M 650,310 C 677,363 623,363 650,310"
+                style="fill:none;stroke:#ffff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="677" y="363" fill="#ffff00"></use>
+            <use xlink:href="#point" x="623" y="363" fill="#ffff00"></use>
+
+            <!--3/4-->
+            <path
+                d="M 650,310 C 680,370 620,370 650,310"
+                style="fill:none;stroke:#00ffff;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="680" y="370" fill="#00ffff"></use>
+            <use xlink:href="#point" x="620" y="370" fill="#00ffff"></use>
+
+            <!--1-->
+            <path
+                d="M 750,310 C 790,360 710,360 750,310"
+                style="fill:none;stroke:#00ff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="750" y="310" fill="#ff0000"></use>
+            <use xlink:href="#point" x="790" y="360" fill="#00ff00"></use>
+            <line x1="750" y1="310" x2="790" y2="360" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+            <use xlink:href="#point" x="710" y="360" fill="#0000ff"></use>
+            <use xlink:href="#point" x="750" y="310" fill="#ff00ff"></use>
+            <line x1="710" y1="360" x2="750" y2="310" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
+
+            <!--1/2-->
+            <path
+                d="M 750,310 C 770,335 730,335 750,310"
+                style="fill:none;stroke:#ff00ff;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="770" y="335" fill="#ff00ff"></use>
+            <use xlink:href="#point" x="730" y="335" fill="#ff00ff"></use>
+
+            <!--2/3-->
+            <path
+                d="M 750,310 C 777,343 723,343 750,310"
+                style="fill:none;stroke:#ffff00;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="777" y="343" fill="#ffff00"></use>
+            <use xlink:href="#point" x="723" y="343" fill="#ffff00"></use>
+
+            <!--3/4-->
+            <path
+                d="M 750,310 C 780,347.5 720,347.5 750,310"
+                style="fill:none;stroke:#00ffff;stroke-width:0.8;stroke-opacity:1">
+            </path>
+            <use xlink:href="#point" x="780" y="347.5" fill="#00ffff"></use>
+            <use xlink:href="#point" x="720" y="347.5" fill="#00ffff"></use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
