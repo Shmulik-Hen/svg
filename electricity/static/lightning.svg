@@ -305,6 +305,18 @@
             <tspan x="100" y="40">_</tspan>
             <tspan x="120" y="40">_</tspan>
         </text> <!--neg_chrg-->
+        <text
+            id="explanation"
+            font-family="Ubuntu"
+            font-size="18"
+            font-weight="bold"
+            fill="#000000">
+            <tspan x="0" y="0">A few hundred millions volts</tspan>
+            <tspan x="0" y="30">that are enough to ionize</tspan>
+            <tspan x="0" y="60">the air all the way to the ground</tspan>
+            <tspan x="0" y="90">and create a path for</tspan>
+            <tspan x="0" y="120">current to flow</tspan>
+        </text>
         <g
             id="lightning"
             transform="scale(0.41,0.41)">
@@ -346,6 +358,28 @@
             <use xlink:href="#wind" transform="scale(0.6,0.6)" x="115" y="100"></use>
             <use xlink:href="#wind_text" x="160" y="280"></use>
             <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="40"></use>
+            <use xlink:href="#explanation" x="410" y="300">
+                <animate
+                    id="explanation_anim"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="clickable_frame.click"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#lightning" x="511" y="436" visibility="hidden">
+                <animate
+                    id="lightning_anim"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    dur="0.1s"
+                    begin="explanation_anim.end"
+                    repeatCount="2">
+                </animate>
+            </use>
             <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="310">
                 <animate
                     attributeName="visibility"
@@ -355,17 +389,6 @@
                     dur="0.001s"
                     begin="lightning_anim.end"
                     fill="freeze">
-            </animate>
-            </use>
-            <use xlink:href="#lightning" x="511" y="436" visibility="hidden">
-                <animate
-                    id="lightning_anim"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    dur="0.1s"
-                    begin="clickable_frame.click"
-                    repeatCount="2">
                 </animate>
             </use>
         </g> <!--layer2-->

@@ -137,6 +137,18 @@
             fill="#000000">
             <tspan>Charged amber</tspan>
         </text> <!--chrg_amber_text-->
+        <text
+            id="explanation"
+            font-family="Ubuntu"
+            font-size="18"
+            font-weight="bold"
+            fill="#000000">
+            <tspan x="0" y="0">Several thousand volts</tspan>
+            <tspan x="0" y="30">that are enough to ionize</tspan>
+            <tspan x="0" y="60">the air over a small gap</tspan>
+            <tspan x="0" y="90">and create a path for</tspan>
+            <tspan x="0" y="120">current to flow</tspan>
+        </text>
         <rect
             id="wool_patterned_block"
             style="fill:url(#wool_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.01;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
@@ -437,6 +449,16 @@
                 </animateTransform>
             </use>
             <use xlink:href="#chrg_amber_text" x="480" y="180" visibility="hidden">
+                <animate
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="amber_2_vis_anim.end"
+                    dur="0.1s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#explanation" x="410" y="450" visibility="hidden">
                 <animate
                     attributeName="visibility"
                     from="hidden"
