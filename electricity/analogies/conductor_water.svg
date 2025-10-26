@@ -20,7 +20,15 @@
             <tspan>Water conductor (pipe)</tspan>
         </text>
         <text
-            id="label_pressure"
+            id="title"
+            font-family="Ubuntu"
+            font-size="22"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Conductivity: Pipe's diameter</tspan>
+        </text>
+        <text
+            id="pressure_label"
             font-family="Ubuntu"
             font-size="20"
             font-weight="bold"
@@ -85,7 +93,8 @@
             id="layer2"
             style="display:inline">
             <use xlink:href="#headline" x="250" y="40"></use>
-            <use xlink:href="#label_pressure" x="40" y="120"></use>
+            <use xlink:href="#title" x="250" y="70"></use>
+            <use xlink:href="#pressure_label" x="40" y="120"></use>
             <line x1="40" y1="130" x2="120" y2="130" style="stroke:#000000;stroke-width:2;marker-end:url(#arrow_head)"></line>
             <line x1="100" y1="150" x2="700" y2="150" style="stroke:#000000;stroke-width:8"></line>
             <line x1="100" y1="450" x2="700" y2="450" style="stroke:#000000;stroke-width:8"></line>
