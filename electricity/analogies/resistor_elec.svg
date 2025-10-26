@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <text
+            id="headline"
+            font-family="Ubuntu"
+            font-size="28"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Electric Resistor</tspan>
+        </text>
+        <text
+            id="title"
+            font-family="Ubuntu"
+            font-size="22"
+            font-weight="bold"
+            fill="#000000">
+            <tspan x="250" y="70">Conductivity: Partial</tspan>
+            <tspan x="220" y="95" font-size="16">Example: Carbon mixed with other materials</tspan>
+        </text>
+        <text
+            id="voltage_label"
+            font-family="Ubuntu"
+            font-size="20"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Voltage (pressure)</tspan>
+        </text>
+        <circle
+            id="nucleus"
+            cx="0"
+            cy="0"
+            r="10"
+            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <circle
+            id="orbital_a"
+            cx="0"
+            cy="0"
+            r="24"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+        </circle>
+        <circle
+            id="orbital_b"
+            cx="0"
+            cy="0"
+            r="24"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:2,2">
+        </circle>
+        <circle
+            id="electron"
+            cx="16"
+            cy="-18"
+            r="3"
+            style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-opacity:1">
+        </circle>
+        <path
+            id="charge"
+            d="m 0,-8 v 16 m -8,-8 h 16"
+            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+        </path>
+        <g
+            id="carbon_atom">
+            <use xlink:href="#nucleus"></use>
+            <use xlink:href="#orbital_a"></use>
+            <use xlink:href="#electron" x="-9" y="2"></use>
+            <use xlink:href="#charge"></use>
+        </g>
+        <g
+            id="metal_atom">
+            <use xlink:href="#nucleus"></use>
+            <use xlink:href="#orbital_b"></use>
+            <use xlink:href="#electron"></use>
+            <use xlink:href="#charge"></use>
+        </g>
+        <g
+            id="legend">
+            <use xlink:href="#carbon_atom" x="40" y="550"></use>
+            <use xlink:href="#nucleus" x="260" y="550"></use>
+            <use xlink:href="#charge" x="260" y="550"></use>
+            <use xlink:href="#electron" x="440" y="570"></use>
+            <use xlink:href="#radiation" x="640" y="580"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="12"
+                font-weight="norm"
+                fill="#000000">
+                <tspan x="80" y="530">Atom/Molecule</tspan>
+                <tspan x="80" y="545">with few Free[able] Electrons</tspan>
+                <tspan x="80" y="560">in some orbitals.</tspan>
+                <tspan x="80" y="575">(metal/carbon mixture)</tspan>
+                <tspan x="80" y="590">Charge: neutral (0)</tspan>
+                <tspan x="285" y="545">metal_atom's Nucleus.</tspan>
+                <tspan x="285" y="560">Charge: positive (>0)</tspan>
+                <tspan x="470" y="545">Free Electron.</tspan>
+                <tspan x="470" y="560">Charge: negative (-1)</tspan>
+                <tspan x="660" y="555">Radiation (heat).</tspan>
+            </text>
+        </g>
+        <g
+            id="atoms_line_odd">
+            <use xlink:href="#metal_atom" transform="translate(15,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(105,30)"></use>
+            <use xlink:href="#metal_atom" transform="translate(195,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(285,30)"></use>
+            <use xlink:href="#metal_atom" transform="translate(375,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(465,30)"></use>
+            <use xlink:href="#metal_atom" transform="translate(555,30)"></use>
+        </g>
+        <g
+            id="atoms_line_even">
+            <use xlink:href="#metal_atom" transform="translate(15,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(105,30)"></use>
+            <use xlink:href="#metal_atom" transform="translate(195,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(285,30)"></use>
+            <use xlink:href="#metal_atom" transform="translate(375,30)"></use>
+            <use xlink:href="#carbon_atom" transform="translate(465,30)"></use>
+        </g>
+        <marker
+            id="arrow_head"
+            style="overflow:visible"
+            viewBox="0 0 4 6"
+            markerWidth="4"
+            markerHeight="6"
+            refX="left"
+            refY="center"
+            orient="auto-start-reverse"
+            preserveAspectRatio="xMidYMid">
+            <path
+                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+                d="M -3,-3 L 0,0 L -3,3"
+                id="path5759">
+            </path>
+        </marker> <!--arrow_head-->
+        <circle
+            id="point"
+            cx="0"
+            cy="0"
+            r="1.5"
+            style="fill-opacity:1;stroke:none">
+        </circle>
+        <g
+            id="curve_ends"
+            style="fill:none;stroke:#b00000;stroke-width:2;marker-end:url(#arrow_head)">
+            <path d="m 0,0 c 30,-30 50,-30 80,0"></path>
+        </g>
+        <g
+            id="curve_mid_a"
+            style="fill:none;stroke:#b00000;stroke-width:2;marker-end:url(#arrow_head)">
+            <path d="m 3,-30 C 28,0 53,0 65,-19"></path>
+        </g>
+        <g
+            id="curve_mid_b"
+            style="fill:none;stroke:#b00000;stroke-width:2;marker-end:url(#arrow_head)">
+            <path d="m 3,0 C 28,-30 53,-30 65,0"></path>
+        </g>
+        <path
+            id="radiation"
+            style="fill:none;stroke:#ff0000;stroke-width:1;marker-end:url(#arrow_head)"
+            d="m 0,0 v -5
+                c 5,-3 5,-5 0,-8
+                s -5,-5 0,-8
+                s 5,-5 0,-8
+                s -5,-5 0,-8
+                s 5,-5 0,-8
+                s -5,-5 0,-8
+                l 0,0 3,-2">
+        </path>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#headline" x="250" y="40"></use>
+            <use xlink:href="#title"></use>
+            <use xlink:href="#voltage_label" x="40" y="120"></use>
+
+            <line x1="40" y1="130" x2="120" y2="130" style="stroke:#000000;stroke-width:2;marker-end:url(#arrow_head)"></line>
+            <line x1="100" y1="150" x2="700" y2="150" style="stroke:#000000;stroke-width:8"></line>
+            <line x1="100" y1="450" x2="700" y2="450" style="stroke:#000000;stroke-width:8"></line>
+            <line x1="40" y1="150" x2="60" y2="150" style="stroke:#ff0000;stroke-width:5"></line>
+            <line x1="740" y1="150" x2="760" y2="150" style="stroke:#0000ff;stroke-width:5"></line>
+            <line x1="750" y1="140" x2="750" y2="160" style="stroke:#0000ff;stroke-width:5"></line>
+            <use xlink:href="#electron" x="40" y="295"></use>
+            <use xlink:href="#atoms_line_odd" x="110" y="155"></use>
+            <use xlink:href="#atoms_line_even" x="155" y="210"></use>
+            <use xlink:href="#atoms_line_odd" x="110" y="265"></use>
+            <use xlink:href="#atoms_line_even" x="155" y="320"></use>
+            <use xlink:href="#atoms_line_odd" x="110" y="375"></use>
+            <use xlink:href="#electron" x="750" y="295"></use>
+
+            <use xlink:href="#curve_ends" x="60" y="270"></use>
+            <use xlink:href="#curve_mid_a" x="162" y="298" transform="rotate(-58,162,290)" stroke-opacity="1"></use>
+            <use xlink:href="#curve_mid_b" x="190" y="220" transform="rotate( 50,190,220)" stroke-opacity="0.80"></use>
+            <use xlink:href="#curve_mid_a" x="252" y="298" transform="rotate(-58,252,290)" stroke-opacity="0.70"></use>
+            <use xlink:href="#curve_mid_b" x="280" y="220" transform="rotate( 50,280,220)" stroke-opacity="0.60"></use>
+            <use xlink:href="#curve_mid_a" x="342" y="298" transform="rotate(-58,342,290)" stroke-opacity="0.50"></use>
+            <use xlink:href="#curve_mid_b" x="370" y="220" transform="rotate( 50,370,220)" stroke-opacity="0.45"></use>
+            <use xlink:href="#curve_mid_a" x="432" y="298" transform="rotate(-58,432,290)" stroke-opacity="0.40"></use>
+            <use xlink:href="#curve_mid_b" x="460" y="220" transform="rotate( 50,460,220)" stroke-opacity="0.35"></use>
+            <use xlink:href="#curve_mid_a" x="522" y="298" transform="rotate(-58,522,290)" stroke-opacity="0.30"></use>
+            <use xlink:href="#curve_mid_b" x="550" y="220" transform="rotate( 50,550,220)" stroke-opacity="0.25"></use>
+            <use xlink:href="#curve_mid_a" x="612" y="298" transform="rotate(-58,612,290)" stroke-opacity="0.30"></use>
+            <use xlink:href="#curve_mid_b" x="640" y="220" transform="rotate( 50,640,220)" stroke-opacity="0.25"></use>
+            <use xlink:href="#curve_ends" x="685" y="270" stroke-opacity="0.20"></use>
+
+            <use xlink:href="#radiation" x="222" y="275"></use>
+            <use xlink:href="#radiation" x="267" y="220"></use>
+            <use xlink:href="#radiation" x="402" y="275"></use>
+            <use xlink:href="#radiation" x="447" y="220"></use>
+            <use xlink:href="#radiation" x="582" y="275"></use>
+            <use xlink:href="#radiation" x="627" y="220"></use>
+            <use xlink:href="#legend"></use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
