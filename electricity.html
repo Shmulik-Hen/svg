@@ -13,29 +13,50 @@
             #toc { flex-direction: column; padding: 2rem max(2rem, 6vw); gap: 1rem; overflow: auto; }
             #toc h1 { margin: 0 0 .5rem 0; font-size: clamp(1.4rem, 2.5vw, 2rem); }
             #toc p#hint { opacity: .7; font-size: .95rem; margin: 0 0 .75rem 0; }
-            /* Numbered, multi-level list */
-            #toc ol.sections { counter-reset: section; list-style: none; margin: 0; padding: 0; }
-            #toc ol.sections > li { counter-increment: section; margin: .75rem 0; }
-            #toc .section-title { font-weight: 600; font-size: clamp(1.05rem, 1.8vw, 1.25rem); }
-            #toc .section-title .num { opacity: .8; margin-right: .4rem; }
-            #toc ol.slides { counter-reset: slide; list-style: none; margin: .4rem 0 .2rem 1.25rem; padding-left: 0; }
-            #toc ol.slides > li { counter-increment: slide; line-height: 1.9; }
-            #toc ol.slides > li a { text-decoration: none; }
-            #toc ol.slides > li a .num { opacity: .8; margin-right: .4rem; }
+
+            /* Collapsible numbered sections */
+            details.section { border: 1px solid rgba(255,255,255,0.12); border-radius: .6rem; padding: .4rem .7rem; background: rgba(255,255,255,0.03); }
+            details.section + details.section { margin-top: .7rem; }
+            details.section[open] { background: rgba(255,255,255,0.05); }
+            details.section summary { cursor: pointer; list-style: none; }
+            details.section summary::-webkit-details-marker { display: none; }
+            .section-title { display: flex; align-items: center; gap: .6rem; font-weight: 600; font-size: clamp(1.05rem, 1.8vw, 1.25rem); }
+            .section-title .num { opacity: .8; }
+            .chev { display:inline-block; transform: rotate(-90deg); transition: transform .18s ease; opacity:.85; }
+            details[open] .chev { transform: rotate(0deg); }
+
+            ol.slides { counter-reset: slide; list-style: none; margin: .4rem 0 .2rem 1.25rem; padding-left: 0; }
+            ol.slides > li { counter-increment: slide; line-height: 1.9; }
+            ol.slides > li a { text-decoration: none; }
+            ol.slides > li a .num { opacity: .8; margin-right: .4rem; }
 
             #viewer { flex-direction: column; min-height: 0; }
             #stageWrap { position: relative; flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; }
             #stage { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: var(--pad); box-sizing: border-box; }
-            #slideObj { width: 100%; height: 100%; border: 0; background:#111; box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset; }
-
+            #mediaHost { width: 100%; height: 100%; display: contents; } /* container we populate with <object> or <img> */
             #controls { display: flex; gap: .5rem; padding: .5rem; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); }
             .left, .right { display: flex; gap: .5rem; align-items: center; }
             button { background: rgba(255,255,255,0.08); color: #e8e8e8; border: 1px solid rgba(255,255,255,0.14); padding: .45rem .75rem; border-radius: .5rem; cursor: pointer; font-size: 0.95rem; }
             button:disabled { opacity: .45; cursor: not-allowed; }
             #title { opacity: .9; font-size: .95rem; }
-            #hint2 { opacity: .6; font-size: .85rem; }
             #backFloat { position: fixed; top: .75rem; left: .75rem; z-index: 10; display: none; }
             #viewer.active #backFloat { display: inline-block; }
+
+            /* Media element shared styles */
+            .media-frame {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                background:#111;
+                box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset;
+            }
+            .media-image {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                background:#111;
+                box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset;
+            }
         </style>
     </head>
 
@@ -43,8 +64,8 @@
         <!-- TOC SCREEN -->
         <section id="toc" class="screen active" aria-labelledby="tocTitle">
             <h1 id="tocTitle">Basic Electricity</h1>
-            <p id="hint">Tip: use ← / → to navigate slides, <kbd>Home</kbd>/<kbd>End</kbd> to jump, <kbd>B</kbd> or <kbd>Esc</kbd> to return here, <kbd>F</kbd> for fullscreen.</p>
-            <ol id="tocSections" class="sections"></ol>
+            <p id="hint">Tip: click a section to expand/collapse. In slides: ←/→ stay within the current section; Next at the last slide returns to TOC. <kbd>B</kbd>/<kbd>Esc</kbd> to return, <kbd>F</kbd> for fullscreen.</p>
+            <div id="tocSections"></div>
         </section>
 
         <!-- VIEWER SCREEN -->
@@ -52,7 +73,7 @@
             <button id="backFloat" title="Back to TOC (B / Esc)">Back</button>
             <div id="stageWrap">
                 <div id="stage" aria-live="polite">
-                    <object id="slideObj" type="image/svg+xml" data="" tabindex="0" aria-label="Slide viewer"></object>
+                    <div id="mediaHost"></div>
                 </div>
             </div>
             <div id="controls">
@@ -70,6 +91,7 @@
 
         <script>
             /*
+            * Sections & slides (you can mix .svg, .png, .jpg, .gif, .webp, etc.)
             * 1) DEFINE YOUR SECTIONS & SLIDES (hierarchical)
             * Each section has a title and a list of slides (file + title).
             * Numbering like 1., 1.1, 1.2 is generated automatically.
@@ -115,166 +137,218 @@
                         { title: "Inductor AC",             file: "electricity/dynamic/inductor_ac.svg" },
                         { title: "Inductor square wave",    file: "electricity/dynamic/inductor_square.svg" },
                     ]
-                }
+                },
             ];
 
-            // --- Build a flattened list of slides for linear navigation ---
+            // Build flat list + section bounds
             const flat = [];
-            sections.forEach((sec, si) => {
-                const sectionNumber = si + 1;
-                sec.slides.forEach((sl, li) => {
-                    flat.push({
-                        file: sl.file,
-                        title: sl.title,
-                        secIndex: si,
-                        slideIndex: li,
-                        sectionTitle: sec.title,
-                        sectionNumber,
-                        number: `${sectionNumber}.${li + 1}`
+            const sectionStarts = [];
+            const sectionEnds = [];
+            (function buildFlat(){
+                let idx = 0;
+                sections.forEach((sec, si) => {
+                    sectionStarts[si] = idx;
+                    sec.slides.forEach((sl, li) => {
+                        flat.push({
+                            file: sl.file,
+                            title: sl.title,
+                            secIndex: si,
+                            slideIndex: li,
+                            sectionTitle: sec.title,
+                            number: (si + 1) + '.' + (li + 1)
+                        });
+                        idx++;
                     });
+                    sectionEnds[si] = idx - 1;
                 });
-            });
+            })();
 
             // --- Elements ---
             const $ = sel => document.querySelector(sel);
-            const toc = $("#toc"), viewer = $("#viewer");
-            const tocSections = $("#tocSections");
-            const slideObj = $("#slideObj"), titleEl = $("#title");
-            const prevBtn = $("#prevBtn"), nextBtn = $("#nextBtn");
-            const backBtn = $("#backBtn"), backFloat = $("#backFloat"), fsBtn = $("#fsBtn");
+            const toc = $('#toc'), viewer = $('#viewer');
+            const tocSections = $('#tocSections');
+            const mediaHost = $('#mediaHost'), titleEl = $('#title');
+            const prevBtn = $('#prevBtn'), nextBtn = $('#nextBtn');
+            const backBtn = $('#backBtn'), backFloat = $('#backFloat'), fsBtn = $('#fsBtn');
 
             let current = -1; // global index in flat[]
 
             function buildTOC() {
-                tocSections.innerHTML = "";
-
+                tocSections.innerHTML = '';
                 sections.forEach((sec, si) => {
-                    const liSection = document.createElement("li");
-                    const sectionNumber = si + 1;
-
-                    // Section title row: "1. Static electricity"
-                    const header = document.createElement("div");
-                    header.className = "section-title";
-                    const num = document.createElement("span");
-                    num.className = "num";
-                    num.textContent = sectionNumber + ".";
-                    header.appendChild(num);
-                    header.appendChild(document.createTextNode(" " + sec.title));
-                    liSection.appendChild(header);
+                    const details = document.createElement('details');
+                    details.className = 'section';
+                    // Default collapsed: do NOT set details.open = true
+                    const summary = document.createElement('summary');
+                    const titleRow = document.createElement('div');
+                    titleRow.className = 'section-title';
+                    const chev = document.createElement('span');
+                    chev.className = 'chev';
+                    chev.textContent = '▸';
+                    const num = document.createElement('span');
+                    num.className = 'num';
+                    num.textContent = (si + 1) + '.';
+                    const text = document.createTextNode(' ' + sec.title);
+                    titleRow.appendChild(chev);
+                    titleRow.appendChild(num);
+                    titleRow.appendChild(text);
+                    summary.appendChild(titleRow);
+                    details.appendChild(summary);
 
                     // Slides list inside this section
-                    const olSlides = document.createElement("ol");
-                    olSlides.className = "slides";
+                    const olSlides = document.createElement('ol');
+                    olSlides.className = 'slides';
 
                     sec.slides.forEach((sl, li) => {
-                        const liSlide = document.createElement("li");
-                        const a = document.createElement("a");
-                        const n = `${sectionNumber}.${li + 1}`;
-                        a.href = `#slide=${indexFromPair(si, li)}`;
-                        a.innerHTML = `<span class="num">${n}</span>${sl.title || sl.file}`;
-                        a.addEventListener("click", (e) => { e.preventDefault(); showSlide(indexFromPair(si, li)); });
+                        const liSlide = document.createElement('li');
+                        const a = document.createElement('a');
+                        const n = (si + 1) + '.' + (li + 1);
+                        const globalIdx = sectionStarts[si] + li;
+                        a.href = '#slide=' + globalIdx;
+                        a.innerHTML = '<span class="num">' + n + '</span>' + (sl.title || sl.file);
+                        a.addEventListener('click', (e) => { e.preventDefault(); showSlide(globalIdx); });
                         liSlide.appendChild(a);
                         olSlides.appendChild(liSlide);
 
-                        // Preload helpful for smoother transitions
-                        const link = document.createElement("link");
-                        link.rel = "preload"; link.as = "image"; link.href = sl.file;
+                        // Preload (helps for both SVG and images)
+                        const link = document.createElement('link');
+                        link.rel = 'preload'; link.as = 'image'; link.href = sl.file;
                         document.head.appendChild(link);
                     });
 
-                    liSection.appendChild(olSlides);
-                    tocSections.appendChild(liSection);
+                    details.appendChild(olSlides);
+                    tocSections.appendChild(details);
                 });
-            }
-
-            // Helper: map (section, slide) -> flat index
-            function indexFromPair(secIndex, slideIndex) {
-                let sum = 0;
-                for (let i = 0; i < sections.length; i++) {
-                    if (i < secIndex) sum += sections[i].slides.length;
-                }
-                return sum + slideIndex;
             }
 
             function showTOC() {
                 current = -1;
-                slideObj.removeAttribute("data"); // some browsers
-                slideObj.data = ""; // others
-                toggleScreens("toc");
-                history.replaceState(null, "", location.pathname + "#toc");
+                mediaHost.innerHTML = ''; // clear any media
+                toggleScreens('toc');
+                history.replaceState(null, '', location.pathname + '#toc');
+            }
+
+            function isSvg(filename) {
+                return /\.svg(\?.*)?$/i.test(filename);
+            }
+
+            function renderMedia(file) {
+                mediaHost.innerHTML = '';
+                if (isSvg(file)) {
+                    // Use <object> for SVG to preserve animations & scripting
+                    const obj = document.createElement('object');
+                    obj.className = 'media-frame';
+                    obj.type = 'image/svg+xml';
+                    obj.data = file;
+                    obj.tabIndex = 0;
+                    obj.setAttribute('aria-label', 'Slide viewer (SVG)');
+                    mediaHost.appendChild(obj);
+                    obj.focus({ preventScroll: false });
+                } else {
+                    // Use <img> for raster images
+                    const img = document.createElement('img');
+                    img.className = 'media-image';
+                    img.src = file;
+                    img.alt = '';
+                    img.onload = () => img.focus?.({ preventScroll: false });
+                    mediaHost.appendChild(img);
+                }
             }
 
             function showSlide(idx) {
                 if (idx < 0 || idx >= flat.length) return;
                 current = idx;
                 const s = flat[idx];
-                slideObj.data = s.file;
-                titleEl.textContent = `Slide ${idx + 1}/${flat.length} — ${s.number} ${s.title} (${s.sectionTitle})`;
-                toggleScreens("viewer");
+                renderMedia(s.file);
+                titleEl.textContent = 'Slide ' + s.number + ' — ' + s.title + ' (' + s.sectionTitle + ')';
+                toggleScreens('viewer');
                 updateNavButtons();
-                history.replaceState(null, "", `#slide=${idx}`);
-                // focus for keyboard users
-                slideObj.focus({ preventScroll: false });
+                history.replaceState(null, '', '#slide=' + idx);
+
+                // Optional nicety: auto-open the section containing this slide in the TOC (when user goes back)
+                const detailsList = Array.from(document.querySelectorAll('details.section'));
+                const secEl = detailsList[s.secIndex];
+                if (secEl && !secEl.open) secEl.open = true;
             }
 
             function toggleScreens(which) {
-                toc.classList.toggle("active", which === "toc");
-                viewer.classList.toggle("active", which === "viewer");
+                toc.classList.toggle('active', which === 'toc');
+                viewer.classList.toggle('active', which === 'viewer');
+            }
+
+            function getSectionBoundsByIndex(globalIdx){
+                const sec = flat[globalIdx].secIndex;
+                return { start: sectionStarts[sec], end: sectionEnds[sec] };
+            }
+
+            function nextSlide() {
+                if (current < 0) return;
+                const bounds = getSectionBoundsByIndex(current);
+                if (current < bounds.end) showSlide(current + 1);
+                else showTOC(); // last in section → back to TOC
+            }
+
+            function prevSlide() {
+                if (current < 0) return;
+                const bounds = getSectionBoundsByIndex(current);
+                if (current > bounds.start) showSlide(current - 1);
+                else showTOC(); // first in section → back to TOC
             }
 
             function updateNavButtons() {
-                prevBtn.disabled = (current <= 0);
-                nextBtn.disabled = (current >= flat.length - 1);
+                if (current < 0) { prevBtn.disabled = nextBtn.disabled = true; return; }
+                const bounds = getSectionBoundsByIndex(current);
+                prevBtn.disabled = (current <= bounds.start);
+                nextBtn.disabled = (current >= bounds.end);
             }
 
-            function nextSlide() { if (current < flat.length - 1) showSlide(current + 1); }
-            function prevSlide() { if (current > 0) showSlide(current - 1); }
-
             // Keyboard controls
-            window.addEventListener("keydown", (e) => {
-                const inViewer = viewer.classList.contains("active");
+            window.addEventListener('keydown', (e) => {
+                const inViewer = viewer.classList.contains('active');
                 const key = e.key;
                 if (inViewer) {
-                    if (key === "ArrowRight" || key === "PageDown" || key === " ") { e.preventDefault(); nextSlide(); }
-                    else if (key === "ArrowLeft" || key === "PageUp") { e.preventDefault(); prevSlide(); }
-                    else if (key === "Home") { e.preventDefault(); showSlide(0); }
-                    else if (key === "End") { e.preventDefault(); showSlide(flat.length - 1); }
-                    else if (key === "Escape" || key.toLowerCase() === "b") { e.preventDefault(); showTOC(); }
-                    else if (key.toLowerCase() === "f") { e.preventDefault(); toggleFullscreen(); }
+                    if (key === 'ArrowRight' || key === 'PageDown' || key === ' ') { e.preventDefault(); nextSlide(); }
+                    else if (key === 'ArrowLeft' || key === 'PageUp') { e.preventDefault(); prevSlide(); }
+                    else if (key === 'Home' || key === 'End') { e.preventDefault(); showTOC(); }
+                    else if (key === 'Escape' || key.toLowerCase() === 'b') { e.preventDefault(); showTOC(); }
+                    else if (key.toLowerCase() === 'f') { e.preventDefault(); toggleFullscreen(); }
                 } else {
                     // From TOC: right arrow or Enter goes to first slide
-                    if (key === "ArrowRight" || key === "Enter") { e.preventDefault(); showSlide(0); }
+                    if (key === 'ArrowRight' || key === 'Enter') {
+                        e.preventDefault();
+                        const detailsList = Array.from(document.querySelectorAll('details.section'));
+                        const firstOpen = detailsList.find(d => d.open) ?? detailsList[0];
+                        const firstIdx = firstOpen ? sectionStarts[detailsList.indexOf(firstOpen)] : 0;
+                        showSlide(firstIdx);
+                    }
                 }
             });
 
             // Buttons
-            backBtn.addEventListener("click", showTOC);
-            backFloat.addEventListener("click", showTOC);
-            prevBtn.addEventListener("click", prevSlide);
-            nextBtn.addEventListener("click", nextSlide);
-            fsBtn.addEventListener("click", toggleFullscreen);
+            backBtn.addEventListener('click', showTOC);
+            backFloat.addEventListener('click', showTOC);
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+            fsBtn.addEventListener('click', toggleFullscreen);
 
             // Fullscreen
             function toggleFullscreen() {
                 const el = document.documentElement;
-                if (!document.fullscreenElement) {
-                    (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen)?.call(el);
-                } else {
-                    (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
-                }
+                if (!document.fullscreenElement) (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen)?.call(el);
+                else (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen)?.call(document);
             }
 
-            // Hash routing
+            // Hash routing (#slide=NUM)
             function handleHash() {
-                const m = location.hash.match(/#slide=(\d+)/);
-                if (m) {
-                    const idx = parseInt(m[1], 10);
-                    if (!Number.isNaN(idx)) { showSlide(idx); return; }
-                }
+                const hash = location.hash.startsWith('#') ? location.hash.slice(1) : location.hash;
+                const params = new URLSearchParams(hash);
+                const val = params.get('slide');
+                const idx = val !== null ? Number(val) : NaN;
+                if (!Number.isNaN(idx)) { showSlide(idx); return; }
                 showTOC();
             }
 
-            window.addEventListener("hashchange", handleHash);
+            window.addEventListener('hashchange', handleHash);
 
             // Build UI & route
             buildTOC();
