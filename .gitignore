@@ -1,4 +1,6 @@
 tmp/
+releases/
 drawing.svg
 **/*ggg*
+**/.*.swp
 
