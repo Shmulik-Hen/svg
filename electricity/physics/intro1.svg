@@ -48,23 +48,18 @@
                 <tspan x="30" y="250">which were supposed to contain the properties of</tspan>
                 <tspan x="30" y="280">each element. The term "Atom" comes from the</tspan>
                 <tspan x="30" y="310">greek word "a-tomus", meaning "Un-Cutable".</tspan>
-                <tspan x="30" y="340">Over the years, different theories were devised to</tspan>
-                <tspan x="30" y="370">try and explain what those atoms were, and how they</tspan>
-                <tspan x="30" y="400">behave and interact.</tspan>
-                <tspan x="30" y="430">Since the beginnig of the </tspan>
-                <tspan x="360" y="430" font-weight="bold">Age of Enlightment</tspan>
-                <tspan x="625" y="430">, more</tspan>
-                <tspan x="30" y="460">and more scientists ran more and more experiments,</tspan>
-                <tspan x="30" y="490">discovering the</tspan>
-                <tspan x="235" y="490" font-weight="bold">Periodic table</tspan>
-                <tspan x="425" y="490">, </tspan>
-                <tspan x="435" y="490" font-weight="bold">Magnetism</tspan>
-                <tspan x="585" y="490">, </tspan>
-                <tspan x="600" y="490" font-weight="bold">Electricity</tspan>
-                <tspan x="740" y="490">,</tspan>
-                <tspan x="30" y="520">and the</tspan>
-                <tspan x="135" y="520" font-weight="bold">Structure of Atoms</tspan>
-                <tspan x="400" y="520">.</tspan>
+
+                <tspan x="30" y="350">Over the years, different theories were devised to</tspan>
+                <tspan x="30" y="380">try and explain what those atoms were, and how they</tspan>
+                <tspan x="30" y="410">behave and interact.</tspan>
+
+                <tspan x="30" y="450">Up until the 17th century, the ruling science was</tspan>
+                <tspan x="30" y="480">Alchemy, and the basic idea was that the Atoms were</tspan>
+                <tspan x="30" y="510">simply tiny chunks of matter, made up of four elements: </tspan>
+                <tspan x="30" y="540">Earth, Water, Air, and Fire, and that they didn't have</tspan>
+                <tspan x="30" y="570">any internal structure.</tspan>
+
+                <tspan x="670" y="590" font-size="22">continued.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

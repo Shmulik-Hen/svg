@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="40"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="80" y="80">Basic physics behind Electricity</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="22"
+                font-weight="norm"
+                fill="#0000ff">
+                <tspan x="670" y="80">(cont.)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="130">The late 19th century up until mid 20th century brought</tspan>
+                <tspan x="30" y="160">huge leaps in our understanding of</tspan>
+                <tspan x="490" y="160" font-weight="bold">Electro-Magnetism</tspan>
+                <tspan x="30" y="190" font-weight="bold">Gravity</tspan>
+                <tspan x="135" y="190">and </tspan>
+                <tspan x="190" y="190" font-weight="bold">Relativity</tspan>
+                <tspan x="330" y="190">theories, the basic concept of a</tspan>
+                <tspan x="30" y="220" font-weight="bold">Force Field</tspan>
+                <tspan x="190" y="220">and of course the</tspan>
+                <tspan x="425" y="220" font-weight="bold">Quantum Theory</tspan>
+                <tspan x="655" y="220">.</tspan>
+
+                <tspan x="30" y="260" font-weight="bold">Quantum Physics</tspan>
+                <tspan x="270" y="260">enabled the invention of new</tspan>
+                <tspan x="30" y="290">products and phenomenons like</tspan>
+                <tspan x="450" y="290" font-weight="bold">Radio Transmission</tspan>
+                <tspan x="710" y="290">,</tspan>
+                <tspan x="30" y="320" font-weight="bold">Lasers</tspan>
+                <tspan x="118" y="320">, and</tspan>
+                <tspan x="185" y="320" font-weight="bold">Semi-Conductors</tspan>
+                <tspan x="420" y="320">.</tspan>
+
+                <tspan x="30" y="370">To name just a few important scientists:</tspan>
+                <tspan x="30" y="400" font-weight="bold">Einstein, Bose, Planck, Heisenberg, Pauli, Schrödinger,</tspan>
+                <tspan x="30" y="430" font-weight="bold">Dirac, Bohr, Fermi, Feynman, Penrose, Gell-Mann, </tspan>
+                <tspan x="30" y="460" font-weight="bold">Thomson, Faraday, Rutherford, Maxwell, Galvani, Volta</tspan>
+                <tspan x="30" y="490" font-weight="bold">Ohm, Ampere, Watt, Hertz, Compton, Edison, Curie</tspan>
+                <tspan x="30" y="520" font-weight="bold">Tesla, Marconi, Röntgen, Bardeen, Shockley, Schottky</tspan>
+                <tspan x="30" y="550">and many others.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
