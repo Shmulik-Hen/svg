@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Physics (6)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Pauli's exclusion principal</tspan>
+                <tspan x="30" y="150" font-style="italic">"No two fermions in an atom can have the same</tspan>
+                <tspan x="30" y="180" font-style="italic">four quantum numbers."</tspan>
+                <tspan x="30" y="220">Meaning each orbital can hold a maximum of 2</tspan>
+                <tspan x="30" y="250">electrons that must have opposite spins.</tspan>
+                <tspan x="30" y="290">This principle is fundamental in chemistry for</tspan>
+                <tspan x="30" y="320">understanding electron configuration, the structure</tspan>
+                <tspan x="30" y="350">of the periodic table, and the properties of elements.</tspan>
+                <tspan x="30" y="390">This also explains why electrons don't simply fall into</tspan>
+                <tspan x="30" y="420">the nucleus due to the attracting electric force - If n</tspan>
+                <tspan x="30" y="450">will be 0, ALL the electrons will be able to have the</tspan>
+                <tspan x="30" y="480">same 4 quantum numbers!</tspan>
+
+                <!-- <tspan x="30" y="270">l - Describes the shape of the electron's orbital, which</tspan>
+                <tspan x="70" y="300">corresponds to subshells.</tspan>
+                <tspan x="70" y="330">Range: 0...n-1</tspan>
+                <tspan x="30" y="370">mₗ - Specifies the orientation of an orbital in space.</tspan>
+                <tspan x="80" y="400">Range: -l...0...+l</tspan>
+                <tspan x="30" y="440">mₛ - Describes the intrinsic angular momentum of an</tspan>
+                <tspan x="80" y="470">electron. Also known as Spin</tspan>
+                <tspan x="80" y="500">Values: +1/2 or -1/2</tspan>
+ -->
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

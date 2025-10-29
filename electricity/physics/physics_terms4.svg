@@ -36,32 +36,26 @@
                 fill="#0000ff">
                 <tspan x="30" y="60">Basic terms in Physics (4)</tspan>
             </text>
-            <path d="M195 80 V570" stroke="#000000" stroke-width="2"></path>
-            <path d="M310 80 V570" stroke="#000000" stroke-width="2"></path>
-            <path d="M30 120 H770" stroke="#000000" stroke-width="2"></path>
-            <path d="M30 245 H770" stroke="#000000" stroke-width="2"></path>
-            <path d="M30 398 H770" stroke="#000000" stroke-width="2"></path>
             <text
                 font-family="Ubuntu"
                 font-size="29"
                 font-weight="norm"
                 fill="#0060a0">
-                <tspan x="30" y="110" font-weight="bold">Term</tspan>
-                <tspan x="200" y="110" font-weight="bold">Unit of</tspan>
-                <tspan x="320" y="110" font-weight="bold">Description.</tspan>
-                <tspan x="30" y="147">Electronvolt</tspan>
-                <tspan x="200" y="147">Energy</tspan>
-                <tspan x="320" y="147">The energy gained by an electron</tspan>
-                <tspan x="320" y="177">accelerated through a potential</tspan>
-                <tspan x="320" y="207">difference of 1V.</tspan>
-                <tspan x="320" y="237">1eV=1.6⋅10⁻¹⁹ J.</tspan>
-                <tspan x="30" y="272">Fermi level</tspan>
-                <tspan x="200" y="272">Energy</tspan>
-                <tspan x="320" y="272">Ef. The total energy required to</tspan>
-                <tspan x="320" y="302">add or remove one electron to a</tspan>
-                <tspan x="320" y="332">solid-state body (atom/molecule)</tspan>
-                <tspan x="320" y="362">Calculated per element and</tspan>
-                <tspan x="320" y="392">Measured in electronvolts (eV).</tspan>
+                <tspan x="30" y="110" font-weight="bold">Electronvolt</tspan>
+                <tspan x="30" y="140">eV. The energy gained by an electron accelerated through</tspan>
+                <tspan x="30" y="170">a potential difference of 1V.</tspan>
+                <tspan x="30" y="200">1eV=1.6⋅10⁻¹⁹ J.</tspan>
+                <tspan x="30" y="235" font-weight="bold">Fermi level</tspan>
+                <tspan x="30" y="265">Ef. The total energy required to add or remove one</tspan>
+                <tspan x="30" y="295">electron to a solid-state body (atom/molecule).</tspan>
+                <tspan x="30" y="325">Calculated per element and Measured in electronvolts.</tspan>
+                <tspan x="30" y="360" font-weight="bold">Quantum numbers</tspan>
+                <tspan x="30" y="390">A set of four numbers that describe the unique state of an</tspan>
+                <tspan x="30" y="425">electron in an atom, specifying its energy level, the shape</tspan>
+                <tspan x="30" y="455">of its orbital, its orientation in space, and its spin.</tspan>
+                <tspan x="30" y="485">These numbers include the principal quantum number (n),</tspan>
+                <tspan x="30" y="515">the angular quantum number (l), the magnetic quantum</tspan>
+                <tspan x="30" y="545">number (mₗ), and the spin quantum number (mₛ).</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->
