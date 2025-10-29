@@ -34,7 +34,7 @@
                 font-size="40"
                 font-weight="bold"
                 fill="#0000ff">
-                <tspan x="80" y="80">Basic physics behind Electricity</tspan>
+                <tspan x="80" y="80">basic Physics behind Electricity (1)</tspan>
             </text>
             <text
                 font-family="Ubuntu"
@@ -58,8 +58,6 @@
                 <tspan x="30" y="510">simply tiny chunks of matter, made up of four elements: </tspan>
                 <tspan x="30" y="540">Earth, Water, Air, and Fire, and that they didn't have</tspan>
                 <tspan x="30" y="570">any internal structure.</tspan>
-
-                <tspan x="670" y="590" font-size="22">continued.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

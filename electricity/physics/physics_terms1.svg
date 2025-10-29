@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Physics (1)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Energy levels</tspan>
+                <tspan x="30" y="140">Discrete states of energy that electrons may occupy.</tspan>
+                <tspan x="30" y="170">Can be visualized as shells or orbits around the nucleus.</tspan>
+                <tspan x="30" y="200">The farther the shell, the higher the energy level.</tspan>
+                <tspan x="30" y="235" font-weight="bold">Sublevels (or subshells)</tspan>
+                <tspan x="30" y="265">Within each principal energy level, there are sublevels</tspan>
+                <tspan x="30" y="295">(l=1..4) that differ slightly in energy values where</tspan>
+                <tspan x="30" y="325">s ≤ p ≤ d ≤ f, Standing for Sharp, Principal, Diffuse,</tspan>
+                <tspan x="30" y="355">and Fundamental (from an old spectroscopic notation).</tspan>
+                <tspan x="30" y="390" font-weight="bold">Band Structure</tspan>
+                <tspan x="30" y="420">Range of energy levels that correspond to a specific</tspan>
+                <tspan x="30" y="450">principal quantum number (n=1,2,3...). Also defines</tspan>
+                <tspan x="30" y="480">ranges which are forbidden, known as band gap.</tspan>
+                <tspan x="30" y="515" font-weight="bold">Filling principle</tspan>
+                <tspan x="30" y="545">Electrons fill the lowest energy levels first, moving up</tspan>
+                <tspan x="30" y="575">to the next available level once a lower one is full.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

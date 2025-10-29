@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Physics (3)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Insulators</tspan>
+                <tspan x="30" y="140">Range: 0 ≤ ℧ ≤ 1⋅10⁻¹⁸ MS/m.</tspan>
+                <tspan x="30" y="170">Groups: Nobel gases, Nonmetals (excluding C, P).</tspan>
+                <tspan x="30" y="210" font-weight="bold">Conductors</tspan>
+                <tspan x="30" y="240">Range: 1 ≤ ℧ ≤ 1⋅10² MS/m.</tspan>
+                <tspan x="30" y="270">Groups: Alkali metals, Alkaline earth metals, Transition</tspan>
+                <tspan x="140" y="300">metals, Post-transition metals, Lanthanides(some),</tspan>
+                <tspan x="140" y="330">Actinides(few).</tspan>
+                <tspan x="30" y="370" font-weight="bold">Semi-Conductors</tspan>
+                <tspan x="30" y="400">Range: 1⋅10⁻³ ≤ ℧ ≤ 1⋅10⁻¹ MS/m.</tspan>
+                <tspan x="30" y="430">Groups: Metalloids(some), Nonmetals(few).</tspan>
+                <!--
+                <tspan x="30" y="110">Electronvolt</tspan>
+                <tspan x="200" y="110">Energy</tspan>
+                <tspan x="320" y="110">It is the energy gained by an</tspan>
+                <tspan x="320" y="140">electron accelerated through a</tspan>
+                <tspan x="320" y="170">potential difference of 1V</tspan>
+                <tspan x="320" y="200">1eV=1.6⋅10⁻¹⁹ J.</tspan>
+                <tspan x="30" y="230">Fermi level</tspan>
+                <tspan x="200" y="230">Energy</tspan>
+                <tspan x="320" y="230">Ef: the total energy required to add</tspan>
+                <tspan x="320" y="260">or remove one electron to a</tspan>
+                <tspan x="320" y="290">solid-state body (atom/molecule)</tspan>
+                <tspan x="320" y="320">1eV=1.6⋅10⁻¹⁹ J.</tspan>
+ -->
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

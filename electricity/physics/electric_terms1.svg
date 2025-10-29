@@ -31,17 +31,56 @@
             style="display:inline">
             <text
                 font-family="Ubuntu"
-                font-size="40"
+                font-size="36"
                 font-weight="bold"
                 fill="#0000ff">
-                <tspan x="80" y="80">basic Physics behind Electricity (3)</tspan>
+                <tspan x="30" y="60">Basic terms in Electricity</tspan>
             </text>
+            <path d="M125 80 V570" stroke="#000000" stroke-width="2"></path>
+            <path d="M265 80 V570" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 120 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 148 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 208 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 238 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 298 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 388 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 448 H770" stroke="#000000" stroke-width="2"></path>
+            <path d="M30 478 H770" stroke="#000000" stroke-width="2"></path>
             <text
                 font-family="Ubuntu"
-                font-size="29"
+                font-size="22"
                 font-weight="norm"
                 fill="#0060a0">
-                <tspan x="30" y="130">The late 19th century up until mid 20th century brought</tspan>
+                <tspan x="30" y="110" font-weight="bold">Term</tspan>
+                <tspan x="132" y="110" font-weight="bold">Unit of</tspan>
+                <tspan x="270" y="110" font-weight="bold">Description.</tspan>
+                <tspan x="30" y="140">Coulomb</tspan>
+                <tspan x="132" y="140">Charge</tspan>
+                <tspan x="270" y="140">1Q≈6.24⋅10¹⁸ electric charges of a proton/electron.</tspan>
+                <tspan x="30" y="170">Volt</tspan>
+                <tspan x="132" y="170">Voltage</tspan>
+                <tspan x="270" y="170">1V is the potential difference that requires 1 joule</tspan>
+                <tspan x="270" y="200">to move 1Q between 2 points. 1V=1J/1Q.</tspan>
+                <tspan x="30" y="230">Ampere</tspan>
+                <tspan x="132" y="230">Current</tspan>
+                <tspan x="270" y="230">1A is a flow of 1Q per second. 1A=1Q/1s.</tspan>
+                <tspan x="30" y="260">Ohm</tspan>
+                <tspan x="132" y="260">Resistance</tspan>
+                <tspan x="270" y="260">1Ω is the resistance that allows 1A to flow with 1V</tspan>
+                <tspan x="270" y="290">applied. 1Ω=1V/1A.</tspan>
+                <tspan x="30" y="320">Siemens</tspan>
+                <tspan x="132" y="320">Conductance</tspan>
+                <tspan x="270" y="320">1S is the conductance that allows 1A to flow with 1V</tspan>
+                <tspan x="270" y="350">applied. 1S=1A/1V. Also called Mho 😄 the reciprocal</tspan>
+                <tspan x="270" y="380">of Ohm. 1℧=1/1Ω. </tspan>
+                <tspan x="30" y="410">Watt</tspan>
+                <tspan x="132" y="410">Power</tspan>
+                <tspan x="270" y="410">1W is defined as one joule of energy per second.</tspan>
+                <tspan x="270" y="440">1W=1J/1s, but also 1W=1A⋅1V.</tspan>
+                <tspan x="30" y="470">Hertz</tspan>
+                <tspan x="132" y="470">Frequency</tspan>
+                <tspan x="270" y="470">1Hz is one cycle per second.</tspan>
+                <!--
                 <tspan x="30" y="160">huge leaps in our understanding of</tspan>
                 <tspan x="490" y="160" font-weight="bold">Electro-Magnetism</tspan>
                 <tspan x="30" y="190" font-weight="bold">Gravity</tspan>
@@ -70,6 +109,7 @@
                 <tspan x="30" y="490" font-weight="bold">Ohm, Ampere, Watt, Hertz, Compton, Edison, Curie</tspan>
                 <tspan x="30" y="520" font-weight="bold">Tesla, Marconi, Röntgen, Bardeen, Shockley, Schottky</tspan>
                 <tspan x="30" y="550">and many others.</tspan>
+ -->
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->
