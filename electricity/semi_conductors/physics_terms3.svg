@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (3)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">N-Type</tspan>
+                <tspan x="30" y="140">N-type semi-conductor is doping an extrinsic semi-</tspan>
+                <tspan x="30" y="170">conductor with impurities from group V.</tspan>
+                <tspan x="30" y="200">This adds extra electrons to the bottom of the</tspan>
+                <tspan x="30" y="230">conduction band, allowing for increased conductivity.</tspan>
+                <tspan x="30" y="260">The more electrons present, the higher the conductivity.</tspan>
+                <tspan x="30" y="295" font-weight="bold">P-Type</tspan>
+                <tspan x="30" y="325">P-type semi-conductor is doping an extrinsic semi-</tspan>
+                <tspan x="30" y="355">conductor with impurities from group III.</tspan>
+                <tspan x="30" y="385">This creates "holes" in the top of the valence band,</tspan>
+                <tspan x="30" y="410">allowing for increased conductivity.</tspan>
+                <tspan x="30" y="440">The more holes present, the higher the conductivity.</tspan>
+                <tspan x="30" y="475" font-weight="bold">Holes</tspan>
+                <tspan x="30" y="505">Holes are the absence of electrons in the valence band.</tspan>
+                <tspan x="30" y="535">They act as positive charge carriers in P-type</tspan>
+                <tspan x="30" y="565">semiconductors, accepting other electrons for conductivity.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

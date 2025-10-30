@@ -17,7 +17,7 @@
             font-size="28"
             font-weight="bold"
             fill="#000000">
-            <tspan>Conduction - Insulator</tspan>
+            <tspan>Conduction - Semi-Conductor (doped: p-type)</tspan>
         </text>
         <text
             id="cond_label"
@@ -50,6 +50,14 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Fermi level (Fe)</tspan>
+        </text>
+        <text
+            id="donor_label"
+            font-family="Ubuntu"
+            font-size="20"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Acceptor level</tspan>
         </text>
         <circle
             id="orbit"
@@ -85,8 +93,6 @@
             id="valence_band"
             style="fill:none;stroke:#0000ff;stroke-width:1">
             <use xlink:href="#orbit" x="400" y="00"></use>
-            <use xlink:href="#orbit" x="400" y="05"></use>
-            <use xlink:href="#orbit" x="400" y="10"></use>
             <use xlink:href="#orbit" x="400" y="15"></use>
             <use xlink:href="#orbit" x="400" y="20"></use>
             <use xlink:href="#orbit" x="400" y="25"></use>
@@ -102,8 +108,10 @@
             <use xlink:href="#orbit" x="400" y="75"></use>
             <use xlink:href="#orbit" x="400" y="80"></use>
             <use xlink:href="#orbit" x="400" y="85"></use>
-            <use xlink:href="#orbit" x="400" y="40"></use>
-            <use xlink:href="#orbit" x="400" y="45"></use>
+            <use xlink:href="#orbit" x="400" y="90"></use>
+            <use xlink:href="#orbit" x="400" y="95"></use>
+            <use xlink:href="#orbit" x="400" y="100"></use>
+            <use xlink:href="#orbit" x="400" y="105"></use>
         </g>
         <g
             id="fermi_level"
@@ -113,7 +121,7 @@
         <g
             id="gap_size"
             style="fill:none;stroke:#000000;stroke-width:1">
-            <path d="m 0,0 v 240 m -10,-240 h 20 m -20,240 h 20"></path>
+            <path d="m 0,0 v 80 m -10,-80 h 20 m -20,80 h 20"></path>
         </g>
     </defs>
     <g
@@ -133,15 +141,18 @@
         <g
             id="band2"
             style="display:inline">
-            <use xlink:href="#headline" x="220" y="40"></use>
-            <use xlink:href="#cond_label" x="290" y="95"></use>
-            <use xlink:href="#gap_label" x="400" y="350"></use>
-            <use xlink:href="#val_label" x="320" y="560"></use>
-            <use xlink:href="#fermi_label" x="120" y="320"></use>
-            <use xlink:href="#gap_size" x="390" y="203"></use>
-            <use xlink:href="#conduction_band" y="2100"></use>
-            <use xlink:href="#valence_band" y="2450"></use>
-            <use xlink:href="#fermi_level" y="2320"></use>
+            <use xlink:href="#headline" x="100" y="40"></use>
+            <use xlink:href="#cond_label" x="290" y="165"></use>
+            <use xlink:href="#gap_label" x="410" y="350"></use>
+            <use xlink:href="#val_label" x="320" y="500"></use>
+            <use xlink:href="#fermi_label" x="80" y="180"></use>
+            <use xlink:href="#donor_label" x="560" y="180"></use>
+            <use xlink:href="#gap_size" x="400" y="283"></use>
+            <use xlink:href="#conduction_band" y="2180"></use>
+            <use xlink:href="#valence_band" y="2370"></use>
+            <use xlink:href="#fermi_level" y="2377.5"></use>
+            <line x1="130" y1="185" x2="250" y2="384" style="stroke:#000000;stroke-width:1"></line>
+            <line x1="620" y1="185" x2="550" y2="375" style="stroke:#000000;stroke-width:1"></line>
         </g> <!--band2-->
     </g> <!--page1-->
 </svg>

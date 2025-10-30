@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (2)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Impurities</tspan>
+                <tspan x="30" y="140">Elements or compounds added to a material to change</tspan>
+                <tspan x="30" y="170">its electrical properties. Such elements come from</tspan>
+                <tspan x="30" y="200">either group III:</tspan>
+                <tspan x="70" y="230">Phosphorus (P), Arsenic (As) and Bismuth (Bi).</tspan>
+                <tspan x="30" y="260">or group V:</tspan>
+                <tspan x="70" y="290">Boron (B), Aluminum (Al) and Gallium (Ga).</tspan>
+                <tspan x="30" y="330" font-weight="bold">Doping</tspan>
+                <tspan x="30" y="360">This is the process of adding impurities to an</tspan>
+                <tspan x="30" y="390">Extrinsic semiconductor - it is not a compound.</tspan>
+                <tspan x="30" y="420">The process involves heating the semiconductor</tspan>
+                <tspan x="30" y="450">and adding the impurities as a high pressure gas.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

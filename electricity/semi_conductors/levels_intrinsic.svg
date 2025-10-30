@@ -17,7 +17,7 @@
             font-size="28"
             font-weight="bold"
             fill="#000000">
-            <tspan>Conduction - General</tspan>
+            <tspan>Conduction - Semi-Conductor (intrinsic)</tspan>
         </text>
         <text
             id="cond_label"
@@ -25,7 +25,7 @@
             font-size="20"
             font-weight="bold"
             fill="#000000">
-            <tspan>Conduction band (3d)</tspan>
+            <tspan>Conduction band</tspan>
         </text>
         <text
             id="val_label"
@@ -33,7 +33,7 @@
             font-size="20"
             font-weight="bold"
             fill="#000000">
-            <tspan>Valence band (4s)</tspan>
+            <tspan>Valence band</tspan>
         </text>
         <text
             id="gap_label"
@@ -42,6 +42,14 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Band gap</tspan>
+        </text>
+        <text
+            id="fermi_label"
+            font-family="Ubuntu"
+            font-size="20"
+            font-weight="bold"
+            fill="#000000">
+            <tspan>Fermi level (Fe)</tspan>
         </text>
         <circle
             id="orbit"
@@ -98,9 +106,14 @@
             <use xlink:href="#orbit" x="400" y="45"></use>
         </g>
         <g
+            id="fermi_level"
+            style="fill:none;stroke:#000000;stroke-width:2">
+            <use xlink:href="#orbit" x="400" y="00"></use>
+        </g>
+        <g
             id="gap_size"
             style="fill:none;stroke:#000000;stroke-width:1">
-            <path d="m 0,0 v 90 m -10,-90 h 20 m -20,90 h 20"></path>
+            <path d="m 0,0 v 80 m -10,-80 h 20 m -20,80 h 20"></path>
         </g>
     </defs>
     <g
@@ -120,13 +133,15 @@
         <g
             id="band2"
             style="display:inline">
-            <use xlink:href="#headline" x="250" y="40"></use>
-            <use xlink:href="#cond_label" x="290" y="95"></use>
-            <use xlink:href="#gap_label" x="400" y="250"></use>
-            <use xlink:href="#val_label" x="320" y="420"></use>
-            <use xlink:href="#gap_size" x="390" y="203"></use>
-            <use xlink:href="#conduction_band" y="2100"></use>
-            <use xlink:href="#valence_band" y="2300"></use>
+            <use xlink:href="#headline" x="160" y="40"></use>
+            <use xlink:href="#cond_label" x="290" y="165"></use>
+            <use xlink:href="#gap_label" x="410" y="350"></use>
+            <use xlink:href="#val_label" x="320" y="480"></use>
+            <use xlink:href="#fermi_label" x="120" y="320"></use>
+            <use xlink:href="#gap_size" x="400" y="283"></use>
+            <use xlink:href="#conduction_band" y="2180"></use>
+            <use xlink:href="#valence_band" y="2370"></use>
+            <use xlink:href="#fermi_level" y="2320"></use>
         </g> <!--band2-->
     </g> <!--page1-->
 </svg>
