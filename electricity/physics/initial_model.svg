@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient
+            id="linearGradient1">
+            <stop
+                style="stop-color:#000000;stop-opacity:1"
+                offset="0.03">
+            </stop>
+            <stop
+                style="stop-color:#241c1c;stop-opacity:1"
+                offset="0.50">
+            </stop>
+            <stop
+                style="stop-color:#241c1c;stop-opacity:0.5"
+                offset="1">
+            </stop>
+        </linearGradient>
+        <radialGradient
+            id="radialGradient2"
+            cx="374.95667"
+            cy="545.91376"
+            r="227.14285"
+            fx="374.95667"
+            fy="545.91376"
+            xlink:href="#linearGradient1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(101.74784,-60.827302)">
+        </radialGradient>
+        <filter
+            style="color-interpolation-filters:sRGB"
+            id="filter1"
+            x="-0.048002519"
+            y="-0.047997484"
+            width="1.096005"
+            height="1.095995">
+            <feGaussianBlur
+                stdDeviation="9.0861909">
+            </feGaussianBlur>
+        </filter>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="170" y="50">Initial view of the Atom</tspan>
+            </text>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            transform="translate(-76.820312,-185.40774)"
+            style="display:inline">
+            <path
+                d="m 704.60499,484.392 a 227.14286,227.14286 0 1 1 -454.28571,0 227.14285,227.14285 0 1 1 454.28571,0 z"
+                style="display:inline;opacity:1;fill:url(#radialGradient2);fill-opacity:1;stroke-width:13.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter1)">
+            </path>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
