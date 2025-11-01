@@ -41,22 +41,22 @@
                 font-size="29"
                 font-weight="norm"
                 fill="#0060a0">
-                <tspan x="30" y="110" font-weight="bold">N-Type</tspan>
+                <tspan x="30" y="110" font-weight="bold">N-Type - Donor</tspan>
                 <tspan x="30" y="140">N-type semi-conductor is doping an extrinsic semi-</tspan>
                 <tspan x="30" y="170">conductor with impurities from group V.</tspan>
                 <tspan x="30" y="200">This adds extra electrons to the bottom of the</tspan>
                 <tspan x="30" y="230">conduction band, allowing for increased conductivity.</tspan>
                 <tspan x="30" y="260">The more electrons present, the higher the conductivity.</tspan>
-                <tspan x="30" y="295" font-weight="bold">P-Type</tspan>
+                <tspan x="30" y="295" font-weight="bold">P-Type - Acceptor</tspan>
                 <tspan x="30" y="325">P-type semi-conductor is doping an extrinsic semi-</tspan>
                 <tspan x="30" y="355">conductor with impurities from group III.</tspan>
-                <tspan x="30" y="385">This creates "holes" in the top of the valence band,</tspan>
+                <tspan x="30" y="385">This adds "holes" at the top of the valence band,</tspan>
                 <tspan x="30" y="410">allowing for increased conductivity.</tspan>
                 <tspan x="30" y="440">The more holes present, the higher the conductivity.</tspan>
                 <tspan x="30" y="475" font-weight="bold">Holes</tspan>
                 <tspan x="30" y="505">Holes are the absence of electrons in the valence band.</tspan>
-                <tspan x="30" y="535">They act as positive charge carriers in P-type</tspan>
-                <tspan x="30" y="565">semiconductors, accepting other electrons for conductivity.</tspan>
+                <tspan x="30" y="535">They act as positive charge carriers in P-type semi-</tspan>
+                <tspan x="30" y="565">conductors, accepting other electrons for conductivity.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

@@ -42,7 +42,7 @@
                 font-weight="norm"
                 fill="#0060a0">
                 <tspan x="30" y="110" font-weight="bold">Diffusion</tspan>
-                <tspan x="30" y="140">Due to the proximity of the two types of majority carriers,</tspan>
+                <tspan x="30" y="140">Due to the proximity of the two majority carrier types,</tspan>
                 <tspan x="30" y="170">electrons from the P-type region tend to move into the</tspan>
                 <tspan x="30" y="200">N-type region, creating a concentration gradient, leaving</tspan>
                 <tspan x="30" y="230">behind fixed, immobile ions at the junction. The N-type</tspan>
@@ -52,7 +52,7 @@
                 <tspan x="30" y="350" font-weight="bold">Depletion Region.</tspan>
                 <tspan x="30" y="390" font-weight="bold">Potential Barrier</tspan>
                 <tspan x="30" y="420">The fixed positive and negative ions on opposite sides of</tspan>
-                <tspan x="30" y="450">the depletion region, creates an internal electric field</tspan>
+                <tspan x="30" y="450">the depletion region, create an internal electric field</tspan>
                 <tspan x="30" y="480">pointing from the N-side to the P-side. This electric field</tspan>
                 <tspan x="30" y="510">creates a voltage difference, which opposes the further</tspan>
                 <tspan x="30" y="540">diffusion of charge carriers.</tspan>

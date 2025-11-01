@@ -46,13 +46,16 @@
                 <tspan x="30" y="170">without adding impurities. The conduction is low,</tspan>
                 <tspan x="30" y="200">but it does exist.</tspan>
                 <tspan x="30" y="230">Examples:</tspan>
-                <tspan x="50" y="260">Gray tin (Sn), Gallium arsenide (GaAs),</tspan>
-                <tspan x="50" y="290">Indium antimonide (InSb) and Boron arsenide (BAs).</tspan>
-                <tspan x="30" y="335" font-weight="bold">Extrinsic</tspan>
-                <tspan x="30" y="365">Elements or compounds that cannot conduct electricity</tspan>
-                <tspan x="30" y="395">without adding impurities from outside.</tspan>
-                <tspan x="30" y="425">Examples:</tspan>
-                <tspan x="50" y="455">Silicon (Si) and Germanium (Ge)</tspan>
+                <tspan x="50" y="260">Gray tin (Sn: IV), Gallium arsenide (GaAs: III-V),</tspan>
+                <tspan x="50" y="290">Indium antimonide (InSb: III-V) and Boron arsenide</tspan>
+                <tspan x="50" y="320">(BAs: III-V).</tspan>
+                <tspan x="30" y="365" font-weight="bold">Extrinsic</tspan>
+                <tspan x="30" y="395">Elements that cannot conduct electricity without</tspan>
+                <tspan x="30" y="425">adding impurities from outside.</tspan>
+                <tspan x="30" y="455">Examples:</tspan>
+                <tspan x="50" y="490">Silicon (Si) and Germanium (Ge) - both from group IV</tspan>
+                <tspan x="30" y="535">Group III,IV,V are in columns 13,14,15 and have 3,4,5</tspan>
+                <tspan x="30" y="565">electrons in the valence shell respectively.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

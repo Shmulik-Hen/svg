@@ -53,6 +53,8 @@
                 <tspan x="30" y="390">Extrinsic semiconductor - it is not a compound.</tspan>
                 <tspan x="30" y="420">The process involves heating the semiconductor</tspan>
                 <tspan x="30" y="450">and adding the impurities as a high pressure gas.</tspan>
+                <tspan x="30" y="480">Since Si and Ge have a crystalline structure, the</tspan>
+                <tspan x="30" y="510">dopants become embedded within the lattice.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

@@ -43,9 +43,9 @@
                 fill="#0060a0">
                 <tspan x="30" y="110" font-weight="bold">Holes (cont.)</tspan>
                 <tspan x="30" y="140">They also appear to "move" through the lattice.</tspan>
-                <tspan x="30" y="170">It is similar to Ions by being positively charged,</tspan>
+                <tspan x="30" y="170">They are similar to Ions by being positively charged,</tspan>
                 <tspan x="30" y="200">but not exactly the same.</tspan>
-                <tspan x="30" y="240" font-weight="bold">Majority carriers</tspan>
+                <tspan x="30" y="240" font-weight="bold">Majority charge carriers</tspan>
                 <tspan x="30" y="270">In N-type semiconductors, the majority carriers are</tspan>
                 <tspan x="30" y="300">electrons, while in P-type semiconductors, the majority</tspan>
                 <tspan x="30" y="330">carriers are holes.</tspan>
@@ -54,6 +54,8 @@
                 <tspan x="30" y="430">semiconductors closely together, by growing them on</tspan>
                 <tspan x="30" y="460">the same substrate (usually silicon-oxide). This allows</tspan>
                 <tspan x="30" y="490">for the movement of charge carriers across the junction.</tspan>
+                <tspan x="30" y="535">Initially, both the extrinsic s-c and the dopants</tspan>
+                <tspan x="30" y="565">are in electrical equilibrium.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->
