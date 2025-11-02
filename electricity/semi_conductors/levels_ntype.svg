@@ -59,70 +59,68 @@
             fill="#000000">
             <tspan>Donor level</tspan>
         </text>
-        <circle
+        <path
             id="orbit"
-            cx="0"
-            cy="0"
-            r="2000">
-        </circle>
+            d="m 0,0 a 2000,2000 0 0 1 800,0">
+        </path>
         <g
             id="conduction_band"
             style="fill:none;stroke:#ff0000;stroke-width:1">
-            <use xlink:href="#orbit" x="400" y="00"></use>
-            <use xlink:href="#orbit" x="400" y="05"></use>
-            <use xlink:href="#orbit" x="400" y="10"></use>
-            <use xlink:href="#orbit" x="400" y="15"></use>
-            <use xlink:href="#orbit" x="400" y="20"></use>
-            <use xlink:href="#orbit" x="400" y="25"></use>
-            <use xlink:href="#orbit" x="400" y="30"></use>
-            <use xlink:href="#orbit" x="400" y="35"></use>
-            <use xlink:href="#orbit" x="400" y="40"></use>
-            <use xlink:href="#orbit" x="400" y="45"></use>
-            <use xlink:href="#orbit" x="400" y="50"></use>
-            <use xlink:href="#orbit" x="400" y="55"></use>
-            <use xlink:href="#orbit" x="400" y="60"></use>
-            <use xlink:href="#orbit" x="400" y="65"></use>
-            <use xlink:href="#orbit" x="400" y="70"></use>
-            <use xlink:href="#orbit" x="400" y="75"></use>
-            <use xlink:href="#orbit" x="400" y="80"></use>
-            <use xlink:href="#orbit" x="400" y="85"></use>
-            <use xlink:href="#orbit" x="400" y="90"></use>
-            <use xlink:href="#orbit" x="400" y="95"></use>
-            <use xlink:href="#orbit" x="400" y="110"></use>
+            <use xlink:href="#orbit" x="0" y="00"></use>
+            <use xlink:href="#orbit" x="0" y="05"></use>
+            <use xlink:href="#orbit" x="0" y="10"></use>
+            <use xlink:href="#orbit" x="0" y="15"></use>
+            <use xlink:href="#orbit" x="0" y="20"></use>
+            <use xlink:href="#orbit" x="0" y="25"></use>
+            <use xlink:href="#orbit" x="0" y="30"></use>
+            <use xlink:href="#orbit" x="0" y="35"></use>
+            <use xlink:href="#orbit" x="0" y="40"></use>
+            <use xlink:href="#orbit" x="0" y="45"></use>
+            <use xlink:href="#orbit" x="0" y="50"></use>
+            <use xlink:href="#orbit" x="0" y="55"></use>
+            <use xlink:href="#orbit" x="0" y="60"></use>
+            <use xlink:href="#orbit" x="0" y="65"></use>
+            <use xlink:href="#orbit" x="0" y="70"></use>
+            <use xlink:href="#orbit" x="0" y="75"></use>
+            <use xlink:href="#orbit" x="0" y="80"></use>
+            <use xlink:href="#orbit" x="0" y="85"></use>
+            <use xlink:href="#orbit" x="0" y="90"></use>
+            <use xlink:href="#orbit" x="0" y="95"></use>
+            <use xlink:href="#orbit" x="0" y="110"></use>
         </g>
         <g
             id="valence_band"
             style="fill:none;stroke:#0000ff;stroke-width:1">
-            <use xlink:href="#orbit" x="400" y="00"></use>
-            <use xlink:href="#orbit" x="400" y="05"></use>
-            <use xlink:href="#orbit" x="400" y="10"></use>
-            <use xlink:href="#orbit" x="400" y="15"></use>
-            <use xlink:href="#orbit" x="400" y="20"></use>
-            <use xlink:href="#orbit" x="400" y="25"></use>
-            <use xlink:href="#orbit" x="400" y="30"></use>
-            <use xlink:href="#orbit" x="400" y="35"></use>
-            <use xlink:href="#orbit" x="400" y="40"></use>
-            <use xlink:href="#orbit" x="400" y="45"></use>
-            <use xlink:href="#orbit" x="400" y="50"></use>
-            <use xlink:href="#orbit" x="400" y="55"></use>
-            <use xlink:href="#orbit" x="400" y="60"></use>
-            <use xlink:href="#orbit" x="400" y="65"></use>
-            <use xlink:href="#orbit" x="400" y="70"></use>
-            <use xlink:href="#orbit" x="400" y="75"></use>
-            <use xlink:href="#orbit" x="400" y="80"></use>
-            <use xlink:href="#orbit" x="400" y="85"></use>
-            <use xlink:href="#orbit" x="400" y="40"></use>
-            <use xlink:href="#orbit" x="400" y="45"></use>
+            <use xlink:href="#orbit" x="0" y="00"></use>
+            <use xlink:href="#orbit" x="0" y="05"></use>
+            <use xlink:href="#orbit" x="0" y="10"></use>
+            <use xlink:href="#orbit" x="0" y="15"></use>
+            <use xlink:href="#orbit" x="0" y="20"></use>
+            <use xlink:href="#orbit" x="0" y="25"></use>
+            <use xlink:href="#orbit" x="0" y="30"></use>
+            <use xlink:href="#orbit" x="0" y="35"></use>
+            <use xlink:href="#orbit" x="0" y="40"></use>
+            <use xlink:href="#orbit" x="0" y="45"></use>
+            <use xlink:href="#orbit" x="0" y="50"></use>
+            <use xlink:href="#orbit" x="0" y="55"></use>
+            <use xlink:href="#orbit" x="0" y="60"></use>
+            <use xlink:href="#orbit" x="0" y="65"></use>
+            <use xlink:href="#orbit" x="0" y="70"></use>
+            <use xlink:href="#orbit" x="0" y="75"></use>
+            <use xlink:href="#orbit" x="0" y="80"></use>
+            <use xlink:href="#orbit" x="0" y="85"></use>
+            <use xlink:href="#orbit" x="0" y="90"></use>
+            <use xlink:href="#orbit" x="0" y="95"></use>
         </g>
         <g
             id="fermi_level"
             style="fill:none;stroke:#000000;stroke-width:2">
-            <use xlink:href="#orbit" x="400" y="00"></use>
+            <use xlink:href="#orbit" x="0" y="00"></use>
         </g>
         <g
             id="gap_size"
             style="fill:none;stroke:#000000;stroke-width:1">
-            <path d="m 0,0 v 80 m -10,-80 h 20 m -20,80 h 20"></path>
+            <path d="m 0,0 v 73 m -10,-73 h 20 m -20,73 h 20"></path>
         </g>
     </defs>
     <g
@@ -148,10 +146,10 @@
             <use xlink:href="#val_label" x="320" y="480"></use>
             <use xlink:href="#fermi_label" x="80" y="180"></use>
             <use xlink:href="#donor_label" x="560" y="180"></use>
-            <use xlink:href="#gap_size" x="400" y="285"></use>
-            <use xlink:href="#conduction_band" y="2180"></use>
-            <use xlink:href="#valence_band" y="2370"></use>
-            <use xlink:href="#fermi_level" y="2282"></use>
+            <use xlink:href="#gap_size" x="400" y="292.7"></use>
+            <use xlink:href="#conduction_band" y="220"></use>
+            <use xlink:href="#valence_band" y="410"></use>
+            <use xlink:href="#fermi_level" y="324"></use>
             <line x1="130" y1="185" x2="250" y2="288" style="stroke:#000000;stroke-width:1"></line>
             <line x1="620" y1="185" x2="550" y2="296" style="stroke:#000000;stroke-width:1"></line>
         </g> <!--band2-->
