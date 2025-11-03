@@ -17,7 +17,7 @@
             font-size="28"
             font-weight="bold"
             fill="#000000">
-            <tspan>Conduction - Semi-Conductor (doped: n-type)</tspan>
+            <tspan>Bands - Semi-Conductor (doped: n-type)</tspan>
         </text>
         <text
             id="cond_label"
@@ -140,7 +140,7 @@
         <g
             id="band2"
             style="display:inline">
-            <use xlink:href="#headline" x="100" y="40"></use>
+            <use xlink:href="#headline" x="140" y="40"></use>
             <use xlink:href="#cond_label" x="290" y="165"></use>
             <use xlink:href="#gap_label" x="410" y="350"></use>
             <use xlink:href="#val_label" x="320" y="480"></use>

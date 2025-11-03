@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (5)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Recombination</tspan>
+                <tspan x="30" y="140">When an electron from the N-side falls into a hole on the</tspan>
+                <tspan x="30" y="170">P-side, they re-combine, and annihilate each other. This</tspan>
+                <tspan x="30" y="200">process reduces the number of charge carriers in the</tspan>
+                <tspan x="30" y="230">depletion region, allowing the electric field to become</tspan>
+                <tspan x="30" y="260">more pronounced. The rate of recombination is influenced</tspan>
+                <tspan x="30" y="290">by temperature and the presence of impurities in the</tspan>
+                <tspan x="30" y="320">semiconductor.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

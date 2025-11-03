@@ -43,29 +43,20 @@
                 fill="#0060a0">
                 <tspan x="30" y="110" font-weight="bold">Diffusion</tspan>
                 <tspan x="30" y="140">Due to the proximity of the two majority carrier types,</tspan>
-                <tspan x="30" y="170">electrons from the P-type region tend to move into the</tspan>
-                <tspan x="30" y="200">N-type region, creating a concentration gradient, leaving</tspan>
-                <tspan x="30" y="230">behind fixed, immobile ions at the junction. The N-type</tspan>
-                <tspan x="30" y="260">side is left with a layer of positive ions, and the P-type</tspan>
-                <tspan x="30" y="290">side is left with a layer of negative ions. Since this area</tspan>
-                <tspan x="30" y="320">is void of any charge carriers, it creates the</tspan>
-                <tspan x="30" y="350" font-weight="bold">Depletion Region.</tspan>
-                <tspan x="30" y="390" font-weight="bold">Potential Barrier</tspan>
-                <tspan x="30" y="420">The fixed positive and negative ions on opposite sides of</tspan>
-                <tspan x="30" y="450">the depletion region, create an internal electric field</tspan>
-                <tspan x="30" y="480">pointing from the N-side to the P-side. This electric field</tspan>
-                <tspan x="30" y="510">creates a voltage difference, which opposes the further</tspan>
-                <tspan x="30" y="540">diffusion of charge carriers.</tspan>
-                <!--
-                <tspan x="30" y="240" font-weight="bold">Majority carriers</tspan>
-                <tspan x="30" y="270">In N-type semiconductors, the majority carriers are</tspan>
-                <tspan x="30" y="300">electrons, while in P-type semiconductors, the majority</tspan>
-                <tspan x="30" y="330">carriers are holes.</tspan>
-                <tspan x="30" y="370" font-weight="bold">Junction</tspan>
-                <tspan x="30" y="400">A junction is created by fusing P-type and N-type</tspan>
-                <tspan x="30" y="430">semiconductors closely together, by growing them on</tspan>
-                <tspan x="30" y="460">the same substrate (usually silicon-oxide). This allows</tspan>
-                <tspan x="30" y="490">for the movement of charge carriers across the junction.</tspan> -->
+                <tspan x="30" y="170">electrons from the N-side diffuse into the P-side, while</tspan>
+                <tspan x="30" y="200">holes from the P-side diffuse into the N-side, creating</tspan>
+                <tspan x="30" y="230">a concentration gradient. This leaves behind immobile</tspan>
+                <tspan x="30" y="260">ions at the junction, locked in the lattice. The N-side is</tspan>
+                <tspan x="30" y="290">left with a layer of positive ions, and the P-side is left</tspan>
+                <tspan x="30" y="320">with a layer of negative ions. Since this area is void of</tspan>
+                <tspan x="30" y="350">any charge carriers, it creates the</tspan>
+                <tspan x="467" y="350" font-weight="bold">Depletion Region.</tspan>
+                <tspan x="30" y="420" font-weight="bold">Potential Barrier</tspan>
+                <tspan x="30" y="450">The fixed positive and negative ions on opposite sides of</tspan>
+                <tspan x="30" y="480">the depletion region, create an internal electric field</tspan>
+                <tspan x="30" y="510">pointing from the P-side to the N-side. This electric field</tspan>
+                <tspan x="30" y="540">creates a potential difference, which opposes any further</tspan>
+                <tspan x="30" y="570">diffusion of charge carriers.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

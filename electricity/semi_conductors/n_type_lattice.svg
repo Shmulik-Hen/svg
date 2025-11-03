@@ -85,7 +85,7 @@
             font-size="22"
             font-weight="norm"
             fill="#000000">
-            <tspan x="0" y="5">Si</tspan>
+            <tspan x="0" y="5">Si⁰</tspan>
         </text>
         <text
             id="boron_label"
@@ -93,7 +93,7 @@
             font-size="22"
             font-weight="norm"
             fill="#000000">
-            <tspan x="0" y="5">B</tspan>
+            <tspan x="0" y="5">B⁰</tspan>
         </text>
         <text
             id="phosphorus_label"
@@ -101,7 +101,7 @@
             font-size="22"
             font-weight="norm"
             fill="#000000">
-            <tspan x="0" y="5">P</tspan>
+            <tspan x="0" y="5">P⁰</tspan>
         </text>
         <g
             id="silicon_atom">
@@ -428,7 +428,7 @@
         </g>
         <g
             id="body">
-            <use xlink:href="#box" x="0" y="0"></use>
+            <!-- <use xlink:href="#box" x="0" y="0"></use> -->
             <use xlink:href="#n_lattice" x="50" y="50"></use>
         </g>
         <g
@@ -467,7 +467,7 @@
         <g
             id="layer2"
             style="display:inline">
-            <use xlink:href="#headline" x="200" y="40"></use>
+            <use xlink:href="#headline" x="180" y="40"></use>
             <use xlink:href="#body" x="30" y="90" transform="scale(0.95)"></use>
             <use xlink:href="#legend" x="30" y="500"></use>
         </g> <!--layer2-->

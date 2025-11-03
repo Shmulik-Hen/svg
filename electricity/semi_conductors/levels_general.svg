@@ -17,7 +17,7 @@
             font-size="28"
             font-weight="bold"
             fill="#000000">
-            <tspan>Conduction - General</tspan>
+            <tspan>Bands - General</tspan>
         </text>
         <text
             id="cond_label"
@@ -131,7 +131,7 @@
         <g
             id="band2"
             style="display:inline">
-            <use xlink:href="#headline" x="250" y="40"></use>
+            <use xlink:href="#headline" x="280" y="40"></use>
             <use xlink:href="#cond_label" x="290" y="95"></use>
             <use xlink:href="#gap_label" x="410" y="250"></use>
             <use xlink:href="#val_label" x="320" y="420"></use>
