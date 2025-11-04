@@ -506,15 +506,30 @@
             d="m 0,0 c 30,30 50,30 150,30"
             style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.3;marker-end:url(#arrow_head)">
         </path>
+        <path
+            id="charge_move_short"
+            d="m 0,0 c 30,15 50,15 210,15"
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
+        </path>
         <g
             id="hole_move">
             <use xlink:href="#charge_move" x="0" y="0"></use>
-            <use xlink:href="#hole" x="160" y="31"></use>
+            <use xlink:href="#hole" x="250" y="15"></use>
+        </g>
+        <g
+            id="hole_move_short">
+            <use xlink:href="#charge_move_short" x="0" y="0"></use>
+            <use xlink:href="#hole" x="245" y="15"></use>
         </g>
         <g
             id="electron_move">
-            <use xlink:href="#charge_move" x="40" y="0" transform="scale(-1,1)"></use>
-            <use xlink:href="#electron" x="-200" y="30"></use>
+            <use xlink:href="#charge_move" x="0" y="0" transform="scale(-1,1)"></use>
+            <use xlink:href="#electron" x="-250" y="15"></use>
+        </g>
+        <g
+            id="electron_move_short">
+            <use xlink:href="#charge_move_short" x="0" y="0" transform="scale(-1,1)"></use>
+            <use xlink:href="#electron" x="-245" y="15"></use>
         </g>
         <g
             id="body">

@@ -496,15 +496,19 @@
             <use xlink:href="#cov_bonds_v" x="10" y="557.5"></use>
             <use xlink:href="#cov_bonds_v" x="10" y="662.5"></use>
         </g>
-        <path
-            id="potential"
-            d="m 0,0 v -28 h 75 m 0,-20 v 40 m 10,-33 v 25 m 0,-12.5 h 75 v 28"
-            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:2 2">
-        </path>
+        <g
+            id="potential">
+            <path
+                d="m 0,0 v -28 h 75 m 0,-20 v 40 m 10,-33 v 25 m 0,-12.5 h 75 v 28"
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:2 2">
+            </path>
+            <use xlink:href="#pos_charge" x="105" y="-80" transform="scale(0.50)"></use>
+            <use xlink:href="#neg_charge" x="210" y="-80" transform="scale(0.50)"></use>
+        </g>
         <path
             id="charge_move"
             d="m 0,0 c 30,30 50,30 150,30"
-            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.3;marker-end:url(#arrow_head)">
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1;marker-end:url(#arrow_head)">
         </path>
         <g
             id="hole_move">
@@ -512,9 +516,19 @@
             <use xlink:href="#hole" x="160" y="31"></use>
         </g>
         <g
+            id="hole_move_short">
+            <use xlink:href="#charge_move_short" x="0" y="0"></use>
+            <use xlink:href="#hole" x="245" y="15"></use>
+        </g>
+        <g
             id="electron_move">
             <use xlink:href="#charge_move" x="40" y="0" transform="scale(-1,1)"></use>
             <use xlink:href="#electron" x="-200" y="30"></use>
+        </g>
+        <g
+            id="electron_move_short">
+            <use xlink:href="#charge_move_short" x="0" y="0" transform="scale(-1,1)"></use>
+            <use xlink:href="#electron" x="-245" y="15"></use>
         </g>
         <g
             id="body">
@@ -524,23 +538,9 @@
             <use xlink:href="#depletion_zone" x="338" y="100"></use>
             <use xlink:href="#barrier" x="400" y="100"></use>
             <use xlink:href="#potential" x="320" y="100"></use>
-            <use xlink:href="#pos_charge" x="750" y="125" transform="scale(0.50)"></use>
-            <use xlink:href="#neg_charge" x="840" y="125" transform="scale(0.50)"></use>
-            <line x1="255" y1="60" x2="318" y2="70" style="stroke:#000000;stroke-width:2;marker-end:url(#arrow_head)"></line>
-            <line
-                x1="337.5"
-                y1="520"
-                x2="337.5"
-                y2="0"
-                style="stroke:#000000;stroke-width:0.5;stroke-opacity:1;stroke-dasharray:4 7">
-            </line>
-            <line
-                x1="462"
-                y1="520"
-                x2="462"
-                y2="0"
-                style="stroke:#000000;stroke-width:0.5;stroke-opacity:1;stroke-dasharray:4 7">
-            </line>
+            <path d="M 255 60 L 318 70" style="stroke:#000000;stroke-width:2;marker-end:url(#arrow_head)"></path>
+            <path d="M 337.5 520 L 337.5 0" style="stroke:#000000;stroke-width:2;stroke-opacity:1;stroke-dasharray:4 7"></path>
+            <path d="M 462 520 L 462 0" style="stroke:#000000;stroke-width:2;stroke-opacity:1;stroke-dasharray:4 7"></path>
             <use xlink:href="#neutral_atoms" x="40" y="120"></use>
             <use xlink:href="#neutral_atoms" x="40" y="220"></use>
             <use xlink:href="#neutral_atoms" x="40" y="320"></use>
