@@ -34,21 +34,28 @@
                 font-size="36"
                 font-weight="bold"
                 fill="#0000ff">
-                <tspan x="30" y="60">Basic terms in Semi-Conductors (5)</tspan>
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (6)</tspan>
             </text>
             <text
                 font-family="Ubuntu"
                 font-size="29"
                 font-weight="norm"
                 fill="#0060a0">
-                <tspan x="30" y="110" font-weight="bold">Recombination</tspan>
-                <tspan x="30" y="140">When an electron from the N-side falls into a hole on the</tspan>
-                <tspan x="30" y="170">P-side, they re-combine, and annihilate each other. This</tspan>
-                <tspan x="30" y="200">process reduces the number of charge carriers in the</tspan>
-                <tspan x="30" y="230">depletion region, allowing the electric field to become</tspan>
-                <tspan x="30" y="260">more pronounced. The rate of recombination is influenced</tspan>
-                <tspan x="30" y="290">by temperature and the presence of impurities in the</tspan>
-                <tspan x="30" y="320">semiconductor.</tspan>
+                <tspan x="30" y="110" font-weight="bold">Potential Barrier</tspan>
+                <tspan x="30" y="140">The fixed positive and negative ions on opposite sides of</tspan>
+                <tspan x="30" y="170">the depletion region, create an internal electric field</tspan>
+                <tspan x="30" y="200">pointing from the P-side to the N-side. This electric field</tspan>
+                <tspan x="30" y="230">creates a potential difference, which opposes any further</tspan>
+                <tspan x="30" y="260">diffusion of charge carriers.</tspan>
+                <tspan x="30" y="300" font-weight="bold">Recombination</tspan>
+                <tspan x="30" y="330">When an electron from the N-side falls into a hole on the</tspan>
+                <tspan x="30" y="360">P-side, they re-combine and annihilate each other. This</tspan>
+                <tspan x="30" y="390">process reduces the number of charge carriers in the</tspan>
+                <tspan x="30" y="420">depletion region, allowing the electric field to become</tspan>
+                <tspan x="30" y="450">more pronounced. The rate of recombination is influenced</tspan>
+                <tspan x="30" y="480">by temperature and the presence of impurities in the</tspan>
+                <tspan x="30" y="510">semiconductor.</tspan>
+                <tspan x="30" y="540">This is the final stage of the manufacturing process.</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->

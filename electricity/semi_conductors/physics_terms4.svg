@@ -46,16 +46,17 @@
                 <tspan x="30" y="170">They are similar to Ions by being positively charged,</tspan>
                 <tspan x="30" y="200">but not exactly the same.</tspan>
                 <tspan x="30" y="240" font-weight="bold">Majority charge carriers</tspan>
-                <tspan x="30" y="270">In N-type semiconductors, the majority carriers are</tspan>
-                <tspan x="30" y="300">electrons, while in P-type semiconductors, the majority</tspan>
-                <tspan x="30" y="330">carriers are holes.</tspan>
-                <tspan x="30" y="370" font-weight="bold">Junction</tspan>
-                <tspan x="30" y="400">A junction is created by fusing P-type and N-type</tspan>
-                <tspan x="30" y="430">semiconductors closely together, by growing them on</tspan>
-                <tspan x="30" y="460">the same substrate (usually silicon-oxide). This allows</tspan>
-                <tspan x="30" y="490">for the movement of charge carriers across the junction.</tspan>
-                <tspan x="30" y="535">Initially, both the extrinsic s-c and the dopants</tspan>
-                <tspan x="30" y="565">are in electrical equilibrium.</tspan>
+                <tspan x="30" y="270">Carriers that participate in the main current conduction.</tspan>
+                <tspan x="30" y="300">In N-type semiconductors, the majority carriers are</tspan>
+                <tspan x="30" y="330">Electrons in P-type zone, Holes in N-type zone.</tspan>
+                <tspan x="30" y="360">Usually around 10-20µA.</tspan>
+                <tspan x="30" y="400" font-weight="bold">Minority charge carriers</tspan>
+                <tspan x="30" y="430">Carriers that exist in the doped zones, but don't </tspan>
+                <tspan x="30" y="460">participate in the main current conduction.</tspan>
+                <tspan x="30" y="490">Electrons in N-type zone, Holes in P-type zone.</tspan>
+                <tspan x="30" y="520">They contribute to leakage currents that are caused by.</tspan>
+                <tspan x="30" y="550">thermal energy.</tspan>
+                <tspan x="30" y="580">Between few pA to few nA (close to negligible).</tspan>
             </text>
         </g> <!--layer2-->
     </g> <!--page1-->
