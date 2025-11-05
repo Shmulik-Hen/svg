@@ -33,7 +33,7 @@
             font-size="28"
             font-weight="bold"
             fill="#000000">
-            <tspan>Bipolar Junction Transistor (BJT) - NPN</tspan>
+            <tspan>Bipolar Junction Transistor (BJT) - PNP</tspan>
         </text>
         <text
             id="title_1"
@@ -54,8 +54,8 @@
             font-size="24"
             font-weight="bold"
             fill="#000000">
-            <tspan x="0" y="0">Vce</tspan>
-            <tspan x="275" y="15">Vbe</tspan>
+            <tspan x="240" y="0">Vce</tspan>
+            <tspan x="-60" y="15">Vcb</tspan>
         </text>
         <circle
             id="hole"
@@ -399,18 +399,18 @@
             style="fill:#000000;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round">
         </rect>
         <rect
-            id="n_side"
-            x="4"
-            y="0"
-            width="302"
-            height="346"
-            style="fill:#00ffff;fill-opacity:0.2;stroke:none">
-        </rect>
-        <rect
             id="p_side"
             x="0"
             y="0"
             width="100"
+            height="346"
+            style="fill:#00ffff;fill-opacity:0.2;stroke:none">
+        </rect>
+        <rect
+            id="n_side"
+            x="4"
+            y="0"
+            width="302"
             height="346"
             style="fill:#ff0000;fill-opacity:0.2;stroke:none">
         </rect>
@@ -543,11 +543,11 @@
         <g
             id="circuit_large">
             <path
-                d="m 0,0 v -100 h 150 m 0,-20 v 40 m 10,-30 v 20 m 0,-10 h 300 v 100"
+                d="m 0,0 v -100 h 300 m 0,-20 v 40 m 10,-30 v 20 m 0,-10 h 150 v 100"
                 style="fill:none;stroke:#000000;stroke-width:3">
             </path>
-            <use xlink:href="#pos_charge" x="140" y="-110"></use>
-            <use xlink:href="#neg_charge" x="170" y="-110"></use>
+            <use xlink:href="#pos_charge" x="290" y="-110"></use>
+            <use xlink:href="#neg_charge" x="320" y="-110"></use>
         </g>
         <path
             id="charge_move_long"
@@ -603,39 +603,39 @@
             <use xlink:href="#depletion_zone" x="444" y="8"></use>
             <use xlink:href="#n_side" x="474" y="8"></use>
             <!-- <use xlink:href="#barrier" x="400" y="50"></use> -->
-            <use xlink:href="#potential_fwd" x="280" y="0"></use>
-            <use xlink:href="#potential_rev" x="420" y="0"></use>
+            <use xlink:href="#potential_rev" x="280" y="0"></use>
+            <use xlink:href="#potential_fwd" x="420" y="0"></use>
             <use xlink:href="#terminal" x="150" y="-10"></use>
             <use xlink:href="#terminal" x="380" y="-10"></use>
             <use xlink:href="#terminal" x="610" y="-10"></use>
-            <use xlink:href="#circuit_small" x="395" y="0"></use>
+            <use xlink:href="#circuit_small" x="165" y="0"></use>
             <use xlink:href="#circuit_large" x="165" y="0"></use>
-            <use xlink:href="#electron" x="50" y="60"></use>
-            <use xlink:href="#electron" x="80" y="60"></use>
-            <use xlink:href="#electron" x="110" y="60"></use>
-            <use xlink:href="#electron" x="140" y="60"></use>
-            <use xlink:href="#electron" x="170" y="60"></use>
-            <use xlink:href="#electron" x="570" y="60"></use>
-            <use xlink:href="#electron" x="585" y="60"></use>
-            <use xlink:href="#electron" x="600" y="60"></use>
-            <use xlink:href="#electron" x="615" y="60"></use>
-            <use xlink:href="#electron" x="630" y="60"></use>
-            <use xlink:href="#electron" x="645" y="60"></use>
-            <use xlink:href="#electron" x="660" y="60"></use>
-            <use xlink:href="#electron" x="675" y="60"></use>
-            <use xlink:href="#electron" x="690" y="60"></use>
-            <use xlink:href="#electron" x="705" y="60"></use>
-            <use xlink:href="#electron" x="720" y="60"></use>
-            <use xlink:href="#electron" x="735" y="60"></use>
-            <use xlink:href="#hole" x="360" y="60"></use>
-            <use xlink:href="#hole" x="390" y="60"></use>
-            <use xlink:href="#hole" x="420" y="60"></use>
-            <!-- <path d="M 650 100 L 400 100" style="stroke:#ff0000;stroke-width:8;marker-end:url(#arrow_head)"></path> -->
-            <path d="M 400 100 L 650 100" style="stroke:#0000ff;stroke-width:8;marker-end:url(#arrow_head)"></path>
-            <path d="M 650 200 L 420 200" style="stroke:#ff0000;stroke-width:20;marker-end:url(#arrow_head)"></path>
-            <path d="M 380 200 L 150 200" style="stroke:#ff0000;stroke-width:15;marker-end:url(#arrow_head)"></path>
-            <path d="M 420 280 L 650 280" style="stroke:#0000ff;stroke-width:15;marker-end:url(#arrow_head)"></path>
-            <path d="M 150 280 L 380 280" style="stroke:#0000ff;stroke-width:15;marker-end:url(#arrow_head)"></path>
+            <use xlink:href="#hole" x="50" y="60"></use>
+            <use xlink:href="#hole" x="80" y="60"></use>
+            <use xlink:href="#hole" x="110" y="60"></use>
+            <use xlink:href="#hole" x="140" y="60"></use>
+            <use xlink:href="#hole" x="170" y="60"></use>
+            <use xlink:href="#hole" x="570" y="60"></use>
+            <use xlink:href="#hole" x="585" y="60"></use>
+            <use xlink:href="#hole" x="600" y="60"></use>
+            <use xlink:href="#hole" x="615" y="60"></use>
+            <use xlink:href="#hole" x="630" y="60"></use>
+            <use xlink:href="#hole" x="645" y="60"></use>
+            <use xlink:href="#hole" x="660" y="60"></use>
+            <use xlink:href="#hole" x="675" y="60"></use>
+            <use xlink:href="#hole" x="690" y="60"></use>
+            <use xlink:href="#hole" x="705" y="60"></use>
+            <use xlink:href="#hole" x="720" y="60"></use>
+            <use xlink:href="#hole" x="735" y="60"></use>
+            <use xlink:href="#electron" x="360" y="60"></use>
+            <use xlink:href="#electron" x="390" y="60"></use>
+            <use xlink:href="#electron" x="420" y="60"></use>
+            <!-- <path d="M 650 100 L 400 100" style="stroke:#0000ff;stroke-width:8;marker-end:url(#arrow_head)"></path> -->
+            <path d="M 400 100 L 650 100" style="stroke:#ff0000;stroke-width:8;marker-end:url(#arrow_head)"></path>
+            <path d="M 650 200 L 420 200" style="stroke:#0000ff;stroke-width:20;marker-end:url(#arrow_head)"></path>
+            <path d="M 380 200 L 150 200" style="stroke:#0000ff;stroke-width:15;marker-end:url(#arrow_head)"></path>
+            <path d="M 420 280 L 650 280" style="stroke:#ff0000;stroke-width:15;marker-end:url(#arrow_head)"></path>
+            <path d="M 150 280 L 380 280" style="stroke:#ff0000;stroke-width:15;marker-end:url(#arrow_head)"></path>
         </g>
         <g
             id="legend">
