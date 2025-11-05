@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                id="white_background"
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g> <!--layer1-->
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Electricity</tspan>
+            </text>
+            <path d="M 125,80 V 570" stroke="#000000" stroke-width="2"></path>
+            <path d="M 265,80 V 570" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,120 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,148 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,208 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,238 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,298 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,388 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,448 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,508 H 770" stroke="#000000" stroke-width="2"></path>
+            <path d="M 30,568 H 770" stroke="#000000" stroke-width="2"></path>
+            <text
+                font-family="Ubuntu"
+                font-size="22"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Term</tspan>
+                <tspan x="132" y="110" font-weight="bold">Unit of</tspan>
+                <tspan x="270" y="110" font-weight="bold">Description.</tspan>
+                <tspan x="30" y="140">Coulomb</tspan>
+                <tspan x="132" y="140">Charge Q/q</tspan>
+                <tspan x="270" y="140">1Q≈6.24⋅10¹⁸ electric charges of a proton/electron.</tspan>
+                <tspan x="30" y="170">Volt</tspan>
+                <tspan x="132" y="170">Voltage V/v</tspan>
+                <tspan x="270" y="170">1V is the potential difference that requires 1 joule</tspan>
+                <tspan x="270" y="200">to move 1Q between 2 points. 1V=1J/1Q.</tspan>
+                <tspan x="30" y="230">Ampere</tspan>
+                <tspan x="132" y="230">Current I/i</tspan>
+                <tspan x="270" y="230">1A is a flow of 1Q per second. 1A=1Q/1s.</tspan>
+                <tspan x="30" y="260">Ohm</tspan>
+                <tspan x="132" y="260">Resistance</tspan>
+                <tspan x="132" y="290">R/r</tspan>
+                <tspan x="270" y="260">1Ω is the resistance that allows 1A to flow with 1V</tspan>
+                <tspan x="270" y="290">applied. 1Ω=1V/1A.</tspan>
+                <tspan x="30" y="320">Siemens</tspan>
+                <tspan x="132" y="320">Conductance</tspan>
+                <tspan x="132" y="350">S/s/℧</tspan>
+                <tspan x="270" y="320">1S is the conductance that allows 1A to flow with 1V</tspan>
+                <tspan x="270" y="350">applied. 1S=1A/1V. Also called Mho 😄 the reciprocal</tspan>
+                <tspan x="270" y="380">of Ohm. 1℧=1/1Ω. </tspan>
+                <tspan x="30" y="410">Watt</tspan>
+                <tspan x="132" y="410">Power W/w</tspan>
+                <tspan x="270" y="410">1W is defined as one joule of energy per second.</tspan>
+                <tspan x="270" y="440">1W=1J/1s, but also 1W=1A⋅1V.</tspan>
+                <tspan x="30" y="470">Hertz</tspan>
+                <tspan x="132" y="470">Frequency</tspan>
+                <tspan x="132" y="500">Hz</tspan>
+                <tspan x="270" y="470">1Hz is one whole cycle per second.</tspan>
+                <tspan x="30" y="530">Band</tspan>
+                <tspan x="30" y="560">Width</tspan>
+                <tspan x="132" y="530">XHz...YHz</tspan>
+                <tspan x="132" y="560">X ≤ Y</tspan>
+                <tspan x="270" y="530">a range of frequencies within a given band.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

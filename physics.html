@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Electricity</title>
+        <title>Physics</title>
         <style>
             :root { --pad: 18px; }
             html, body { height: 100%; margin: 0; font-family: system-ui, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
@@ -78,7 +78,7 @@
     <body>
         <!-- TOC SCREEN -->
         <section id="toc" class="screen active" aria-labelledby="tocTitle">
-            <h1 id="tocTitle">Basic Electricity</h1>
+            <h1 id="tocTitle">Physics of Electricity</h1>
             <p id="hint">Tip: click a section to expand/collapse. In slides: ←/→ stay within the current section; Next at the last slide returns to TOC. <kbd>B</kbd>/<kbd>Esc</kbd> to return, <kbd>F</kbd> for fullscreen.</p>
             <div id="tocSections"></div>
             <a href="https://ptable.com/#Properties/Series" target="_blank" rel="noopener">Periodic Table of Elements - Properties</a>
@@ -110,45 +110,54 @@
             /* ==== Your sections ==== */
             const sections = [
                 {
-                    title: "Analogies",
+                    title: "Basic Physics",
                     slides: [
-                        { title: "Intro",                   file: "electricity/analogies/intro.svg" },
-                        { title: "Electrical terms (1)",    file: "electricity/analogies/electric_terms1.svg" },
-                        { title: "Voltage",                 file: "electricity/analogies/voltage.svg" },
-                        { title: "Current",                 file: "electricity/analogies/current.svg" },
-                        { title: "Conductor (water)",       file: "electricity/analogies/conductor_water.svg" },
-                        { title: "Conductor (electricity)", file: "electricity/analogies/conductor_elec.svg" },
-                        { title: "Insulator (electricity)", file: "electricity/analogies/insulator_elec.svg" },
-                        { title: "Resistor (electricity)",  file: "electricity/analogies/resistor_elec.svg" },
-                        { title: "Switch",                  file: "electricity/analogies/switch.svg" },
-                        { title: "Resistor",                file: "electricity/analogies/resistor.svg" },
-                        { title: "Capacitor",               file: "electricity/analogies/capacitor.svg" },
-                        { title: "Inductor",                file: "electricity/analogies/inductor.svg" },
+                        { title: "Intro (1)",                       file: "physics/basic/intro1.svg" },
+                        { title: "Initial model",                   file: "physics/basic/initial_model.svg" },
+                        { title: "Intro (2)",                       file: "physics/basic/intro2.svg" },
+                        { title: "Thomson's model",                 file: "physics/basic/thomsons_model.png" },
+                        { title: "Intro (3)",                       file: "physics/basic/intro3.svg" },
+                        { title: "Planetary model",                 file: "physics/basic/planetary_model.png" },
+                        { title: "Orbitals model",                  file: "physics/basic/orbitals_model.png" },
+                        { title: "Physics terms (1)",               file: "physics/basic/physics_terms1.svg" },
+                        { title: "Physics terms (2)",               file: "physics/basic/physics_terms2.svg" },
+                        { title: "Physics terms (3)",               file: "physics/basic/physics_terms3.svg" },
+                        { title: "Physics terms (4)",               file: "physics/basic/physics_terms4.svg" },
+                        { title: "Physics terms (5)",               file: "physics/basic/physics_terms5.svg" },
+                        { title: "Physics terms (6)",               file: "physics/basic/physics_terms6.svg" },
                     ]
                 },
                 {
-                    title: "Static electricity",
+                    title: "Advanced Physics",
                     slides: [
-                        { title: "Intro",       file: "electricity/static/intro.svg" },
-                        { title: "Amber",       file: "electricity/static/amber.svg" },
-                        { title: "Lightning",   file: "electricity/static/lightning.svg" },
+                        { title: "Intro",                           file: "physics/advanced/intro.svg" },
+                        { title: "Physics terms (1)",               file: "physics/advanced/physics_terms1.svg" },
+                        { title: "Physics terms (2)",               file: "physics/advanced/physics_terms2.svg" },
+                        { title: "Physics terms (3)",               file: "physics/advanced/physics_terms3.svg" },
+                        { title: "Physics terms (4)",               file: "physics/advanced/physics_terms4.svg" },
+                        { title: "Physics terms (5)",               file: "physics/advanced/physics_terms5.svg" },
+                        { title: "Physics terms (6)",               file: "physics/advanced/physics_terms6.svg" },
+                        { title: "Energy levels",                   file: "physics/advanced/energy_levels.png" },
+                        { title: "Energy bands",                    file: "physics/advanced/levels_general.svg" },
+                        { title: "Levels in a conductor",           file: "physics/advanced/levels_conductor.svg" },
+                        { title: "Levels in an insulator",          file: "physics/advanced/levels_insulator.svg" },
+                        { title: "Levels in a semi-conductor (1)",  file: "physics/advanced/levels_intrinsic.svg" },
+                        { title: "Levels in a semi-conductor (2)",  file: "physics/advanced/levels_ntype.svg" },
+                        { title: "Levels in a semi-conductor (3)",  file: "physics/advanced/levels_ptype.svg" },
+                        { title: "Holes Analogy",                   file: "physics/advanced/holes_analogy.svg" },
                     ]
                 },
                 {
-                    title: "Dynamic electricity",
+                    title: "Semi-Conductor Physics",
                     slides: [
-                        { title: "Intro",                   file: "electricity/dynamic/intro.svg" },
-                        { title: "Direct current",          file: "electricity/dynamic/dc_current.svg" },
-                        { title: "Alternating current",     file: "electricity/dynamic/ac_current.svg" },
-                        { title: "Resistor DC",             file: "electricity/dynamic/resistor_dc.svg" },
-                        { title: "Resistor AC",             file: "electricity/dynamic/resistor_ac.svg" },
-                        { title: "Resistor square wave",    file: "electricity/dynamic/resistor_square.svg" },
-                        { title: "Capacitor DC",            file: "electricity/dynamic/capacitor_dc.svg" },
-                        { title: "Capacitor AC",            file: "electricity/dynamic/capacitor_ac.svg" },
-                        { title: "Capacitor square wave",   file: "electricity/dynamic/capacitor_square.svg" },
-                        { title: "Inductor DC",             file: "electricity/dynamic/inductor_dc.svg" },
-                        { title: "Inductor AC",             file: "electricity/dynamic/inductor_ac.svg" },
-                        { title: "Inductor square wave",    file: "electricity/dynamic/inductor_square.svg" },
+                        { title: "Silicon Lattice",                 file: "physics/semi_conductors/silicon_lattice.svg" },
+                        { title: "P-type Lattice",                  file: "physics/semi_conductors/p_type_lattice.svg" },
+                        { title: "N-type Lattice",                  file: "physics/semi_conductors/n_type_lattice.svg" },
+                        { title: "P-N Junction initial state",      file: "physics/semi_conductors/p-n_junction_initial.svg" },
+                        { title: "P-N Junction diffusion stage",    file: "physics/semi_conductors/p-n_junction_diffusion.svg" },
+                        { title: "P-N Junction final state",        file: "physics/semi_conductors/p-n_junction_final.svg" },
+                        { title: "P-N Junction reverse bias",       file: "physics/semi_conductors/p-n_junction_rev_bias.svg" },
+                        { title: "P-N Junction forward bias",       file: "physics/semi_conductors/p-n_junction_fwd_bias.svg" },
                     ]
                 },
             ];
