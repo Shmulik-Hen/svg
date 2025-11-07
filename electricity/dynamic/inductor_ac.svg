@@ -30,7 +30,7 @@
         <circle
             id="big_contact"
             cx="0" cy="0" r="4"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
         </circle>
         <circle
             id="small_contact"
@@ -40,19 +40,19 @@
         <circle
             id="meter"
             cx="0" cy="0" r="20"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
         </circle>
         <g
             id="coordinate_system">
             <path
                 id="axis_x_line"
                 d="M 25,100 H 375"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
                 id="axis_y_line"
                 d="M 50,20 V 180"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
             </path>
             <text
                 id="axis_x_text"
@@ -122,7 +122,7 @@
                s 50 70, 80 0
                s 50 -70, 80 0
                s 50 70, 80 0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
         </path>
         <g
             id="circuit_elements">
@@ -142,7 +142,7 @@
                 y="164.5"
                 width="25"
                 height="75"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
             </rect>
             <path
                 id="conductors"
@@ -150,8 +150,8 @@
                    m 0,75 v 50 h -115 m -40,0 h -115
                    M 55,100 v -50 h 50 m 40,0 h 50 v 50
                    M 275,125 h 50 v 50 m 0,40 v 50 h -50"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
-            </path> <!--conductors-->
+                style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
+            </path>
             <g
                 id="contact_points">
                 <use xlink:href="#big_contact" x="0" y="100"></use>
@@ -160,7 +160,7 @@
                 <use xlink:href="#small_contact" x="195" y="100"></use>
                 <use xlink:href="#small_contact" x="274" y="125"></use>
                 <use xlink:href="#small_contact" x="274" y="265"></use>
-            </g> <!--contact_points-->
+            </g>
             <g
                 id="meters">
                 <use xlink:href="#meter" x="125" y="50"></use>
@@ -215,22 +215,22 @@
             <path
                 id="horiz guide 1"
                 d="M 0,200 H 800"
-                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
                 id="horiz guide 2"
                 d="M 400,400 H 800"
-                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
                 id="vert guide 1"
                 d="M 400,0 V 600"
-                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
                 id="vert guide 2"
                 d="M 470,0 V 600"
-                style="fill:none;fill-opacity:1;stroke:#ffc000;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ffc000;stroke-width:1;stroke-opacity:1">
             </path>
         </g> <!--layer1-->
         <g
@@ -318,7 +318,7 @@
                    s 50 70, 80 0
                    s 50 -70, 80 0
                    s 50 70, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
             </path>
         </g> <!--layer6-->
         <g
@@ -342,7 +342,7 @@
                    s 50 40, 80 0
                    s 50 -40, 80 0
                    s 50 40, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+                style="fill:none;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
             </path>
             <use xlink:href="#reference_wave" x="450" y="100"></use>
         </g> <!--layer7-->
@@ -367,7 +367,7 @@
                    s 50 40, 80 0
                    s 50 -40, 80 0
                    s 50 40, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
+                style="fill:none;stroke:#00ff00;stroke-width:2;stroke-opacity:1">
             </path>
             <use xlink:href="#reference_wave" x="450" y="300"></use>
         </g> <!--layer8-->
@@ -392,7 +392,7 @@
                    s 50 65, 80 0
                    s 50 -65, 80 0
                    s 50 65, 80 0"
-                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
+                style="fill:none;stroke:#ff0000;stroke-width:2;stroke-opacity:1">
             </path>
             <use xlink:href="#reference_wave" x="450" y="500"></use>
         </g> <!--layer9-->
@@ -428,7 +428,7 @@
                    c -1 12.5, -2 12.5, -3 0
                    c 3 -12.5, 6 -12.5, 9 0
                    h 10"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
             </path> <!--symbol-->
             <text
                 id="symbol_letter"

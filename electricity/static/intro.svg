@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -57,6 +57,6 @@
                 <tspan x="50" y="500">separation creates an electric attraction between</tspan>
                 <tspan x="50" y="540">the two objects - ballon "glued" to the cat.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

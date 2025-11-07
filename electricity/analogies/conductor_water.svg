@@ -73,8 +73,7 @@
                 d="M -3,-3 L 0,0 L -3,3"
                 id="path5759">
             </path>
-        </marker> <!--arrow_head-->
-    </defs>
+        </marker> arrow_head--> </defs>
     <g
         id="page1">
         <g
@@ -88,7 +87,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">

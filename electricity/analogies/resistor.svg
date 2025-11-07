@@ -14,8 +14,8 @@
         <path
             id="divider"
             d="m 0,40 v 600"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
-        </path> <!--divider-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
+        </path>
         <g
             id="headline">
             <text
@@ -39,7 +39,7 @@
                 fill="#000000">
                 <tspan x="260" y="0">Pipe narrowing</tspan>
             </text>
-        </g> <!--headline-->
+        </g>
         <text
             id="pipe_text"
             font-family="Ubuntu"
@@ -47,7 +47,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Pipe</tspan>
-        </text> <!--pipe_text-->
+        </text>
         <text
             id="narrow_text"
             font-family="Ubuntu"
@@ -55,7 +55,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Narrow</tspan>
-        </text> <!--narrow_text-->
+        </text>
         <text
             id="wire_text"
             font-family="Ubuntu"
@@ -63,7 +63,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Wire</tspan>
-        </text> <!--wire_text-->
+        </text>
         <text
             id="resistor_text"
             font-family="Ubuntu"
@@ -71,7 +71,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Resistor</tspan>
-        </text> <!--resistor_text-->
+        </text>
         <text
             id="bulb_text"
             font-family="Ubuntu"
@@ -79,81 +79,81 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Bulb</tspan>
-        </text> <!--bulb_text-->
+        </text>
         <g
             id="pipe">
             <path
                 d="m 0,0 v 197 a 8,8 0 0 0 8,8 h 33 a 8,8 0 0 1 8,8 v 50"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-opacity:1;stroke-linejoin:round">
+                style="fill:none;stroke:#000000;stroke-width:10;stroke-opacity:1;stroke-linejoin:round">
             </path>
             <path
                 d="m 150,0 v 197 a 8,8 0 0 1 -8,8 h -33 a 8,8 0 0 0 -8,8 v 50"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:10;stroke-opacity:1">
             </path>
-        </g> <!--pipe-->
+        </g>
         <polyline
             id="water_top"
             points="0,0 145.5,0 145.5,203 0,203"
-            style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
-        </polyline> <!--water_top-->
+            style="fill:#0000ff;fill-opacity:0.4;stroke:none">
+        </polyline>
         <polyline
             id="water_bottom"
             points="50,0 100,0 100,310 50,310"
-            style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
-        </polyline> <!--water_bottom-->
+            style="fill:#0000ff;fill-opacity:0.4;stroke:none">
+        </polyline>
         <g
             id="full_pipe_top">
             <use xlink:href="#pipe"></use>
             <use xlink:href="#water_top" x="2"></use>
-        </g> <!--full_pipe_top-->
+        </g>
         <g
             id="full_pipe_bottom">
             <use xlink:href="#pipe" transform="scale(1,-1)"></use>
             <use xlink:href="#water_bottom" y="-297"></use>
-        </g> <!--full_pipe_bottom-->
+        </g>
         <circle
             id="contact_point"
             cx="0"
             cy="0"
             r="5"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-        </circle> <!--contact_point-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle>
         <g
             id="circuit">
             <path
                 id="wire"
                 d="m 0,0 v 90 m 0,100 v 90 m 0,60 v 110"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <use xlink:href="#contact_point" x="0" y="95"></use>
             <use xlink:href="#contact_point" x="0" y="185"></use>
-        </g> <!--circuit-->
+        </g>
         <circle
             id="bulb_shape"
             cx="0"
             cy="0"
             r="30"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-        </circle> <!--bulb_shape-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle>
         <circle
             id="bulb_light"
             cx="0"
             cy="0"
             r="40"
-            style="fill:#e4f40b;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
-        </circle> <!--bulb_light-->
+            style="fill:#e4f40b;fill-opacity:1;stroke:none">
+        </circle>
         <path
             id="bulb_line"
             d="m 0,0 l 60,0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-        </path> <!--bulb_line-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path>
         <g
             id="bulb">
             <use xlink:href="#bulb_light" x="0" y="0" opacity="0.3"></use>
             <use xlink:href="#bulb_shape" x="0" y="0"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
-        </g> <!--bulb-->
+        </g>
         <path
             id="symbol"
             d="m 0,0 h 15
@@ -161,8 +161,8 @@
                l 4,-20 l 4,20 l 4,-20 l 4,20
                l 4,-20 l 4,20 l 2,-10 h 15"
             transform="rotate(90) scale(1.2,1.2)"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
-        </path> <!--symbol-->
+            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </path>
         <text
             id="symbol_letter"
             font-family="Ubuntu"
@@ -170,7 +170,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>R</tspan>
-        </text> <!--symbol_letter-->
+        </text>
         <text
             id="pos_chrg"
             font-family="Ubuntu"
@@ -240,7 +240,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -261,6 +261,6 @@
             <use xlink:href="#pos_chrg" x="620" y="130"></use>
             <use xlink:href="#neg_chrg" x="610" y="500"></use>
             <use xlink:href="#pos_chrg" x="680" y="340" transform="scale(0.9)"></use>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

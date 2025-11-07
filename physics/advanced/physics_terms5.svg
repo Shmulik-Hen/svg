@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -59,6 +59,6 @@
                 <tspan x="30" y="570">any charge carriers, it forms the</tspan>
                 <tspan x="447" y="570" font-weight="bold">Depletion Region.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

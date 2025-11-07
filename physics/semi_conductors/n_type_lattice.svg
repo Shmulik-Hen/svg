@@ -463,13 +463,13 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
             <use xlink:href="#headline" x="180" y="40"></use>
             <use xlink:href="#body" x="30" y="90" transform="scale(0.95)"></use>
             <use xlink:href="#legend" x="30" y="500"></use>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

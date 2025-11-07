@@ -34,7 +34,7 @@
             </rect>
             <g
                 id="guides"
-                style="fill:none;fill-opacity:1;stroke:#0000c0;stroke-width:0.3;stroke-opacity:1">
+                style="fill:none;stroke:#0000c0;stroke-width:0.3;stroke-opacity:1">
                 <path
                     id="horiz guides"
                     d="M 0,100 H 800

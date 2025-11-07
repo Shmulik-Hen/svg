@@ -14,13 +14,13 @@
         <path
             id="divider"
             d="m 0,40 v 600"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
         </path>
         <g
             id="ground">
             <path
                 d="m 0,0 h 390"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <path
                 d="m 20,1 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
@@ -30,7 +30,7 @@
                    m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
                    m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
                    m 40,-20 l -20,20"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1">
             </path>
         </g> <!--ground-->
         <g
@@ -41,7 +41,7 @@
                 </path>
             <g
                 id="leaves"
-                style="fill:#3d7838;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+                style="fill:#3d7838;fill-opacity:1;stroke:none">
                 <path
                     d="m 62,120 64.424478,40.35424 -129.0317859,-0.0727 z">
                     </path>
@@ -59,7 +59,7 @@
         <g
             id="house">
             <rect
-                style="fill:#f3adb9;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+                style="fill:#f3adb9;fill-opacity:1;stroke:none"
                 width="72.970612"
                 height="76.738922"
                 x="15"
@@ -67,10 +67,10 @@
                 ry="0">
             </rect>
             <path
-                style="fill:#cb0b2e;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+                style="fill:#cb0b2e;fill-opacity:1;stroke:none"
                 d="m 50,0 49.390062,49.16628 -99.97476,-0.12316 z">
             </path>
-        </g> <!--house-->
+        </g>
         <g
             id="pole">
             <path
@@ -90,7 +90,7 @@
         </g>
         <g
             id="cloud"
-            style="fill:none;fill-opacity:1;stroke:#ababab;stroke-width:6;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round">
+            style="fill:none;stroke:#ababab;stroke-width:6;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round">
             <path
                 d="m 214.38437,208.94216 a 8.1859503,5.0035167 0 0 1 7.1958,2.55646 8.1859503,5.0035167 0 0 1 -0.18559,5.08603">
             </path>
@@ -212,7 +212,7 @@
         </g> <!--cloud-->
         <g
             id="wind"
-            style="fill:none;fill-opacity:1;stroke:#8699da;stroke-width:3;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round">
+            style="fill:none;stroke:#8699da;stroke-width:3;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round">
             <path
                 d="M 141.55139,373.04081 A 35.339993,208.04607 0 0 1 110.87444,289.5387 35.339993,208.04607 0 0 1 106.13987,92.535581">
             </path>
@@ -326,7 +326,7 @@
             cx="0"
             cy="0"
             r="20"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
         </circle>
         <circle
             id="button_full"

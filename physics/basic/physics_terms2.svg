@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -58,6 +58,6 @@
                 <tspan x="30" y="540">in insulators, and partially filled in conductors and</tspan>
                 <tspan x="30" y="570">semi-conductors.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

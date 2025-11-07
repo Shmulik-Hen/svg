@@ -131,13 +131,13 @@
                l 4,-20 l 4,20 l 4,-20 l 4,20
                l 4,-20 l 4,20 l 2,-10 h 15"
             transform="rotate(90) scale(1.2,1.2)"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
         <g
             id="circuit">
             <path
                 d="m 0,0 v 80 m 0,60 v 50 m 0,60 v 50 m 0,60 v 80 h -150 v -200 m -20,0 h 40 m -50,-10 h 60 m -30,0 v -227.5 h 60 m 30,0 h 60"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <text
                 font-family="Ubuntu"
@@ -154,12 +154,12 @@
             cx="0"
             cy="0"
             r="5"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </circle>
         <path
             id="contact_wire"
             d="m 0,0 l 0,40"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </path>
         <g
             id="contact">
@@ -184,11 +184,11 @@
                 cx="0"
                 cy="0"
                 r="30"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </circle>
             <path
                 d="m -20,-20 l 40,40 m -40,0 l 40,-40"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
         </g>
         <circle
@@ -196,7 +196,7 @@
             cx="0"
             cy="0"
             r="40"
-            style="fill:#e4f40b;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+            style="fill:#e4f40b;fill-opacity:1;stroke:none">
         </circle>
         <g
             id="bulb_on">
@@ -212,7 +212,7 @@
             cx="0"
             cy="0"
             r="20"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
         </circle>
         <g
             id="button_on">
@@ -240,11 +240,11 @@
             id="current">
             <path
                 d="m 0,0 l 100,0"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1;marker-end:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
                 d="m 40,-10 l 20,20 m 0,-20 l -20,20"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <text
                 font-family="Ubuntu"
@@ -268,7 +268,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">

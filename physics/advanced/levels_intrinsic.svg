@@ -127,7 +127,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--band1-->
+        </g>
         <g
             id="band2"
             style="display:inline">
@@ -140,6 +140,6 @@
             <use xlink:href="#conduction_band" y="225"></use>
             <use xlink:href="#valence_band" y="408"></use>
             <use xlink:href="#fermi_level" y="363"></use>
-        </g> <!--band2-->
+        </g>
     </g> <!--page1-->
 </svg>

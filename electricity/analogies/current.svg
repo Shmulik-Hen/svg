@@ -29,7 +29,7 @@
         <polyline
             id="tub"
             points="0,0 40,70 120,70 160,0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:4;stroke-opacity:1">
         </polyline>
         <path
             id="waves"
@@ -38,7 +38,7 @@
                t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
                t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
                t 6,0 6,0 6,0 6,0 6,0"
-            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:3;stroke-opacity:1">
+            style="fill:none;stroke:#0000ff;stroke-width:3;stroke-opacity:1">
         </path>
         <path
             id="water"
@@ -47,7 +47,7 @@
                t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
                t 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0 6,0
                t 6,0 6,0 6,0 6,0 6,0 m -2,0 l -36,65 h -81 l -37,-65"
-            style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-opacity:1">
+            style="fill:#0000ff;fill-opacity:1;stroke:none">
         </path>
         <g
             id="full_tub">
@@ -59,7 +59,7 @@
             id="ground">
             <path
                 d="M 1,0 h 400"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <path
                 d="M 20,1 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
@@ -69,7 +69,7 @@
                    m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
                    m 40,-20 l -20,20 m 40,-20 l -20,20 m 40,-20 l -20,20
                    m 40,-20 l -20,20 m 40,-20 l -20,20"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1">
             </path>
         </g>
         <g
@@ -99,23 +99,23 @@
         <path
             id="gnd"
             d="M 0,0 v 47 h -80 v 50 m -30,0 h 60 m -50,10 h 40 m -30,10 h 20"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
         </path>
         <g
             id="pipe">
             <path
                 d="M 3,15 h 112 v 335"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
             </path>
             <path
                 d="M 13,0 h 118 v 350"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
             </path>
         </g>
         <polyline
             id="pipe_water"
             points="10,1.5 130,1.5 130,380 116.5,380 116.5,380 116.5,13.5 0,13.5"
-            style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:4;stroke-opacity:1">
+            style="fill:#0000ff;fill-opacity:1;stroke:none">
         </polyline>
         <g
             id="full_pipe">
@@ -190,8 +190,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
-        <g
+        </g> layer1--> <g
             id="layer2"
             style="display:inline">
             <use xlink:href="#full_tub" x="50" y="100"></use>
@@ -301,22 +300,22 @@
             <path
                 id="divider"
                 d="M 440,40 V 600"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+                style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
             </path>
             <path
                 id="platform"
                 d="M 20,172 h 200 v 400"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:4;stroke-opacity:1">
             </path>
             <path
                 id="arrow"
                 d="M 250,120 q 150,-25 90,400"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;marker-end:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
                 id="wire"
                 d="M 575,158 v -35 h 180 v 401 h -180"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
             </path>
         </g> <!--layer2-->
     </g> <!--page1-->

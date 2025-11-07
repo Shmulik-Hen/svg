@@ -14,8 +14,8 @@
         <path
             id="divider"
             d="m 0,40 v 600"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
-        </path> <!--divider-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
+        </path>
         <g
             id="headline">
             <text
@@ -39,7 +39,7 @@
                 fill="#000000">
                 <tspan x="250" y="0">Water tap</tspan>
             </text>
-        </g> <!--headline-->
+        </g>
         <text
             id="pipe_text"
             font-family="Ubuntu"
@@ -47,7 +47,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Pipe</tspan>
-        </text> <!--pipe_text-->
+        </text>
         <text
             id="tap_text"
             font-family="Ubuntu"
@@ -55,7 +55,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Tap</tspan>
-        </text> <!--tap_text-->
+        </text>
         <text
             id="wire_text"
             font-family="Ubuntu"
@@ -63,7 +63,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Wire</tspan>
-        </text> <!--wire_text-->
+        </text>
         <text
             id="switch_text"
             font-family="Ubuntu"
@@ -71,7 +71,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Switch</tspan>
-        </text> <!--switch_text-->
+        </text>
         <text
             id="bulb_text"
             font-family="Ubuntu"
@@ -79,28 +79,28 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Bulb</tspan>
-        </text> <!--bulb_text-->
+        </text>
         <g
             id="pipe">
             <path
                 d="m 0,0 v 220"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <path
                 d="m 150,0 v 220"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
         </g>
         <polyline
             id="water"
             points="2.5,0 147.5,0 147.5,220 2.5,220"
-            style="fill:#0000ff;fill-opacity:0.4;stroke:none;stroke-width:1;stroke-opacity:1">
-        </polyline> <!--water-->
+            style="fill:#0000ff;fill-opacity:0.4;stroke:none">
+        </polyline>
         <g
             id="full_pipe_top">
             <use xlink:href="#pipe"></use>
             <use xlink:href="#water"></use>
-        </g> <!--full_pipe_top-->
+        </g>
         <g
             id="full_pipe_bottom">
             <use xlink:href="#pipe"></use>
@@ -124,7 +124,7 @@
                     fill="freeze">
                 </animate>
             </use>
-        </g> <!--full_pipe_bottom-->
+        </g>
         <g
             id="tap_open">
             <circle
@@ -133,55 +133,55 @@
                 cx="35"
                 cy="30"
                 r="72"
-                style="fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+                style="fill:#7f7f7f;fill-opacity:1;stroke:none">
             </circle>
             <path
                 id="axis"
                 d="m 105,29 h 70"
-                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:10;stroke-opacity:1">
+                style="fill:none;stroke:#7f7f7f;stroke-width:10;stroke-opacity:1">
             </path>
             <circle
                 id="handle"
                 cx="177"
                 cy="30"
                 r="20"
-                style="fill:#7f7f7f;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
+                style="fill:#7f7f7f;fill-opacity:1;stroke:none">
             </circle>
-        </g> <!--tap_open-->
+        </g>
         <g
             id="tap_closed">
             <path
                 id="seal"
                 d="m 0,0 h 144"
-                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:15;stroke-opacity:1">
+                style="fill:none;stroke:#7f7f7f;stroke-width:15;stroke-opacity:1">
             </path>
             <path
                 id="axis"
                 d="m 144,0 h 70"
-                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:10;stroke-opacity:1">
+                style="fill:none;stroke:#7f7f7f;stroke-width:10;stroke-opacity:1">
             </path>
             <path
                 id="handle"
                 d="m 214,-72.5 v 150 m -20,0 h 40 m 0,-150 h -40"
-                style="fill:none;fill-opacity:1;stroke:#7f7f7f;stroke-width:7;stroke-opacity:1">
+                style="fill:none;stroke:#7f7f7f;stroke-width:7;stroke-opacity:1">
             </path>
-        </g> <!--tap_closed-->
+        </g>
         <path
             id="circuit"
             d="m 0,0 v 110 m 0,60 v 110 m 0,60 v 110"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </path>
         <circle
             id="contact_point"
             cx="0"
             cy="0"
             r="5"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </circle>
         <path
             id="contact_wire"
             d="m 0,0 l 0,40"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </path>
         <g
             id="contact">
@@ -205,20 +205,20 @@
             cx="0"
             cy="0"
             r="30"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-        </circle> <!--bulb_shape-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </circle>
         <circle
             id="bulb_light"
             cx="0"
             cy="0"
             r="40"
-            style="fill:#e4f40b;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
-        </circle> <!--bulb_light-->
+            style="fill:#e4f40b;fill-opacity:1;stroke:none">
+        </circle>
         <path
             id="bulb_line"
             d="m 0,0 l 60,0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
-        </path> <!--bulb_line-->
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+        </path>
         <g
             id="bulb_on">
             <use xlink:href="#bulb_light" x="0" y="0"></use>
@@ -237,7 +237,7 @@
             cx="0"
             cy="0"
             r="20"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
         </circle>
         <g
             id="button_on">
@@ -275,7 +275,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">

@@ -25,14 +25,14 @@
             <!-- <path
                 id="horiz guide"
                 d="M 0,300 H 800"
-                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
                 id="vert guide"
                 d="M 400,0 V 600"
-                style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
+                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path> -->
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -51,12 +51,12 @@
                 <path
                     id="wire_horiz_top"
                     d="M 22.5,22.5 H 780.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="wire_horiz_bottom"
                     d="M 22.5,577.5 H 780.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="wire_vert_left_top"
@@ -66,17 +66,17 @@
                 <path
                     id="wire_vert_left_bottom"
                     d="M 25.0,310.0 V 575.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="wire_vert_right_top"
                     d="M 777.5,25.0 V 270.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="wire_vert_right_bottom"
                     d="M 777.5,330.0 V 575.0"
-                    style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="display:inline;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
             </g> <!--wire-->
             <g
@@ -115,12 +115,12 @@
                 <path
                     id="cathode"
                     d="M 10.0,292.5 H 40.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="anode"
                     d="M 15.0,307.5 H 35.0"
-                    style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+                    style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
                     id="plus_horiz"

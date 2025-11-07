@@ -48,20 +48,20 @@
                l 4,-20 l 4,20 l 4,-20 l 4,20
                l 4,-20 l 4,20 l 2,-10 h 15"
             transform="rotate(90) scale(1.2,1.2)"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
         <circle
             id="contact_point"
             cx="0"
             cy="0"
             r="5"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
         </circle>
         <g
             id="circuit">
             <path
                 d="m 0,3 h 27 m 84,0 h 25 v 40 l 47,47 m 25,25 l 47,47 l -47,47 m -25,25 l -47,47 l -47,-47 m -25,-25 l -47,-47 l 47,-47 m 25,-25 l 47,-47 m 0,240 v 40 h -130 m 10,-160 h 70 m 100,0 h 70"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <use xlink:href="#contact_point" x="-3" y="3"></use>
             <use xlink:href="#contact_point" x="-1" y="323"></use>
@@ -82,12 +82,12 @@
             <path
                 id="axis_x_line"
                 d="M 25,100 H 375"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
                 id="axis_y_line"
                 d="M 50,20 V 180"
-                style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
+                style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
             </path>
             <text
                 id="axis_x_text"
@@ -159,7 +159,7 @@
                s 30 70, 50 0
                s 30 -70, 50 0
                s 30 70, 50 0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
         <path
             id="reference_wave"
@@ -170,7 +170,7 @@
                  s 30 70, 50 0
                  s 30 -70, 50 0
                  s 30 70, 50 0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3">
         </path>
         <path
             id="rectified_wave"
@@ -181,7 +181,7 @@
                c 20 -70, 30 -70, 50 0
                c 20 -70, 30 -70, 50 0
                c 20 -70, 30 -70, 50 0"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-opacity:1">
+            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
     </defs>
     <g
@@ -197,7 +197,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -210,13 +210,13 @@
             <use xlink:href="#resistor_symbol" x="68" y="160" transform="rotate(90,118,203)"></use>
             <polyline
                 points="220,180 335,295 20,295 155,435"
-                style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3"
+                style="fill:none;stroke:#0000ff;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3"
                 marker-mid="url(#arrow_head)"
                 marker-end="url(#arrow_head)">
             </polyline>
             <polyline
                 points="220,435 335,325 20,325 160,180"
-                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3"
+                style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stroke-dasharray:3, 3"
                 marker-mid="url(#arrow_head)"
                 marker-end="url(#arrow_head)">
             </polyline>

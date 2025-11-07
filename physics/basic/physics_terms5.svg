@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -55,6 +55,6 @@
                 <tspan x="80" y="470">electron, also known as Spin.</tspan>
                 <tspan x="80" y="500">Values: +1/2 or -1/2</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

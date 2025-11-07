@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -57,6 +57,6 @@
                 <tspan x="30" y="515">the angular quantum number (l), the magnetic quantum</tspan>
                 <tspan x="30" y="545">number (mₗ), and the spin quantum number (mₛ).</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

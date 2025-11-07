@@ -590,7 +590,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -599,6 +599,6 @@
             <use xlink:href="#title_1" x="0" y="70"></use>
             <use xlink:href="#title_2" x="0" y="480"></use>
             <use xlink:href="#legend" x="30" y="500"></use>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

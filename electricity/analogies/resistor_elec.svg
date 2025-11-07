@@ -41,21 +41,21 @@
             cx="0"
             cy="0"
             r="10"
-            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
         </circle>
         <circle
             id="orbital_a"
             cx="0"
             cy="0"
             r="24"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
         </circle>
         <circle
             id="orbital_b"
             cx="0"
             cy="0"
             r="24"
-            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:2,2">
+            style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:2,2">
         </circle>
         <circle
             id="electron"
@@ -67,7 +67,7 @@
         <path
             id="charge"
             d="m 0,-8 v 16 m -8,-8 h 16"
-            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
+            style="fill:none;stroke:#0000ff;stroke-width:2;stroke-opacity:1">
         </path>
         <g
             id="carbon_atom">
@@ -141,7 +141,7 @@
                 d="M -3,-3 L 0,0 L -3,3"
                 id="path5759">
             </path>
-        </marker> <!--arrow_head-->
+        </marker>
         <circle
             id="point"
             cx="0"
@@ -190,7 +190,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">

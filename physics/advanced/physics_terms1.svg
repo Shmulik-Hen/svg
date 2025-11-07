@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -57,6 +57,6 @@
                 <tspan x="30" y="535">Group III,IV,V are in columns 13,14,15 and have 3,4,5</tspan>
                 <tspan x="30" y="565">electrons in the valence shell respectively.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

@@ -25,10 +25,10 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

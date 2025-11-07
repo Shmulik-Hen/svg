@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -59,6 +59,6 @@
                 <tspan x="30" y="540">Earth, Water, Air, and Fire, and that they didn't have</tspan>
                 <tspan x="30" y="570">any internal structure.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

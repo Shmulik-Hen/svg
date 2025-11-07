@@ -136,7 +136,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--band1-->
+        </g>
         <g
             id="band2"
             style="display:inline">
@@ -152,6 +152,6 @@
             <use xlink:href="#fermi_level" y="324"></use>
             <line x1="130" y1="185" x2="250" y2="288" style="stroke:#000000;stroke-width:1"></line>
             <line x1="620" y1="185" x2="550" y2="296" style="stroke:#000000;stroke-width:1"></line>
-        </g> <!--band2-->
+        </g>
     </g> <!--page1-->
 </svg>

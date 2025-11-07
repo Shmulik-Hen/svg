@@ -25,7 +25,7 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -58,6 +58,6 @@
                 <tspan x="30" y="545">Electrons fill the lowest energy levels first, moving up</tspan>
                 <tspan x="30" y="575">to the next available level once a lower one is full.</tspan>
             </text>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>
