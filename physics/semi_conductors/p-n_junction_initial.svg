@@ -43,7 +43,6 @@
             fill="#000000">
             <tspan x="70" y="60">Neutral Acceptors</tspan>
             <tspan x="600" y="60">Neutral Donors</tspan>
-            <!-- <tspan x="290" y="10">Potential Difference</tspan> -->
         </text>
         <text
             id="title_2"
@@ -55,7 +54,6 @@
             <tspan x="330" y="20">ions</tspan>
             <tspan x="420" y="0">Positive</tspan>
             <tspan x="440" y="20">ions</tspan>
-            <!-- <tspan x="500" y="0">Donor</tspan> -->
         </text>
         <circle
             id="hole"
@@ -358,7 +356,6 @@
         </g>
         <g
             id="cov_bonds_h_odd">
-            <!-- <use xlink:href="#covalent_bond_h" x="-65" y="0"></use> -->
             <use xlink:href="#covalent_bond_h" x="45" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="265" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="485" y="0"></use>
@@ -366,7 +363,6 @@
         </g>
         <g
             id="cov_bonds_h_even">
-            <!-- <use xlink:href="#covalent_bond_h" x="-65" y="0"></use> -->
             <use xlink:href="#covalent_bond_h" x="155" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="375" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="595" y="0"></use>
@@ -538,11 +534,7 @@
             <use xlink:href="#p_side" x="14" y="100"></use>
             <use xlink:href="#p_lattice" x="56" y="260" transform="scale(0.44,0.48)"></use>
             <use xlink:href="#n_lattice" x="970" y="260" transform="scale(0.44,0.48)"></use>
-            <!-- <use xlink:href="#depletion_zone" x="338" y="100"></use> -->
             <use xlink:href="#barrier" x="400" y="100"></use>
-            <!-- <use xlink:href="#potential" x="320" y="100"></use> -->
-            <!-- <use xlink:href="#pos_charge" x="730" y="100" transform="scale(0.50)"></use> -->
-            <!-- <use xlink:href="#neg_charge" x="830" y="100" transform="scale(0.50)"></use> -->
         </g>
         <g
             id="legend">
@@ -595,7 +587,6 @@
             <use xlink:href="#headline" x="150" y="40"></use>
             <use xlink:href="#body" x="50" y="60" transform="scale(0.9,0.9)"></use>
             <use xlink:href="#title_1" x="0" y="70"></use>
-            <!-- <use xlink:href="#title_2" x="0" y="480"></use> -->
             <use xlink:href="#legend" x="30" y="500"></use>
         </g>
     </g> <!--page1-->

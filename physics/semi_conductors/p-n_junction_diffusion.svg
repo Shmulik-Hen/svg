@@ -55,7 +55,6 @@
             <tspan x="330" y="20">ions</tspan>
             <tspan x="420" y="0">Positive</tspan>
             <tspan x="440" y="20">ions</tspan>
-            <!-- <tspan x="500" y="0">Donor</tspan> -->
         </text>
         <circle
             id="hole"
@@ -358,7 +357,6 @@
         </g>
         <g
             id="cov_bonds_h_odd">
-            <!-- <use xlink:href="#covalent_bond_h" x="-65" y="0"></use> -->
             <use xlink:href="#covalent_bond_h" x="45" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="265" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="485" y="0"></use>
@@ -366,7 +364,6 @@
         </g>
         <g
             id="cov_bonds_h_even">
-            <!-- <use xlink:href="#covalent_bond_h" x="-65" y="0"></use> -->
             <use xlink:href="#covalent_bond_h" x="155" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="375" y="0"></use>
             <use xlink:href="#covalent_bond_h" x="595" y="0"></use>
@@ -533,7 +530,6 @@
             <use xlink:href="#p_side" x="14" y="100"></use>
             <use xlink:href="#p_lattice" x="56" y="260" transform="scale(0.44,0.48)"></use>
             <use xlink:href="#n_lattice" x="970" y="260" transform="scale(0.44,0.48)"></use>
-            <!-- <use xlink:href="#depletion_zone" x="338" y="100"></use> -->
             <use xlink:href="#barrier" x="400" y="100"></use>
             <use xlink:href="#potential" x="320" y="100"></use>
             <use xlink:href="#pos_charge" x="730" y="100" transform="scale(0.50)"></use>

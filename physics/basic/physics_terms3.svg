@@ -52,20 +52,6 @@
                 <tspan x="30" y="370" font-weight="bold">Semi-Conductors</tspan>
                 <tspan x="30" y="400">Range: 1⋅10⁻³ ≤ ℧ ≤ 1⋅10⁻¹ MS/m.</tspan>
                 <tspan x="30" y="430">Groups: Metalloids(some), Nonmetals(few).</tspan>
-                <!--
-                <tspan x="30" y="110">Electronvolt</tspan>
-                <tspan x="200" y="110">Energy</tspan>
-                <tspan x="320" y="110">It is the energy gained by an</tspan>
-                <tspan x="320" y="140">electron accelerated through a</tspan>
-                <tspan x="320" y="170">potential difference of 1V</tspan>
-                <tspan x="320" y="200">1eV=1.6⋅10⁻¹⁹ J.</tspan>
-                <tspan x="30" y="230">Fermi level</tspan>
-                <tspan x="200" y="230">Energy</tspan>
-                <tspan x="320" y="230">Ef: the total energy required to add</tspan>
-                <tspan x="320" y="260">or remove one electron to a</tspan>
-                <tspan x="320" y="290">solid-state body (atom/molecule)</tspan>
-                <tspan x="320" y="320">1eV=1.6⋅10⁻¹⁹ J.</tspan>
- -->
             </text>
         </g>
     </g> <!--page1-->

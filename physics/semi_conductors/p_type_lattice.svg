@@ -428,7 +428,6 @@
         </g>
         <g
             id="body">
-            <!-- <use xlink:href="#box" x="0" y="0"></use> -->
             <use xlink:href="#p_lattice" x="50" y="50"></use>
         </g>
         <g

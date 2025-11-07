@@ -190,7 +190,8 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> layer1--> <g
+        </g>
+        <g
             id="layer2"
             style="display:inline">
             <use xlink:href="#full_tub" x="50" y="100"></use>

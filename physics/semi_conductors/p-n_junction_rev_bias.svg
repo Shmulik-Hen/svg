@@ -208,7 +208,6 @@
             <use xlink:href="#neutral_atom" x="0" y="30"></use>
             <use xlink:href="#neutral_atom" x="90" y="30"></use>
             <use xlink:href="#neutral_atom" x="180" y="30"></use>
-            <!-- <use xlink:href="#neutral_atom" x="270" y="30"></use> -->
             <use xlink:href="#neutral_atom" x="45" y="80"></use>
             <use xlink:href="#neutral_atom" x="135" y="80"></use>
             <use xlink:href="#neutral_atom" x="225" y="80"></use>
@@ -253,7 +252,6 @@
             <use xlink:href="#electron" x="50" y="50"></use>
             <use xlink:href="#electron" x="140" y="50"></use>
             <use xlink:href="#electron" x="230" y="50"></use>
-            <!-- <use xlink:href="#electron" x="320" y="50"></use> -->
         </g>
         <g
             id="holes">
@@ -263,7 +261,6 @@
             <use xlink:href="#hole" x="35" y="50"></use>
             <use xlink:href="#hole" x="125" y="50"></use>
             <use xlink:href="#hole" x="215" y="50"></use>
-            <!-- <use xlink:href="#hole" x="305" y="50"></use> -->
         </g>
         <g
             id="holes_odd">

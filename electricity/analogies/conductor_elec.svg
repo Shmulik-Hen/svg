@@ -125,7 +125,8 @@
                 d="M -3,-3 L 0,0 L -3,3"
                 id="path5759">
             </path>
-        </marker> arrow_head--> <circle
+        </marker>
+        <circle
             id="point"
             cx="0"
             cy="0"
@@ -136,14 +137,6 @@
             id="curve_ends"
             style="fill:none;stroke:#b00000;stroke-width:2;marker-end:url(#arrow_head)">
             <path d="m 0,0 c 30,-30 50,-30 80,0"></path>
-            <!--
-            <use xlink:href="#point" x="0" y="0" fill="#ff0000"></use>
-            <use xlink:href="#point" x="30" y="-30" fill="#00ff00"></use>
-            <line x1="0" y1="0" x2="30" y2="-30" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
-            <use xlink:href="#point" x="50" y="-30" fill="#0000ff"></use>
-            <use xlink:href="#point" x="80" y="0" fill="#ff00ff"></use>
-            <line x1="50" y1="-30" x2="80" y2="0" style="stroke:#ff0000;stroke-width:0.8;stroke-opacity:0.3"></line>
-             -->
         </g>
         <g
             id="curve_mid_a"

@@ -208,7 +208,6 @@
         </path>
         <g
             id="bulb">
-            <!-- <use xlink:href="#bulb_light" x="0" y="0"></use> -->
             <use xlink:href="#bulb_shape" x="0" y="0"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>

@@ -602,7 +602,6 @@
             <use xlink:href="#p_side" x="344" y="8"></use>
             <use xlink:href="#depletion_zone" x="444" y="8"></use>
             <use xlink:href="#n_side" x="474" y="8"></use>
-            <!-- <use xlink:href="#barrier" x="400" y="50"></use> -->
             <use xlink:href="#potential_fwd" x="280" y="0"></use>
             <use xlink:href="#potential_rev" x="420" y="0"></use>
             <use xlink:href="#terminal" x="150" y="-10"></use>
@@ -630,7 +629,6 @@
             <use xlink:href="#hole" x="360" y="60"></use>
             <use xlink:href="#hole" x="390" y="60"></use>
             <use xlink:href="#hole" x="420" y="60"></use>
-            <!-- <path d="M 650 100 L 400 100" style="stroke:#ff0000;stroke-width:8;marker-end:url(#arrow_head)"></path> -->
             <path d="M 400 100 L 650 100" style="stroke:#0000ff;stroke-width:8;marker-end:url(#arrow_head)"></path>
             <path d="M 650 200 L 420 200" style="stroke:#ff0000;stroke-width:20;marker-end:url(#arrow_head)"></path>
             <path d="M 380 200 L 150 200" style="stroke:#ff0000;stroke-width:15;marker-end:url(#arrow_head)"></path>

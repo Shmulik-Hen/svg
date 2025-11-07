@@ -22,16 +22,6 @@
                 height="600"
                 fill="white">
             </rect>
-            <!-- <path
-                id="horiz guide"
-                d="M 0,300 H 800"
-                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
-            </path>
-            <path
-                id="vert guide"
-                d="M 400,0 V 600"
-                style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
-            </path> -->
         </g>
         <g
             id="layer2"

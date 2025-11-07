@@ -25,7 +25,8 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> layer1--> <g
+        </g>
+        <g
             id="layer2"
             style="display:inline">
             <text
