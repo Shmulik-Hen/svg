@@ -26,7 +26,7 @@
                 d="M -3,-3 L 0,0 L -3,3"
                 id="path5759">
             </path>
-        </marker> <!--arrow_head-->
+        </marker>
         <rect
             id="white_background"
             x="0"
@@ -34,18 +34,18 @@
             width="800"
             height="600"
             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
-        </rect> <!--white_background-->
+        </rect>
         <rect
             id="grey_background"
             width="50"
             height="600"
             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1">
-        </rect> <!--grey_background-->
+        </rect>
         <path
             id="divider"
             d="m 0,40 v 600"
             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:5,5">
-        </path> <!--divider-->
+        </path>
         <polygon
             id="clickable_frame_1"
             points="50,0 399,0 399,600 50,600"
@@ -53,7 +53,7 @@
             fill="red"
             opacity="0"
             stroke-width="0">
-        </polygon> <!--clickable_frame_1-->
+        </polygon>
         <polygon
             id="clickable_frame_2"
             points="401,0 749,0 749,600 401,600"
@@ -61,7 +61,7 @@
             fill="green"
             opacity="0"
             stroke-width="0">
-        </polygon> <!--clickable_frame_2-->
+        </polygon>
         <g
             id="headline">
             <text
@@ -99,12 +99,12 @@
                 fill="#000000">
                 <tspan x="285" y="5">(Greek)</tspan>
             </text>
-        </g> <!--headline-->
+        </g>
         <path
             id="arrow"
             d="m 0,0 l -50,0"
             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
-        </path> <!--arrow-->
+        </path>
         <text
             id="wool_text"
             font-family="Ubuntu"
@@ -112,7 +112,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Wool</tspan>
-        </text> <!--wool_text-->
+        </text>
         <text
             id="metal_text"
             font-family="Ubuntu"
@@ -120,7 +120,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Metal</tspan>
-        </text> <!--metal_text-->
+        </text>
         <text
             id="amber_text"
             font-family="Ubuntu"
@@ -128,7 +128,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Amber</tspan>
-        </text> <!--amber_text-->
+        </text>
         <text
             id="chrg_amber_text"
             font-family="Ubuntu"
@@ -136,7 +136,7 @@
             font-weight="bold"
             fill="#000000">
             <tspan>Charged amber</tspan>
-        </text> <!--chrg_amber_text-->
+        </text>
         <text
             id="explanation"
             font-family="Ubuntu"
@@ -154,22 +154,24 @@
             style="fill:url(#wool_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.01;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
             width="50"
             height="600">
-        </rect> <!--wool_patterned_block-->
+        </rect>
         <rect
             id="metal_patterned_block"
             style="fill:url(#metal_pattern);fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none"
             width="50"
             height="600">
-        </rect> <!--metal_patterned_block-->
-        <ellipse
-            id="amber"
-            style="opacity:0.55;mix-blend-mode:normal;fill:#ffc000;fill-opacity:1;stroke:#ffc000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
-            cx="-102.43741"
-            cy="27.664942"
-            rx="100"
-            ry="25"
-            transform="rotate(-90)">
-        </ellipse> <!--amber-->
+        </rect>
+        <g
+            id="amber">
+            <ellipse
+                style="opacity:0.55;mix-blend-mode:normal;fill:#ffc000;fill-opacity:1;stroke:#ffc000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+                cx="-102.43741"
+                cy="27.664942"
+                rx="100"
+                ry="25"
+                transform="rotate(-90)">
+            </ellipse>
+        </g>
         <text
             id="neg_chrg"
             font-family="Ubuntu"
@@ -213,14 +215,35 @@
         <g
             id="charged_amber">
             <use xlink:href="#amber"></use>
-            <use xlink:href="#neg_chrg" transform="translate(40,100)">
+            <use xlink:href="#neg_chrg" x="40" y="100" visibility="hidden">
                 <animate
+                    id="neg_charge_vis"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="hidden"
+                    to="visible"
+                    dur="0.001s"
+                    begin="amber_2_vis.end"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="neg_charge_hid"
                     attributeName="visibility"
                     attributeType="XML"
                     from="visible"
                     to="hidden"
                     dur="0.001s"
-                    begin="lightning_anim.end"
+                    begin="lightning_vis.end"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="neg_charge_hid2"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="visible"
+                    to="hidden"
+                    dur="0.001s"
+                    begin="amber_2_hid.end"
                     fill="freeze">
                 </animate>
             </use>
@@ -230,7 +253,7 @@
             effect="spiro"
             is_visible="true"
             lpeversion="1">
-        </path-effect> <!--path_effect_1-->
+        </path-effect>
         <filter
             id="filter_1"
             collect="always"
@@ -244,7 +267,7 @@
                 stdDeviation="0.00094107435"
                 id="feGaussianBlur2311">
             </feGaussianBlur>
-        </filter> <!--filter_1-->
+        </filter>
         <clipPath
             id="clip_path_1"
             clipPathUnits="userSpaceOnUse">
@@ -255,7 +278,7 @@
                 x="0.74780279"
                 y="0.93743813">
             </rect>
-        </clipPath> <!--clip_path_1-->
+        </clipPath>
         <clipPath
             id="clip_path_2"
             clipPathUnits="userSpaceOnUse">
@@ -267,7 +290,7 @@
                 x="0.063456431"
                 y="0.063456431">
             </rect>
-        </clipPath> <!--clip_path_2-->
+        </clipPath>
         <pattern
             id="wool_pattern"
             patternUnits="userSpaceOnUse"
@@ -389,7 +412,87 @@
                 style="fill:#ff1000;stroke-width:15.694;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:12;-inkscape-stroke:none;paint-order:markers stroke fill"
                 d="m 90.335028,-518.28359 -1.138352,0.88472 -52.418698,201.7345 -0.0057,0.01 -36.37280166,145.03743 1.90394486,1.17962 144.8890488,-124.17456 -39.828,355.753429 -0.006,0.03604 -6.12187,54.685171 -0.003,0.0328 2.33405,0.29163 0.003,-0.0295 7.61291,-54.498403 55.33769,-396.247117 -1.95269,-1.03872 -136.02882,122.71969 86.52052,-304.87908 -1.12975,-1.49746 z m -59.429458,283.92118 -0.140502,0.49807 c -0.455786,-0.0879 -2.675144,-0.006 -5.657354,0.2523 l -5.046601,0.43581 0.27527,-1.09443 5.275991,-0.0459 z">
             </path>
-        </g> <!--lightning-->
+        </g>
+        <circle
+            id="button"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <circle
+            id="button_full"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <g
+            id="button_1">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-6" y="6">1</tspan>
+            </text>
+        </g>
+        <g
+            id="button_2">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-6" y="6">2</tspan>
+            </text>
+        </g>
+        <g
+            id="button_3">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-6" y="6">3</tspan>
+            </text>
+        </g>
+        <g
+            id="button_4">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-6" y="6">4</tspan>
+            </text>
+        </g>
+        <g
+            id="button_5">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-6" y="6">5</tspan>
+            </text>
+        </g>
+        <g
+            id="button_reset">
+            <use xlink:href="#button_full" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="bold"
+                fill="#ffffff">
+                <tspan x="-19" y="5">Reset</tspan>
+            </text>
+        </g>
     </defs>
     <g
         id="page1">
@@ -397,7 +500,7 @@
             id="layer1"
             style="display:inline">
             <use xlink:href="#white_background"></use>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
@@ -406,19 +509,46 @@
             <use xlink:href="#clickable_frame_1"></use>
             <use xlink:href="#clickable_frame_2"></use>
             <use xlink:href="#headline" x="250" y="30"></use>
-            <use xlink:href="#wool_text" x="110" y="80"></use>
+            <use xlink:href="#wool_text" x="60" y="80"></use>
             <use xlink:href="#metal_text" x="670" y="80"></use>
-            <use xlink:href="#amber_text" x="110" y="300"></use>
-            <use xlink:href="#arrow" x="105" y="72"></use>
             <use xlink:href="#wool_patterned_block"></use>
             <use xlink:href="#metal_patterned_block" x="750"></use>
-            <use id="amber_1" xlink:href="#amber" x="50" y="200">
+            <use xlink:href="#button_1" x="100" y="550"></use>
+            <use xlink:href="#button_2" x="150" y="550"></use>
+            <use xlink:href="#button_3" x="200" y="550"></use>
+            <use xlink:href="#button_4" x="250" y="550"></use>
+            <use xlink:href="#button_5" x="300" y="550"></use>
+            <use xlink:href="#button_reset" x="350" y="550"></use>
+            <use id="amber_1" xlink:href="#amber" x="50" y="200" visibility="hidden">
+                <animate
+                    id="amber_1_vis"
+                    xlink:href="#amber_1"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="hidden"
+                    to="visible"
+                    begin="button_1.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="amber_1_hid"
+                    xlink:href="#amber_1"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="visible"
+                    to="hidden"
+                    begin="button_reset.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
                 <animateTransform
+                    id="amber_1_move"
                     attributeName="transform"
                     attributeType="XML"
                     type="translate"
                     values="0,0;0,190;0,0;0,-190;0,0"
-                    begin="clickable_frame_1.click"
+                    begin="button_2.click"
                     dur="0.5s"
                     repeatDur="3.5s"
                     fill="freeze">
@@ -426,55 +556,144 @@
             </use>
             <use id="amber_2" xlink:href="#charged_amber" x="420" y="200" visibility="hidden">
                 <animate
-                    id="amber_2_vis_anim"
+                    id="amber_2_vis"
                     xlink:href="#amber_2"
                     attributeName="visibility"
                     attributeType="XML"
                     from="hidden"
                     to="visible"
-                    begin="clickable_frame_2.click"
-                    dur="0.1s"
+                    begin="button_3.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="amber_2_hid"
+                    xlink:href="#amber_2"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="visible"
+                    to="hidden"
+                    begin="amber_1_hid.end"
+                    dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animateTransform
-                    id="amber_2_anim"
+                    id="amber_2_move"
                     attributeName="transform"
                     attributeType="XML"
                     type="translate"
                     from="0,0"
                     to="240,0"
-                    begin=".click"
+                    begin="button_4.click"
                     dur="1.5s"
                     fill="freeze">
                 </animateTransform>
+                <animateTransform
+                    id="amber_2_move_back"
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    from="240,0"
+                    to="0,0"
+                    begin="exp_hid2.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animateTransform>
             </use>
-            <use xlink:href="#chrg_amber_text" x="480" y="180" visibility="hidden">
+            <use xlink:href="#amber_text" x="120" y="300" visibility="hidden">
                 <animate
+                    id="amber_text_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="amber_2_vis_anim.end"
-                    dur="0.1s"
+                    begin="amber_1_vis.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="amber_text_hid"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="amber_1_hid.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="amber_text_hid2"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="amber_1_hid.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#chrg_amber_text" x="480" y="180" visibility="hidden">
+                <animate
+                    id="text_vis"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="neg_charge_vis.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="text_hid"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="neg_charge_hid.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="text_hid2"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="amber_text_hid.end"
+                    dur="0.01s"
                     fill="freeze">
                 </animate>
             </use>
             <use xlink:href="#explanation" x="410" y="450" visibility="hidden">
                 <animate
+                    id="exp_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="amber_2_vis_anim.end"
-                    dur="0.1s"
+                    begin="text_vis.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="exp_hid"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="text_hid.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="exp_hid2"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="text_hid2.end"
+                    dur="0.01s"
                     fill="freeze">
                 </animate>
             </use>
             <use xlink:href="#lightning" x="745" y="300" visibility="hidden">
                 <animate
-                    id="lightning_anim"
+                    id="lightning_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="amber_2_anim.end"
+                    begin="button_5.click"
                     dur="0.1s"
                     repeatCount="2">
                 </animate>

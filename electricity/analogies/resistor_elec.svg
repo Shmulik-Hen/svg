@@ -101,7 +101,7 @@
                 <tspan x="80" y="575">(metal/carbon mixture)</tspan>
                 <tspan x="80" y="590">Charge: neutral (0)</tspan>
                 <tspan x="285" y="545">metal_atom's Nucleus.</tspan>
-                <tspan x="285" y="560">Charge: positive (>0)</tspan>
+                <tspan x="285" y="560">Charge: positive (≥1)</tspan>
                 <tspan x="470" y="545">Free Electron.</tspan>
                 <tspan x="470" y="560">Charge: negative (-1)</tspan>
                 <tspan x="660" y="555">Radiation (heat).</tspan>

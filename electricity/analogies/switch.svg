@@ -232,6 +232,35 @@
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(45)"></use>
             <use xlink:href="#bulb_line" x="-30" y="0" transform="rotate(-45)"></use>
         </g>
+        <circle
+            id="button"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <g
+            id="button_on">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-13" y="6">On</tspan>
+            </text>
+        </g>
+        <g
+            id="button_off">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-17" y="6">Off</tspan>
+            </text>
+        </g>
     </defs>
     <g
         id="page1">
@@ -259,127 +288,129 @@
             <use xlink:href="#bulb_text" x="500" y="420"></use>
             <use xlink:href="#full_pipe_top" x="90" y="80"></use>
             <use xlink:href="#full_pipe_bottom" x="90" y="300"></use>
-            <use id="tap1" xlink:href="#tap_open" x="130" y="271" visibility="visible">
-                <animate
-                    id="tap_1_anim_1"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin=".click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="tap_1_anim_2"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
-            <use id="tap2" xlink:href="#tap_closed" x="93" y="300" visibility="hidden">
-                <animate
-                    id="tap_2_anim"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="tap1.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="tap_2_anim"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
-            <use xlink:href="#switch_closed" x="600" y="215" visibility="visible">
-                <animate
-                    id="switch_closed_anim_1"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="tap1.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="switch_closed_anim_2"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
-            <use xlink:href="#switch_open" x="600" y="215" visibility="hidden">
-                <animate
-                    id="switch_open_anim_1"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="tap1.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="switch_open_anim_2"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
-            <use xlink:href="#bulb_on" x="600" y="410" visibility="visible">
-                <animate
-                    id="bulb_on_anim_1"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="tap1.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="bulb_on_anim_2"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
-            <use xlink:href="#bulb_off" x="600" y="410" visibility="hidden">
-                <animate
-                    id="bulb_off_anim_1"
-                    attributeName="visibility"
-                    from="hidden"
-                    to="visible"
-                    begin="tap1.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-                <animate
-                    id="bulb_off_anim_2"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="full_pipe_top.click"
-                    dur="0.01s"
-                    fill="freeze">
-                </animate>
-            </use>
             <use xlink:href="#circuit" x="600" y="100"></use>
+            <use xlink:href="#button_on" x="700" y="40"></use>
+            <use xlink:href="#button_off" x="750" y="40"></use>
+            <use id="tap_off" xlink:href="#tap_closed" x="93" y="300" visibility="visible">
+                <animate
+                    id="tap_off_anim_on"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="button_on.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="tap_off_anim_off"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="button_off.click"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use id="tap_on" xlink:href="#tap_open" x="130" y="271" visibility="hidden">
+                <animate
+                    id="tap_on_anim_on"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap_off_anim_on.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="tap_on_anim_off"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="tap_off_anim_off.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#switch_open" x="600" y="215" visibility="visible">
+                <animate
+                    id="switch_open_anim_on"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="tap_on_anim_on.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="switch_open_anim_off"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="tap_on_anim_off.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#switch_closed" x="600" y="215" visibility="hidden">
+                <animate
+                    id="switch_closed_anim_on"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="switch_open_anim_on.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="switch_closed_anim_off"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="switch_open_anim_off.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#bulb_off" x="600" y="410" visibility="visible">
+                <animate
+                    id="bulb_off_anim_on"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="switch_closed_anim_on.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="bulb_off_anim_off"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="switch_closed_anim_off.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#bulb_on" x="600" y="410" visibility="hidden">
+                <animate
+                    id="bulb_on_anim_on"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="bulb_off_anim_on.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="bulb_on_anim_off"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="bulb_off_anim_off.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+            </use>
         </g> <!--layer2-->
     </g> <!--page1-->
 </svg>

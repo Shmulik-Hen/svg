@@ -37,19 +37,37 @@
             r="10"
             style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2">
         </circle>
-        <path
-            id="focal"
-            d="m -20,-20 l 20,20 m 0,-20 l -20,20"
-            style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:4">
-        </path>
-        <polygon
-            id="clickable_frame"
-            points="1,1 799,1 799,599 1,599"
-            stroke="none"
-            fill="white"
-            opacity="0"
-            stroke-width="0">
-        </polygon> <!--clickable_frame-->
+        <g
+            id="focal">
+            <circle
+                cx="0"
+                cy="0"
+                r="20"
+                style="fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:2">
+            </circle>
+            <path
+                d="m -15,-15 l 30,30 m 0,-30 l -30,30"
+                style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:4">
+            </path>
+        </g>
+        <circle
+            id="button"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <g
+            id="button_1">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-12" y="6">Go</tspan>
+            </text>
+        </g>
     </defs>
     <g
         id="page1">
@@ -64,12 +82,12 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
-            <use xlink:href="#clickable_frame"></use>
-            <use xlink:href="#focal" x="416" y="400"></use>
+            <use xlink:href="#button_1" x="675" y="550"></use>
+            <use xlink:href="#focal" x="420" y="430"></use>
 
             <use xlink:href="#chair" x="50" y="250" transform="scale(1.3)"></use>
             <use xlink:href="#chair" x="105" y="250" transform="scale(1.3)"></use>
@@ -86,20 +104,20 @@
                 id="ball_1"
                 xlink:href="#ball" x="85" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_1_1"
+                    id="ball_1_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_11_2.end+1.5s"
+                    begin="ball_11_vis.end+0.5s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_1_2"
+                    id="ball_1_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_2_1.end"
+                    begin="ball_2_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -108,20 +126,20 @@
                 id="ball_2"
                 xlink:href="#ball" x="156" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_2_1"
+                    id="ball_2_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_1_1.end+0.4s"
+                    begin="ball_1_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_2_2"
+                    id="ball_2_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_3_1.end"
+                    begin="ball_3_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -130,20 +148,20 @@
                 id="ball_3"
                 xlink:href="#ball" x="227" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_3_1"
+                    id="ball_3_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_2_1.end+0.4s"
+                    begin="ball_2_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_3_2"
+                    id="ball_3_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_4_1.end"
+                    begin="ball_4_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -152,20 +170,20 @@
                 id="ball_4"
                 xlink:href="#ball" x="299" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_4_1"
+                    id="ball_4_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_3_1.end+0.4s"
+                    begin="ball_3_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_4_2"
+                    id="ball_4_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_5_1.end"
+                    begin="ball_5_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -174,20 +192,20 @@
                 id="ball_5"
                 xlink:href="#ball" x="370" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_5_1"
+                    id="ball_5_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_4_1.end+0.4s"
+                    begin="ball_4_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_5_2"
+                    id="ball_5_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_6_1.end"
+                    begin="ball_6_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -196,20 +214,20 @@
                 id="ball_6"
                 xlink:href="#ball" x="441" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_6_1"
+                    id="ball_6_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_5_1.end+0.4s"
+                    begin="ball_5_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_6_2"
+                    id="ball_6_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_7_1.end"
+                    begin="ball_7_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -218,20 +236,20 @@
                 id="ball_7"
                 xlink:href="#ball" x="513" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_7_1"
+                    id="ball_7_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_6_1.end+0.4s"
+                    begin="ball_6_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_7_2"
+                    id="ball_7_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_8_1.end"
+                    begin="ball_8_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -240,20 +258,20 @@
                 id="ball_8"
                 xlink:href="#ball" x="584" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_8_1"
+                    id="ball_8_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_7_1.end+0.4s"
+                    begin="ball_7_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_8_2"
+                    id="ball_8_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_9_1.end"
+                    begin="ball_9_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -262,20 +280,20 @@
                 id="ball_9"
                 xlink:href="#ball" x="655" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_9_1"
+                    id="ball_9_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_8_1.end+0.4s"
+                    begin="ball_8_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_9_2"
+                    id="ball_9_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_10_1.end"
+                    begin="ball_10_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -284,20 +302,20 @@
                 id="ball_10"
                 xlink:href="#ball" x="728" y="313" visibility="visible">
                 <animate
-                    id="ball_anim_10_1"
+                    id="ball_10_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_9_1.end+0.4s"
+                    begin="ball_9_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_10_2"
+                    id="ball_10_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_11_2.end"
+                    begin="ball_11_vis.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -306,20 +324,20 @@
                 id="ball_11"
                 xlink:href="#ball" x="789" y="280" visibility="hidden">
                 <animate
-                    id="ball_anim_11_1"
+                    id="ball_11_hid"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
-                    begin="ball_anim_10_1.end+0.4s"
+                    begin="ball_10_hid.end+0.4s"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
                 <animate
-                    id="ball_anim_11_2"
+                    id="ball_11_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="clickable_frame.click"
+                    begin="button_1.click"
                     dur="0.01s"
                     fill="freeze">
                 </animate>
@@ -328,11 +346,11 @@
                 id="ball_12"
                 xlink:href="#ball" x="728" y="313" visibility="hidden">
                 <animate
-                    id="ball_anim_12_1"
+                    id="ball_12_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
-                    begin="ball_anim_11_1.end"
+                    begin="ball_11_hid.end"
                     dur="0.01s"
                     fill="freeze">
                 </animate>

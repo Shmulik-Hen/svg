@@ -11,19 +11,11 @@
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <polygon
-            id="clickable_frame"
-            points="1,0 399,0 399,600 1,600"
-            stroke="none"
-            fill="white"
-            opacity="0"
-            stroke-width="0">
-        </polygon> <!--clickable_frame-->
         <path
             id="divider"
             d="m 0,40 v 600"
             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
-        </path> <!--divider-->
+        </path>
         <g
             id="ground">
             <path
@@ -88,14 +80,14 @@
                    h -23 l 30,23 l -41,31 l 48,30 l -59,40 l 75,50
                    m -141,-230 h 200 m 0,15 h -200">
             </path>
-        </g> <!--pole-->
+        </g>
         <g
             id="landscape"
             transform="scale(0.2,0.2)">
             <use xlink:href="#tree" x="0" y="0"></use>
             <use xlink:href="#house" x="130" y="115"></use>
             <use xlink:href="#pole" x="400" y="-106"></use>
-        </g> <!--landscape-->
+        </g>
         <g
             id="cloud"
             style="fill:none;fill-opacity:1;stroke:#ababab;stroke-width:6;stroke-opacity:1;stroke-linecap:round;stroke-linejoin:round">
@@ -328,7 +320,43 @@
                 style="fill:#ff1000;stroke-width:15.694;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:12;-inkscape-stroke:none;paint-order:markers stroke fill"
                 d="m 90.335028,-518.28359 -1.138352,0.88472 -52.418698,201.7345 -0.0057,0.01 -36.37280166,145.03743 1.90394486,1.17962 144.8890488,-124.17456 -39.828,355.753429 -0.006,0.03604 -6.12187,54.685171 -0.003,0.0328 2.33405,0.29163 0.003,-0.0295 7.61291,-54.498403 55.33769,-396.247117 -1.95269,-1.03872 -136.02882,122.71969 86.52052,-304.87908 -1.12975,-1.49746 z m -59.429458,283.92118 -0.140502,0.49807 c -0.455786,-0.0879 -2.675144,-0.006 -5.657354,0.2523 l -5.046601,0.43581 0.27527,-1.09443 5.275991,-0.0459 z">
             </path>
-        </g> <!--lightning-->
+        </g>
+        <circle
+            id="button"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <circle
+            id="button_full"
+            cx="0"
+            cy="0"
+            r="20"
+            style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1">
+        </circle>
+        <g
+            id="button_1">
+            <use xlink:href="#button" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#000000">
+                <tspan x="-12" y="6">Go</tspan>
+            </text>
+        </g>
+        <g
+            id="button_reset">
+            <use xlink:href="#button_full" x="0" y="0"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="14"
+                font-weight="bold"
+                fill="#ffffff">
+                <tspan x="-19" y="5">Reset</tspan>
+            </text>
+        </g>
     </defs>
     <g
         id="page1">
@@ -343,11 +371,10 @@
                 height="600"
                 fill="white">
             </rect>
-        </g> <!--layer1-->
+        </g>
         <g
             id="layer2"
             style="display:inline">
-            <use xlink:href="#clickable_frame" x="400"></use>
             <use xlink:href="#divider" x="400" y="0"></use>
             <use xlink:href="#ground" x="5" y="573"></use>
             <use xlink:href="#ground" x="405" y="573"></use>
@@ -358,36 +385,58 @@
             <use xlink:href="#wind" transform="scale(0.6,0.6)" x="115" y="100"></use>
             <use xlink:href="#wind_text" x="160" y="280"></use>
             <use xlink:href="#pos_chrg" transform="scale(0.6,0.6)" x="800" y="40"></use>
-            <use xlink:href="#explanation" x="410" y="300">
-                <animate
-                    id="explanation_anim"
-                    attributeName="visibility"
-                    from="visible"
-                    to="hidden"
-                    begin="clickable_frame.click"
-                    dur="0.1s"
-                    fill="freeze">
-                </animate>
-            </use>
+            <use xlink:href="#button_1" x="675" y="400"></use>
+            <use xlink:href="#button_reset" x="725" y="400"></use>
             <use xlink:href="#lightning" x="511" y="436" visibility="hidden">
                 <animate
-                    id="lightning_anim"
+                    id="lightning_vis"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
                     dur="0.1s"
-                    begin="explanation_anim.end"
+                    begin="button_1.click"
                     repeatCount="2">
                 </animate>
             </use>
-            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="310">
+            <use xlink:href="#neg_chrg" transform="scale(0.6,0.6)" x="800" y="310" visibility="visible">
                 <animate
+                    id="neg_chrg_hid"
                     attributeName="visibility"
                     attributeType="XML"
                     from="visible"
                     to="hidden"
-                    dur="0.001s"
-                    begin="lightning_anim.end"
+                    dur="0.01s"
+                    begin="lightning_vis.end"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="neg_chrg_vis"
+                    attributeName="visibility"
+                    attributeType="XML"
+                    from="hidden"
+                    to="visible"
+                    dur="0.01s"
+                    begin="button_reset.click"
+                    fill="freeze">
+                </animate>
+            </use>
+            <use xlink:href="#explanation" x="410" y="300" visibility="visible">
+                <animate
+                    id="exp_vis"
+                    attributeName="visibility"
+                    from="hidden"
+                    to="visible"
+                    begin="neg_chrg_vis.end"
+                    dur="0.01s"
+                    fill="freeze">
+                </animate>
+                <animate
+                    id="exp_hid"
+                    attributeName="visibility"
+                    from="visible"
+                    to="hidden"
+                    begin="neg_chrg_hid.end"
+                    dur="0.01s"
                     fill="freeze">
                 </animate>
             </use>
