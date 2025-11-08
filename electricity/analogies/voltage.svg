@@ -162,7 +162,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -181,7 +180,6 @@
             <use xlink:href="#pos_chrg" x="510" y="200"></use>
             <use xlink:href="#neg_chrg" x="510" y="420"></use>
             <text
-                id="headline"
                 x="100"
                 y="30"
                 font-family="Ubuntu"
@@ -281,17 +279,14 @@
                 <tspan x="662" y="340">(chemical)</tspan>
             </text>
             <path
-                id="divider"
                 d="M 440,40 V 600"
                 style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
             </path>
             <path
-                id="platform"
                 d="M 220,572 v -400 h 200"
                 style="fill:none;stroke:#000000;stroke-width:4;stroke-opacity:1">
             </path>
             <path
-                id="arrow"
                 d="M 100,480 q 0,-370 120,-360"
                 style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>

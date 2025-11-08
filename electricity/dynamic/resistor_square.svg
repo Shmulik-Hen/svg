@@ -23,8 +23,7 @@
             preserveAspectRatio="xMidYMid">
             <path
                 style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-                d="M -3,-3 L 0,0 L -3,3"
-                id="path5759">
+                d="M -3,-3 L 0,0 L -3,3">
             </path>
         </marker>
         <circle
@@ -45,17 +44,14 @@
         <g
             id="coordinate_system">
             <path
-                id="axis_x_line"
                 d="M 25,100 H 375"
                 style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
-                id="axis_y_line"
                 d="M 50,20 V 180"
                 style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
             </path>
             <text
-                id="axis_x_text"
                 x="25"
                 y="115"
                 font-family="Ubuntu"
@@ -65,7 +61,6 @@
                 <tspan>x</tspan>
             </text>
             <text
-                id="axis_y_text"
                 x="40"
                 y="55"
                 font-family="Ubuntu"
@@ -75,7 +70,6 @@
                 <tspan>y</tspan>
             </text>
             <text
-                id="axis_x_unit"
                 x="380"
                 y="105"
                 font-family="Ubuntu"
@@ -85,7 +79,6 @@
                 <tspan>T</tspan>
             </text>
             <text
-                id="zero_value"
                 x="10"
                 y="105"
                 font-family="Ubuntu"
@@ -95,7 +88,6 @@
                 <tspan>0</tspan>
             </text>
             <text
-                id="plus_value"
                 x="10"
                 y="30"
                 font-family="Ubuntu"
@@ -105,7 +97,6 @@
                 <tspan>+</tspan>
             </text>
             <text
-                id="minus_value"
                 x="10"
                 y="180"
                 font-family="Ubuntu"
@@ -128,7 +119,6 @@
         <g
             id="circuit_elements">
             <text
-                id="load_text"
                 x="200"
                 y="200"
                 font-family="Ubuntu"
@@ -138,7 +128,6 @@
                 <tspan>Load</tspan>
             </text>
             <rect
-                id="load"
                 x="262"
                 y="164.5"
                 width="25"
@@ -146,15 +135,13 @@
                 style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
             </rect>
             <path
-                id="conductors"
                 d="M 4,100 h 85 m 70,0 h 115 v 65
                    m 0,75 v 50 h -115 m -40,0 h -115
                    M 55,100 v -50 h 50 m 40,0 h 50 v 50
                    M 275,125 h 50 v 50 m 0,40 v 50 h -50"
                 style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
             </path>
-            <g
-                id="contact_points">
+            <g>
                 <use xlink:href="#big_contact" x="0" y="100"></use>
                 <use xlink:href="#big_contact" x="0" y="290"></use>
                 <use xlink:href="#small_contact" x="55" y="100"></use>
@@ -162,13 +149,11 @@
                 <use xlink:href="#small_contact" x="274" y="125"></use>
                 <use xlink:href="#small_contact" x="274" y="265"></use>
             </g>
-            <g
-                id="meters">
+            <g>
                 <use xlink:href="#meter" x="125" y="50"></use>
                 <use xlink:href="#meter" x="325" y="195"></use>
                 <use xlink:href="#meter" x="139" y="290"></use>
                 <text
-                    id="voltmeter1_letter"
                     x="118"
                     y="57"
                     font-family="Ubuntu"
@@ -178,7 +163,6 @@
                     <tspan>V</tspan>
                 </text>
                 <text
-                    id="voltmeter2_letter"
                     x="318"
                     y="203"
                     font-family="Ubuntu"
@@ -188,7 +172,6 @@
                     <tspan>V</tspan>
                 </text>
                 <text
-                    id="ampermeter_letter"
                     x="133"
                     y="296"
                     font-family="Ubuntu"
@@ -206,7 +189,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -214,17 +196,14 @@
                 fill="white">
             </rect>
             <path
-                id="horiz guide 1"
                 d="M 0,200 H 800"
                 style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
-                id="horiz guide 2"
                 d="M 400,400 H 800"
                 style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
             <path
-                id="vert guide 1"
                 d="M 400,0 V 600"
                 style="fill:none;stroke:#ff00ff;stroke-width:1;stroke-opacity:1">
             </path>
@@ -235,7 +214,6 @@
             <!-- Input Voltage -->
             <use xlink:href="#coordinate_system" x="0" y="0"></use>
             <text
-                id="axis_y_unit"
                 x="45"
                 y="15"
                 font-family="Ubuntu"
@@ -251,7 +229,6 @@
             <!-- Element Voltage -->
             <use xlink:href="#coordinate_system" x="400" y="0"></use>
             <text
-                id="axis_y_unit"
                 x="445"
                 y="15"
                 font-family="Ubuntu"
@@ -267,7 +244,6 @@
             <!-- Load voltage -->
             <use xlink:href="#coordinate_system" x="400" y="200"></use>
             <text
-                id="axis_y_unit"
                 x="445"
                 y="215"
                 font-family="Ubuntu"
@@ -283,7 +259,6 @@
             <!-- Current -->
             <use xlink:href="#coordinate_system" x="400" y="400"></use>
             <text
-                id="axis_y_unit"
                 x="445"
                 y="415"
                 font-family="Ubuntu"
@@ -298,7 +273,6 @@
             style="display:inline">
             <!-- Input signal-->
             <text
-                id="voltage_text"
                 x="70"
                 y="25"
                 font-family="Ubuntu"
@@ -308,7 +282,6 @@
                 <tspan>Input</tspan>
             </text>
             <path
-                id="voltage_wave"
                 d="M 51,100
                    v -60 h 60
                    v 60 h 60
@@ -323,7 +296,6 @@
             style="display:inline">
             <!-- Element Voltage -->
             <text
-                id="voltage_text"
                 x="470"
                 y="25"
                 font-family="Ubuntu"
@@ -333,7 +305,6 @@
                 <tspan>Resistor</tspan>
             </text>
             <path
-                id="voltage_wave"
                 d="M 451,100
                    v -30 h 60
                    v 30 h 60
@@ -349,7 +320,6 @@
             style="display:inline">
             <!-- Load voltage -->
             <text
-                id="voltage_text"
                 x="470"
                 y="225"
                 font-family="Ubuntu"
@@ -359,7 +329,6 @@
                 <tspan>Load</tspan>
             </text>
             <path
-                id="voltage_wave"
                 d="M 451,300
                    v -30 h 60
                    v 30 h 60
@@ -375,7 +344,6 @@
             style="display:inline">
             <!-- Current -->
             <text
-                id="current_text"
                 x="470"
                 y="425"
                 font-family="Ubuntu"
@@ -385,7 +353,6 @@
                 <tspan>Current (scaled)</tspan>
             </text>
             <path
-                id="current_wave"
                 d="M 451,500
                    v -30 h 60 v 30 h 60
                    v -30 h 60 v 30 h 60
@@ -400,7 +367,6 @@
             <!-- Circuit -->
             <use xlink:href="#circuit_elements" x="30" y="250"></use>
             <text
-                id="circuit_text"
                 x="150"
                 y="225"
                 font-family="Ubuntu"
@@ -410,7 +376,6 @@
                 <tspan>Resistor</tspan>
             </text>
             <path
-                id="symbol"
                 d="M 119,350 h 15
                    l 2,-10 l 4,20 l 4,-20 l 4,20
                    l 4,-20 l 4,20 l 4,-20 l 4,20
@@ -418,7 +383,6 @@
                 style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1">
             </path>
             <text
-                id="symbol_letter"
                 x="147"
                 y="380"
                 font-family="Ubuntu"

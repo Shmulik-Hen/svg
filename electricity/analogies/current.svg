@@ -183,7 +183,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -203,7 +202,6 @@
             <use xlink:href="#neg_chrg" x="510" y="420"></use>
             <use xlink:href="#full_pipe" x="173" y="145"></use>
             <text
-                id="headline"
                 x="80"
                 y="30"
                 font-family="Ubuntu"
@@ -299,12 +297,10 @@
                 <tspan x="585" y="110">Conductor=wire</tspan>
             </text>
             <path
-                id="divider"
                 d="M 440,40 V 600"
                 style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1;stroke-dasharray:5,5">
             </path>
             <path
-                id="platform"
                 d="M 20,172 h 200 v 400"
                 style="fill:none;stroke:#000000;stroke-width:4;stroke-opacity:1">
             </path>

@@ -122,17 +122,9 @@
             preserveAspectRatio="xMidYMid">
             <path
                 style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-                d="M -3,-3 L 0,0 L -3,3"
-                id="path5759">
+                d="M -3,-3 L 0,0 L -3,3">
             </path>
         </marker>
-        <circle
-            id="point"
-            cx="0"
-            cy="0"
-            r="1.5"
-            style="fill-opacity:1;stroke:none">
-        </circle>
         <g
             id="curve_ends"
             style="fill:none;stroke:#b00000;stroke-width:2;marker-end:url(#arrow_head)">
@@ -155,7 +147,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"

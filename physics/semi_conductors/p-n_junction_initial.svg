@@ -11,22 +11,6 @@
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <marker
-            id="arrow_head"
-            style="overflow:visible"
-            viewBox="0 0 4 6"
-            markerWidth="4"
-            markerHeight="6"
-            refX="left"
-            refY="center"
-            orient="auto-start-reverse"
-            preserveAspectRatio="xMidYMid">
-            <path
-                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-                d="M -3,-3 L 0,0 L -3,3"
-                id="path5759">
-            </path>
-        </marker>
         <text
             id="headline"
             font-family="Ubuntu"
@@ -43,17 +27,6 @@
             fill="#000000">
             <tspan x="70" y="60">Neutral Acceptors</tspan>
             <tspan x="600" y="60">Neutral Donors</tspan>
-        </text>
-        <text
-            id="title_2"
-            font-family="Ubuntu"
-            font-size="18"
-            font-weight="bold"
-            fill="#000000">
-            <tspan x="320" y="0">Negative</tspan>
-            <tspan x="330" y="20">ions</tspan>
-            <tspan x="420" y="0">Positive</tspan>
-            <tspan x="440" y="20">ions</tspan>
         </text>
         <circle
             id="hole"
@@ -195,104 +168,6 @@
             <use xlink:href="#neg_charge"></use>
         </g>
         <g
-            id="pos_ions">
-            <use xlink:href="#pos_ion" x="15" y="30"></use>
-            <use xlink:href="#pos_ion" x="105" y="30"></use>
-            <use xlink:href="#pos_ion" x="195" y="30"></use>
-            <use xlink:href="#pos_ion" x="285" y="30"></use>
-            <use xlink:href="#pos_ion" x="60" y="80"></use>
-            <use xlink:href="#pos_ion" x="150" y="80"></use>
-            <use xlink:href="#pos_ion" x="240" y="80"></use>
-        </g>
-        <g
-            id="neutral_atoms">
-            <use xlink:href="#neutral_atom" x="0" y="30"></use>
-            <use xlink:href="#neutral_atom" x="90" y="30"></use>
-            <use xlink:href="#neutral_atom" x="180" y="30"></use>
-            <use xlink:href="#neutral_atom" x="270" y="30"></use>
-            <use xlink:href="#neutral_atom" x="45" y="80"></use>
-            <use xlink:href="#neutral_atom" x="135" y="80"></use>
-            <use xlink:href="#neutral_atom" x="225" y="80"></use>
-        </g>
-        <g
-            id="neg_ions">
-            <use xlink:href="#neg_ion" x="15" y="30"></use>
-            <use xlink:href="#neg_ion" x="105" y="30"></use>
-            <use xlink:href="#neg_ion" x="195" y="30"></use>
-            <use xlink:href="#neg_ion" x="285" y="30"></use>
-            <use xlink:href="#neg_ion" x="60" y="80"></use>
-            <use xlink:href="#neg_ion" x="150" y="80"></use>
-            <use xlink:href="#neg_ion" x="240" y="80"></use>
-        </g>
-        <g
-            id="dep_pos_ions">
-            <use xlink:href="#pos_ion" x="0" y="0"></use>
-            <use xlink:href="#pos_ion" x="0" y="40"></use>
-            <use xlink:href="#pos_ion" x="0" y="80"></use>
-            <use xlink:href="#pos_ion" x="0" y="120"></use>
-            <use xlink:href="#pos_ion" x="0" y="160"></use>
-            <use xlink:href="#pos_ion" x="0" y="200"></use>
-            <use xlink:href="#pos_ion" x="0" y="240"></use>
-            <use xlink:href="#pos_ion" x="0" y="280"></use>
-        </g>
-        <g
-            id="dep_neg_ions">
-            <use xlink:href="#neg_ion" x="0" y="0"></use>
-            <use xlink:href="#neg_ion" x="0" y="40"></use>
-            <use xlink:href="#neg_ion" x="0" y="80"></use>
-            <use xlink:href="#neg_ion" x="0" y="120"></use>
-            <use xlink:href="#neg_ion" x="0" y="160"></use>
-            <use xlink:href="#neg_ion" x="0" y="200"></use>
-            <use xlink:href="#neg_ion" x="0" y="240"></use>
-            <use xlink:href="#neg_ion" x="0" y="280"></use>
-        </g>
-        <g
-            id="free_electrons">
-            <use xlink:href="#electron" x="95" y="0"></use>
-            <use xlink:href="#electron" x="185" y="0"></use>
-            <use xlink:href="#electron" x="275" y="0"></use>
-            <use xlink:href="#electron" x="50" y="50"></use>
-            <use xlink:href="#electron" x="140" y="50"></use>
-            <use xlink:href="#electron" x="230" y="50"></use>
-            <use xlink:href="#electron" x="320" y="50"></use>
-        </g>
-        <g
-            id="holes">
-            <use xlink:href="#hole" x="80" y="0"></use>
-            <use xlink:href="#hole" x="170" y="0"></use>
-            <use xlink:href="#hole" x="260" y="0"></use>
-            <use xlink:href="#hole" x="35" y="50"></use>
-            <use xlink:href="#hole" x="125" y="50"></use>
-            <use xlink:href="#hole" x="215" y="50"></use>
-            <use xlink:href="#hole" x="305" y="50"></use>
-        </g>
-        <g
-            id="holes_odd">
-            <use xlink:href="#hole" x="0" y="0"></use>
-            <use xlink:href="#hole" x="220" y="0"></use>
-            <use xlink:href="#hole" x="440" y="0"></use>
-        </g>
-        <g
-            id="holes_even">
-            <use xlink:href="#hole" x="0" y="0"></use>
-            <use xlink:href="#hole" x="220" y="0"></use>
-            <use xlink:href="#hole" x="440" y="0"></use>
-            <use xlink:href="#hole" x="660" y="0"></use>
-        </g>
-        <g
-            id="free_electrons_odd">
-            <use xlink:href="#electron" x="0" y="0"></use>
-            <use xlink:href="#electron" x="220" y="0"></use>
-            <use xlink:href="#electron" x="440" y="0"></use>
-        </g>
-        <g
-            id="free_electrons_even">
-            <use xlink:href="#electron" x="0" y="0"></use>
-            <use xlink:href="#electron" x="220" y="0"></use>
-            <use xlink:href="#electron" x="440" y="0"></use>
-            <use xlink:href="#electron" x="660" y="0"></use>
-        </g>
-        <g
             id="si_atoms">
             <use xlink:href="#silicon_atom" x="0" y="0"></use>
             <use xlink:href="#silicon_atom" x="110" y="0"></use>
@@ -416,23 +291,6 @@
             style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.3;stroke-dasharray:4 4">
         </path>
         <g
-            id="si_lattice">
-            <use xlink:href="#si_atoms" x="0" y="0"></use>
-            <use xlink:href="#si_atoms" x="0" y="105"></use>
-            <use xlink:href="#si_atoms" x="0" y="210"></use>
-            <use xlink:href="#si_atoms" x="0" y="315"></use>
-            <use xlink:href="#cov_bonds_h" x="45" y="0"></use>
-            <use xlink:href="#cov_bonds_h" x="45" y="0"></use>
-            <use xlink:href="#cov_bonds_h" x="45" y="105"></use>
-            <use xlink:href="#cov_bonds_h" x="45" y="210"></use>
-            <use xlink:href="#cov_bonds_h" x="45" y="315"></use>
-            <use xlink:href="#cov_bonds_v" x="10" y="32.5"></use>
-            <use xlink:href="#cov_bonds_v" x="10" y="137.5"></use>
-            <use xlink:href="#cov_bonds_v" x="10" y="242.5"></use>
-            <use xlink:href="#cov_bonds_v" x="10" y="347.5"></use>
-            <use xlink:href="#cov_bonds_v" x="10" y="452.5"></use>
-        </g>
-        <g
             id="n_lattice">
             <use xlink:href="#si_atoms_odd" x="0" y="0"></use>
             <use xlink:href="#si_atoms_even" x="0" y="105"></use>
@@ -492,41 +350,6 @@
             <use xlink:href="#cov_bonds_v" x="10" y="557.5"></use>
             <use xlink:href="#cov_bonds_v" x="10" y="662.5"></use>
         </g>
-        <path
-            id="potential"
-            d="m 0,0 v -40 h 65 m 0,-20 v 40 m 10,-33 v 25 m 0,-12.5 h 65 v 40"
-            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1;stroke-dasharray:2 2">
-        </path>
-        <path
-            id="charge_move"
-            d="m 0,0 c 30,30 50,30 150,30"
-            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.3;marker-end:url(#arrow_head)">
-        </path>
-        <path
-            id="charge_move_short"
-            d="m 0,0 c 30,15 50,15 210,15"
-            style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
-        </path>
-        <g
-            id="hole_move">
-            <use xlink:href="#charge_move" x="0" y="0"></use>
-            <use xlink:href="#hole" x="250" y="15"></use>
-        </g>
-        <g
-            id="hole_move_short">
-            <use xlink:href="#charge_move_short" x="0" y="0"></use>
-            <use xlink:href="#hole" x="245" y="15"></use>
-        </g>
-        <g
-            id="electron_move">
-            <use xlink:href="#charge_move" x="0" y="0" transform="scale(-1,1)"></use>
-            <use xlink:href="#electron" x="-250" y="15"></use>
-        </g>
-        <g
-            id="electron_move_short">
-            <use xlink:href="#charge_move_short" x="0" y="0" transform="scale(-1,1)"></use>
-            <use xlink:href="#electron" x="-245" y="15"></use>
-        </g>
         <g
             id="body">
             <use xlink:href="#box" x="10" y="100"></use>
@@ -573,7 +396,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"

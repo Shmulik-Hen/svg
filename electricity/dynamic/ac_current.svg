@@ -15,7 +15,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -26,10 +25,8 @@
         <g
             id="layer2"
             style="display:inline">
-            <g
-                id="wire">
+            <g>
                 <text
-                    id="wire_text"
                     x="30"
                     y="48"
                     font-family="Ubuntu"
@@ -39,61 +36,32 @@
                     <tspan>Wire</tspan>
                 </text>
                 <path
-                    id="wire_horiz_top"
                     d="M 22.5,22.5 H 780.0"
                     style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_horiz_bottom"
                     d="M 22.5,577.5 H 780.0"
                     style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_left_top"
                     d="M 25.0,25.0 V 277.5"
                     style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_left_bottom"
                     d="M 25.0,322.5 V 575.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_right_top"
                     d="M 777.5,25.0 V 270.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_right_bottom"
                     d="M 777.5,330.0 V 575.0"
                     style="display:inline;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
             </g> <!--wire-->
-            <g
-                id="load">
+            <g>
                 <text
-                    id="load_text"
-                    x="710"
-                    y="255"
-                    font-family="Ubuntu"
-                    font-size="25"
-                    font-weight="bold"
-                    fill="#000000">
-                    <tspan>Load</tspan>
-                </text>
-                <rect
-                    id="load_rect"
-                    x="768.5"
-                    y="270.0"
-                    width="15"
-                    height="60"
-                    style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
-                </rect>
-            </g>
-            <g
-                id="power_source">
-                <text
-                    id="power_source_text"
                     x="30"
                     y="275"
                     font-family="Ubuntu"
@@ -103,19 +71,16 @@
                     <tspan>AC</tspan>
                 </text>
                 <circle
-                    id="power_source_circle"
                     cx="25.0"
                     cy="300"
                     r="22.5"
                     style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3">
                 </circle>
                 <path
-                    id="power_source_sine base"
                     d="M 4,300 H 47"
                     style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="power_source_sine_wave"
                     d="M 6,300
                        c 0,0 9,-25 18,0
                        c 0,0 9,25 18,0"
@@ -127,7 +92,6 @@
             id="layer3"
             style="display:inline">
             <text
-                id="charge_carriers_text"
                 x="80"
                 y="105"
                 font-family="Ubuntu"
@@ -137,13 +101,11 @@
                 <tspan>Charge carriers</tspan>
             </text>
             <circle
-                id="charge_carriers_circle"
                 cx="400"
                 cy="300"
                 r="240"
                 style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
-                    id="circle_carriers_rotate"
                     attributeName="transform"
                     attributeType="XML"
                     type="rotate"

@@ -15,7 +15,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -26,10 +25,8 @@
         <g
             id="layer2"
             style="display:inline">
-            <g
-                id="wire">
+            <g>
                 <text
-                    id="wire_text"
                     x="30"
                     y="48"
                     font-family="Ubuntu"
@@ -39,40 +36,32 @@
                     <tspan>Wire</tspan>
                 </text>
                 <path
-                    id="wire_horiz_top"
                     d="M 22.5,22.5 H 780.0"
                     style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_horiz_bottom"
                     d="M 22.5,577.5 H 780.0"
                     style="fill:none;stroke:#000000;stroke-width:5.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_left_top"
                     d="M 25.0,25.0 V 290.5"
                     style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_left_bottom"
                     d="M 25.0,310.0 V 575.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_right_top"
                     d="M 777.5,25.0 V 270.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="wire_vert_right_bottom"
                     d="M 777.5,330.0 V 575.0"
                     style="display:inline;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
             </g> <!--wire-->
-            <g
-                id="load">
+            <g>
                 <text
-                    id="load_text"
                     x="710"
                     y="255"
                     font-family="Ubuntu"
@@ -82,7 +71,6 @@
                     <tspan>Load</tspan>
                 </text>
                 <rect
-                    id="load_rect"
                     x="768.5"
                     y="270.0"
                     width="15"
@@ -90,10 +78,8 @@
                     style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1">
                 </rect>
             </g> <!--load-->
-            <g
-                id="power_source">
+            <g>
                 <text
-                    id="power_source_text"
                     x="30"
                     y="275"
                     font-family="Ubuntu"
@@ -103,27 +89,22 @@
                     <tspan>DC</tspan>
                 </text>
                 <path
-                    id="cathode"
                     d="M 10.0,292.5 H 40.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="anode"
                     d="M 15.0,307.5 H 35.0"
                     style="fill:none;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="plus_horiz"
                     d="M 4.0,284.0 H 12.0"
                     style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="plus_vert"
                     d="M 8.0,280.0 V 288.0"
                     style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
                 <path
-                    id="minus"
                     d="M 4.0,316.0 H 12.0"
                     style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
                 </path>
@@ -133,7 +114,6 @@
             id="layer3"
             style="display:inline">
             <text
-                id="neg_charge_carriers_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
@@ -142,13 +122,11 @@
                 <tspan x="240" y="170">carriers</tspan>
             </text>
             <circle
-                id="neg_charge_carriers_circle"
                 cx="400"
                 cy="300"
                 r="240"
                 style="fill:none;stroke:#ff0000;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
-                    id="neg_charge_carriers_circle_rotate_ccw"
                     attributeName="transform"
                     attributeType="XML"
                     type="rotate"
@@ -164,7 +142,6 @@
             id="layer4"
             style="display:inline">
             <text
-                id="pos_charge_carries_text"
                 font-family="Ubuntu"
                 font-size="25"
                 font-weight="bold"
@@ -173,13 +150,11 @@
                 <tspan x="40" y="125">carriers</tspan>
             </text>
             <circle
-                id="pos_charge_carries_circle"
                 cx="400"
                 cy="300"
                 r="260"
                 style="fill:none;stroke:#0000ff;stroke-opacity:1;stroke-width:3;stroke-dasharray:9, 9;stroke-dashoffset:0">
                 <animateTransform
-                    id="pos_charge_carries_rotate_cw"
                     attributeName="transform"
                     attributeType="XML"
                     type="rotate"

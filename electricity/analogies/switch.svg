@@ -106,7 +106,6 @@
             <use xlink:href="#pipe"></use>
             <use id="water_bottom_anim" xlink:href="#water" visibility="visible">
                 <animate
-                    id="water_anim_1"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"
@@ -115,7 +114,6 @@
                     fill="freeze">
                 </animate>
                 <animate
-                    id="water_anim_2"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
@@ -268,7 +266,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -393,7 +390,6 @@
             </use>
             <use xlink:href="#bulb_on" x="600" y="410" visibility="hidden">
                 <animate
-                    id="bulb_on_anim_on"
                     attributeName="visibility"
                     from="hidden"
                     to="visible"
@@ -402,7 +398,6 @@
                     fill="freeze">
                 </animate>
                 <animate
-                    id="bulb_on_anim_off"
                     attributeName="visibility"
                     from="visible"
                     to="hidden"

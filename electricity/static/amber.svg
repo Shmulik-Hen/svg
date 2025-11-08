@@ -23,8 +23,7 @@
             preserveAspectRatio="xMidYMid">
             <path
                 style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-                d="M -3,-3 L 0,0 L -3,3"
-                id="path5759">
+                d="M -3,-3 L 0,0 L -3,3">
             </path>
         </marker>
         <rect
@@ -264,8 +263,7 @@
             height="1">
             <feGaussianBlur
                 collect="always"
-                stdDeviation="0.00094107435"
-                id="feGaussianBlur2311">
+                stdDeviation="0.00094107435">
             </feGaussianBlur>
         </filter>
         <clipPath
@@ -284,7 +282,6 @@
             clipPathUnits="userSpaceOnUse">
             <rect
                 style="opacity:1;fill:none;stroke:none"
-                id="rect5605"
                 width="10.024995"
                 height="15.046202"
                 x="0.063456431"
