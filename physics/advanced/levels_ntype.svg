@@ -126,10 +126,8 @@
     <g
         id="page1">
         <g
-            id="band1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -138,7 +136,6 @@
             </rect>
         </g>
         <g
-            id="band2"
             style="display:inline">
             <use xlink:href="#headline" x="140" y="40"></use>
             <use xlink:href="#cond_label" x="290" y="165"></use>

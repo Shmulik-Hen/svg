@@ -43,14 +43,6 @@
             fill="#000000">
             <tspan>Band gap</tspan>
         </text>
-        <text
-            id="fermi_label"
-            font-family="Ubuntu"
-            font-size="20"
-            font-weight="bold"
-            fill="#000000">
-            <tspan>Fermi level (Fe)</tspan>
-        </text>
         <path
             id="orbit"
             d="m 0,0 a 2000,2000 0 0 1 800,0">
@@ -104,11 +96,6 @@
             <use xlink:href="#orbit" x="0" y="45"></use>
         </g>
         <g
-            id="fermi_level"
-            style="fill:none;stroke:#000000;stroke-width:2">
-            <use xlink:href="#orbit" x="0" y="00"></use>
-        </g>
-        <g
             id="gap_size"
             style="fill:none;stroke:#000000;stroke-width:1">
             <path d="m 0,0 v 90 m -10,-90 h 20 m -20,90 h 20"></path>
@@ -117,10 +104,8 @@
     <g
         id="page1">
         <g
-            id="band1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -129,7 +114,6 @@
             </rect>
         </g>
         <g
-            id="band2"
             style="display:inline">
             <use xlink:href="#headline" x="280" y="40"></use>
             <use xlink:href="#cond_label" x="290" y="95"></use>
