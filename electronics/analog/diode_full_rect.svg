@@ -23,8 +23,7 @@
             preserveAspectRatio="xMidYMid">
             <path
                 style="fill:none;stroke:context-stroke;stroke-width:3;stroke-linecap:butt"
-                d="M 0,0 L 5,5 L 0,10"
-                id="path5759">
+                d="M 0,0 L 5,5 L 0,10">
             </path>
         </marker>
         <text
@@ -80,17 +79,14 @@
         <g
             id="coordinate_system">
             <path
-                id="axis_x_line"
                 d="M 25,100 H 375"
                 style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head)">
             </path>
             <path
-                id="axis_y_line"
                 d="M 50,20 V 180"
                 style="fill:none;stroke:#000000;stroke-width:1.5;stroke-opacity:1;marker-end:url(#arrow_head);marker-start:url(#arrow_head)">
             </path>
             <text
-                id="axis_x_text"
                 x="25"
                 y="115"
                 font-family="Ubuntu"
@@ -100,7 +96,6 @@
                 <tspan>x</tspan>
             </text>
             <text
-                id="axis_y_text"
                 x="40"
                 y="55"
                 font-family="Ubuntu"
@@ -110,7 +105,6 @@
                 <tspan>y</tspan>
             </text>
             <text
-                id="axis_x_unit"
                 x="380"
                 y="105"
                 font-family="Ubuntu"
@@ -120,7 +114,6 @@
                 <tspan>T</tspan>
             </text>
             <text
-                id="zero_value"
                 x="10"
                 y="105"
                 font-family="Ubuntu"
@@ -130,7 +123,6 @@
                 <tspan>0</tspan>
             </text>
             <text
-                id="plus_value"
                 x="10"
                 y="30"
                 font-family="Ubuntu"
@@ -140,7 +132,6 @@
                 <tspan>+</tspan>
             </text>
             <text
-                id="minus_value"
                 x="10"
                 y="180"
                 font-family="Ubuntu"
@@ -190,7 +181,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
@@ -243,6 +233,6 @@
             </text>
             <use xlink:href="#reference_wave" x="451" y="400"></use>
             <use xlink:href="#rectified_wave" x="451" y="400"></use>
-        </g> <!--layer2-->
+        </g>
     </g> <!--page1-->
 </svg>

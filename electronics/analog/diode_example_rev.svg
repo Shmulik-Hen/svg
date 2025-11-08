@@ -23,8 +23,7 @@
             preserveAspectRatio="xMidYMid">
             <path
                 style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-                d="M -3,-3 L 0,0 L -3,3"
-                id="path5759">
+                d="M -3,-3 L 0,0 L -3,3">
             </path>
         </marker>
         <text
@@ -199,11 +198,6 @@
             style="fill:#e4f40b;fill-opacity:1;stroke:none">
         </circle>
         <g
-            id="bulb_on">
-            <use xlink:href="#bulb_light" x="0" y="0"></use>
-            <use xlink:href="#bulb_shape" x="0" y="0"></use>
-        </g>
-        <g
             id="bulb_off">
             <use xlink:href="#bulb_shape" x="0" y="0"></use>
         </g>
@@ -261,7 +255,6 @@
             id="layer1"
             style="display:inline">
             <rect
-                id="white_background"
                 x="0"
                 y="0"
                 width="800"
