@@ -22,8 +22,8 @@
             orient="auto-start-reverse"
             preserveAspectRatio="xMidYMid">
             <path
-                style="fill:none;stroke:context-stroke;stroke-width:3;stroke-linecap:butt"
-                d="M 0,0 L 5,5 L 0,10">
+                style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+                d="M -3,-3 L 0,0 L -3,3">
             </path>
         </marker>
         <text
@@ -31,15 +31,13 @@
             font-family="Ubuntu"
             font-size="32"
             font-weight="bold"
-            fill="#000000">
+            fill="#0000ff">
             <tspan>Diode Usage - Half Rectification</tspan>
         </text>
         <g
             id="diode_symbol"
             style="fill:none;stroke:#000000;stroke-width:5">
-            <polygon
-                points="0,0 30,15 0,30">
-            </polygon>
+            <polygon points="0,0 30,15 0,30"></polygon>
             <path d="m 32,-3 v 35"></path>
             <text
                 font-family="Ubuntu"
@@ -70,7 +68,7 @@
         <g
             id="circuit">
             <path
-                d="m 0,3 h 80 m 30,0 h 150 m -90,0 v 80 m 0,60 v 80 m 90,0 h -260 m 50,0 v 20 m -20,0 h 40 m -35,10 h 30 m -25,10 h 20"
+                d="m 0,3 h 80 m 30,0 h 150 m -90,0 v 80 m 0,60 v 80 m 90,0 h -260 m -3,5 v 20 m -20,0 h 40 m -35,10 h 30 m -25,10 h 20"
                 style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
             </path>
             <use xlink:href="#contact_point" x="-3" y="3"></use>
