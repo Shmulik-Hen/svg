@@ -166,22 +166,28 @@
             </text>
         </g>
         <g
-            id="circuit"
-            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            <path d="m 0,0 v 200 m 0,10 v 200"></path>
-            <use xlink:href="#ps" x="0" y="200"></use>
-            <path d="m 0,0 h 200 v 50 m 0,80 v 53"></path>
-            <use xlink:href="#resistor_symbol" x="200" y="50" transform="rotate(90,200,50)"></use>
-            <use xlink:href="#npn_symbol" x="175.5" y="206"></use>
-            <path d="m 200,233 v 40"></path>
-            <use xlink:href="#resistor_symbol" x="200" y="267" transform="rotate(90,200,267)"></use>
-            <path d="m 200,351 v 56.5 h -200"></path>
-            <path d="m 70,405 v -90 m 0,-10 v -99 h 10"></path>
-            <use xlink:href="#ps" x="70" y="305"></use>
-            <use xlink:href="#resistor_symbol" x="80" y="206"></use>
-            <path d="m 164,206 h 10"></path>
-            <path d="m 200,242 h 50"></path>
-            <use xlink:href="#contact_point" x="253" y="242"></use>
+            id="circuit">
+            <g
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                <path d="m 0,0 v 200 m 0,10 v 200"></path>
+                <use xlink:href="#ps" x="0" y="200"></use>
+                <path d="m 0,0 h 200 v 50 m 0,80 v 53"></path>
+                <use xlink:href="#resistor_symbol" x="200" y="50" transform="rotate(90,200,50)"></use>
+                <use xlink:href="#npn_symbol" x="175.5" y="206"></use>
+                <path d="m 200,233 v 40"></path>
+                <use xlink:href="#resistor_symbol" x="200" y="267" transform="rotate(90,200,267)"></use>
+                <path d="m 200,351 v 56.5 h -200"></path>
+                <path d="m 70,405 v -90 m 0,-10 v -99 h 10"></path>
+                <use xlink:href="#ps" x="70" y="305"></use>
+                <use xlink:href="#resistor_symbol" x="80" y="206"></use>
+                <path d="m 164,206 h 10"></path>
+                <path d="m 200,242 h 50"></path>
+                <use xlink:href="#contact_point" x="253" y="242"></use>
+            </g>
+            <path
+                d="m 40,340 l 60,-60"
+                style="fill:none;stroke:#000000;stroke-width:2.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+            </path>
             <text
                 font-family="Ubuntu"
                 font-size="24"

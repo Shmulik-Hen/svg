@@ -86,7 +86,7 @@
                 style="fill:none;stroke:#000000;stroke-width:7;stroke-opacity:1">
                 <path d="m 0,0 h 400 m 0,410 h -400"></path>
                 <path d="m 0,0 v 200 m 0,10 v 202.5"></path>
-                <use xlink:href="#ps" x="" y="200"></use>
+                <use xlink:href="#ps" x="0" y="200"></use>
                 <use xlink:href="#contact_point" x="407" y="0"></use>
                 <use xlink:href="#contact_point" x="407" y="410"></use>
                 <use xlink:href="#gnd" x="407" y="417"></use>
@@ -96,6 +96,10 @@
                 <path d="m 200,200 h 200"></path>
                 <use xlink:href="#contact_point" x="407" y="200"></use>
             </g>
+            <path
+                d="m -30,235 l 60,-60"
+                style="fill:none;stroke:#000000;stroke-width:2.5;stroke-opacity:1;marker-end:url(#arrow_head)">
+            </path>
         </g>
         <g>
             <path
