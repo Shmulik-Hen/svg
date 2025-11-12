@@ -17,7 +17,7 @@
             font-size="30"
             font-weight="bold"
             fill="#0000ff">
-            <tspan x="60" y="0">Diode Characteristic Curve - Passive, Non-Linear</tspan>
+            <tspan x="60" y="0">Diode V-I Curve - Passive, Non-Linear</tspan>
         </text>
         <marker
             id="arrow_head"
@@ -90,7 +90,7 @@
         <g
             id="layer2"
             style="display:inline">
-            <use xlink:href="#headline" x="0" y="45"></use>
+            <use xlink:href="#headline" x="80" y="45"></use>
             <use xlink:href="#coordinate_system" x="50" y="40"></use>
             <use xlink:href="#curve" x="400" y="340"></use>
             <use xlink:href="#curve2" x="400" y="340"></use>
