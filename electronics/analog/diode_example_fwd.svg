@@ -90,8 +90,8 @@
                 fill="#000000"
                 stroke-width="1"
                 style="fill:none;stroke:#000000;stroke-width:1">
-                <tspan x="50" y="-10">Cathode</tspan>
-                <tspan x="200" y="-10">Anode</tspan>
+                <tspan x="50" y="-10">Anode</tspan>
+                <tspan x="200" y="-10">Cathode</tspan>
             </text>
             <text
                 font-family="Ubuntu"
@@ -127,8 +127,8 @@
                 font-weight="norm"
                 fill="#000000"
                 stroke-width="1">
-                <tspan x="40" y="5">Anode</tspan>
-                <tspan x="-60" y="5">Cathode</tspan>
+                <tspan x="40" y="5">Cathode</tspan>
+                <tspan x="-60" y="5">Anode</tspan>
             </text>
         </g>
         <path
