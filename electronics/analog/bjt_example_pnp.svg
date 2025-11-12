@@ -79,77 +79,45 @@
             id="contact_point"
             cx="0"
             cy="0"
-            r="5"
-            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            r="5">
         </circle>
         <g
-            id="transistor">
-            <rect
-                x="0"
-                y="0"
-                width="150"
-                height="300"
-                style="fill:none;stroke:#000000;stroke-width:5">
-            </rect>
-            <path
-                d="m 0,140 h 150"
+            id="transistor"
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            <g>
+                <rect x="0" y="0" width="150" height="300"></rect>
+                <path d="m 0,150 h -50"></path>
+                <path d="m 75,0 v -50"></path>
+                <path d="m 75,300 v 50"></path>
+                <use xlink:href="#contact_point" x="-53" y="150"></use>
+                <use xlink:href="#contact_point" x="75" y="-53"></use>
+                <use xlink:href="#contact_point" x="75" y="353"></use>
+            </g>
+            <g
                 style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.5;stroke-dasharray:4 4">
-            </path>
-            <path
-                d="m 0,160 h 150"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.5;stroke-dasharray:4 4">
-            </path>
-            <path
-                d="m 0,150 h -50"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-            <path
-                d="m 75,0 v -50"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-            <path
-                d="m 75,300 v 50"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
-            <use xlink:href="#contact_point" x="-53" y="150"></use>
-            <use xlink:href="#contact_point" x="75" y="-53"></use>
-            <use xlink:href="#contact_point" x="75" y="353"></use>
+                <path d="m 0,140 h 150"></path>
+                <path d="m 0,160 h 150"></path>
+            </g>
             <use xlink:href="#p_side" x="2.5" y="2.5"></use>
             <use xlink:href="#n_side" x="2.5" y="140"></use>
             <use xlink:href="#p_side" x="2.5" y="160"></use>
-            <text
-                font-family="Ubuntu"
-                font-size="20"
-                font-weight="norm"
-                fill="#000000"
-                stroke-width="1"
-                style="fill:none;stroke:#000000;stroke-width:1">
-                <tspan x="70" y="75">P</tspan>
-                <tspan x="70" y="156">N</tspan>
-                <tspan x="70" y="235">P</tspan>
-            </text>
-            <text
-                font-family="Ubuntu"
-                font-size="16"
-                font-weight="norm"
-                fill="#000000"
-                stroke-width="1"
-                style="fill:none;stroke:#000000;stroke-width:1">
-                <tspan x="80" y="-20">Collector - C</tspan>
-                <tspan x="-70" y="175">Base - B</tspan>
-                <tspan x="80" y="330">Emitter - E</tspan>
-            </text>
-            <text
-                font-family="Ubuntu"
-                font-size="24"
-                font-weight="norm"
-                fill="#000000"
-                stroke-width="1"
-                style="fill:#000000;stroke:#000000;stroke-width:1">
-                <tspan x="55" y="-65">Vcc</tspan>
-                <tspan x="-70" y="140">Vbb</tspan>
-                <tspan x="55" y="380">Vee</tspan>
-            </text>
+            <g style="fill:none;stroke:#000000;stroke-width:1;font-family:Ubuntu;font-size:20;font-weight:norm">
+                <text>
+                    <tspan x="70" y="75">P</tspan>
+                    <tspan x="70" y="156">N</tspan>
+                    <tspan x="70" y="235">P</tspan>
+                </text>
+                <text>
+                    <tspan x="80" y="-20">Collector - C</tspan>
+                    <tspan x="-70" y="175">Base - B</tspan>
+                    <tspan x="80" y="330">Emitter - E</tspan>
+                </text>
+                <text>
+                    <tspan x="55" y="-65">Vcc</tspan>
+                    <tspan x="-70" y="140">Vbb</tspan>
+                    <tspan x="55" y="380">Vee</tspan>
+                </text>
+            </g>
         </g>
         <path
             id="direction"
@@ -183,40 +151,37 @@
             style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
         <g
+            id="ps">
+            <path
+                d="m -30,0 h 60 m -50,10 h 40">
+            </path>
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="norm"
+                fill="#000000"
+                stroke-width="1">
+                <tspan x="-30" y="-15">+</tspan>
+                <tspan x="-30" y="20">_</tspan>
+            </text>
+        </g>
+        <g
             id="circuit"
             style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            <!-- d="m 0,0 v 80 m 0,60 v 50 m 0,60 v 50 m 0,60 v 80 h -150 v -200 m -20,0 h 40 m -50,-10 h 60 m -30,0 v -227.5 h 60 m
-            30,0 h 60"-->
-            <path d="m 0,0 v 200 m -30,0 h 60 m -50,10 h 40 m -20,0 v 200"></path>
-            <use xlink:href="#resistor_symbol" x="200" y="50" transform="rotate(90,200,50)"></use>
+            <path d="m 0,0 v 200 m 0,10 v 200"></path>
+            <use xlink:href="#ps" x="0" y="200"></use>
             <path d="m 0,0 h 200 v 50 m 0,80 v 53"></path>
+            <use xlink:href="#resistor_symbol" x="200" y="50" transform="rotate(90,200,50)"></use>
             <use xlink:href="#pnp_symbol" x="175.5" y="206"></use>
             <path d="m 200,229 v 40"></path>
             <use xlink:href="#resistor_symbol" x="200" y="267" transform="rotate(90,200,267)"></use>
             <path d="m 200,351 v 56.5 h -200"></path>
-            <path d="m 70,0 v 90 m -20,10 h 40 m -50,-10 h 60 m -30,10 v 106 h 10"></path>
+            <path d="m 70,0 v 99 m 0,10 v 97 h 10"></path>
+            <use xlink:href="#ps" x="70" y="100"></use>
             <use xlink:href="#resistor_symbol" x="80" y="206"></use>
             <path d="m 164,206 h 10"></path>
             <path d="m 200,242 h 50"></path>
             <use xlink:href="#contact_point" x="253" y="242"></use>
-            <text
-                font-family="Ubuntu"
-                font-size="36"
-                font-weight="norm"
-                fill="#000000"
-                stroke-width="1">
-                <tspan x="-27" y="190">+</tspan>
-                <tspan x="-25" y="220">_</tspan>
-            </text>
-            <text
-                font-family="Ubuntu"
-                font-size="36"
-                font-weight="norm"
-                fill="#000000"
-                stroke-width="1">
-                <tspan x="42" y="80">+</tspan>
-                <tspan x="44" y="108">_</tspan>
-            </text>
             <text
                 font-family="Ubuntu"
                 font-size="24"
@@ -238,18 +203,12 @@
                 <tspan x="235" y="140">Ic</tspan>
                 <tspan x="235" y="290">Ie</tspan>
             </text>
-            <path
-                d="m 160,230 h -70"
+            <g
                 style="fill:none;stroke:#0000ff;stroke-width:2;marker-end:url(#arrow_head)">
-            </path>
-            <path
-                d="m 225,100 v 70"
-                style="fill:none;stroke:#0000ff;stroke-width:2;marker-end:url(#arrow_head)">
-            </path>
-            <path
-                d="m 225,250 v 70"
-                style="fill:none;stroke:#0000ff;stroke-width:2;marker-end:url(#arrow_head)">
-            </path>
+                <path d="m 160,230 h -70"></path>
+                <path d="m 225,100 v 70"></path>
+                <path d="m 225,250 v 70"></path>
+            </g>
         </g>
     </defs>
     <g

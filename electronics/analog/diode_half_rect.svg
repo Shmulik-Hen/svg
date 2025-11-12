@@ -62,15 +62,12 @@
             id="contact_point"
             cx="0"
             cy="0"
-            r="5"
-            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            r="5">
         </circle>
         <g
-            id="circuit">
-            <path
-                d="m 0,3 h 80 m 30,0 h 150 m -90,0 v 80 m 0,60 v 80 m 90,0 h -260 m -3,5 v 20 m -20,0 h 40 m -35,10 h 30 m -25,10 h 20"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
-            </path>
+            id="circuit"
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            <path d="m 0,3 h 80 m 30,0 h 150 m -90,0 v 80 m 0,60 v 80 m 90,0 h -260"></path>
             <use xlink:href="#contact_point" x="-3" y="3"></use>
             <use xlink:href="#contact_point" x="265" y="3"></use>
             <use xlink:href="#contact_point" x="-3" y="222.5"></use>

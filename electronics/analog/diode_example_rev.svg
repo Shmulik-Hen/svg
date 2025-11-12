@@ -132,11 +132,14 @@
             transform="rotate(90) scale(1.2,1.2)"
             style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:1">
         </path>
+        <path
+            id="gnd"
+            d="m 0,0 v 20 m -30,0 h 60 m -50,10 h 40 m -30,10 h 20">
+        </path>
         <g
-            id="circuit">
+            id="ps">
             <path
-                d="m 0,0 v 80 m 0,60 v 50 m 0,60 v 50 m 0,60 v 80 h -150 v -200 m -20,0 h 40 m -50,-10 h 60 m -30,0 v -227.5 h 60 m 30,0 h 60"
-                style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+                d="m -30,0 h 60 m -50,10 h 40">
             </path>
             <text
                 font-family="Ubuntu"
@@ -144,9 +147,16 @@
                 font-weight="norm"
                 fill="#000000"
                 stroke-width="1">
-                <tspan x="-180" y="220">+</tspan>
-                <tspan x="-180" y="250">_</tspan>
+                <tspan x="-30" y="-15">+</tspan>
+                <tspan x="-30" y="20">_</tspan>
             </text>
+        </g>
+        <g
+            id="circuit"
+            style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:1">
+            <path d="m 0,0 v 80 m 0,60 v 50 m 0,60 v 50 m 0,60 v 80 h -150 v -200"></path>
+            <use xlink:href="#ps" x="-150" y="230"></use>
+            <path d="m -150,230 v -227.5 h 60 m 30,0 h 60"></path>
         </g>
         <circle
             id="contact_point"
