@@ -11,6 +11,14 @@
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
+        <text
+            id="headline"
+            font-family="Ubuntu"
+            font-size="40"
+            font-weight="bold"
+            fill="#0000ff">
+            <tspan>Concept of the Hole</tspan>
+        </text>
         <g
             id="chair">
             <path
@@ -85,6 +93,7 @@
         <g
             id="layer2"
             style="display:inline">
+            <use xlink:href="#headline" x="210" y="60"></use>
             <use xlink:href="#button_1" x="675" y="550"></use>
             <use xlink:href="#focal" x="420" y="430"></use>
 

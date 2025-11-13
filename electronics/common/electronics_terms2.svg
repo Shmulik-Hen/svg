@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (2)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">FET - Field Effect Transistor</tspan>
+                <tspan x="30" y="140">By using a single P-N junction in a different constellation,</tspan>
+                <tspan x="30" y="170">it creates a device with either a P-type control and an</tspan>
+                <tspan x="30" y="200">N-Channel, or an N-type control and a P-channel.</tspan>
+                <tspan x="30" y="230">The amount of current flowing through the channel can</tspan>
+                <tspan x="30" y="260">be controlled according to the biasing at the control</tspan>
+                <tspan x="30" y="290">point.</tspan>
+                <tspan x="30" y="320">Field Effect: the Static Electricity voltage between the</tspan>
+                <tspan x="30" y="350">control point and the channel is either widening or</tspan>
+                <tspan x="30" y="380">narrowing the width of the channel.</tspan>
+                <tspan x="30" y="420" font-weight="bold">Zener Diode</tspan>
+                <tspan x="30" y="450">By carefull control in the doping stage, it is possible to</tspan>
+                <tspan x="30" y="480">create the Zener diode, which can conducts current with</tspan>
+                <tspan x="30" y="510">reverse bias at the Zener point without burning out.</tspan>
+                <tspan x="30" y="540">This point can be very accurately controlled with less</tspan>
+                <tspan x="30" y="570">than 1% tolerance.</tspan>
+            </text>
+        </g>
+    </g> <!--page1-->
+</svg>

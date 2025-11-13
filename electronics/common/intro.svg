@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="48"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="270" y="100">Electronics</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="30"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="60" y="150">Electronics is a field of electricity that deals with</tspan>
+                <tspan x="60" y="185">small currents, typically around μA to mA.</tspan>
+                <tspan x="60" y="230">Mainly regarding devices like Diodes, Transistors,</tspan>
+                <tspan x="60" y="265">Voltage Regulators, Rectifiers, Apmlifiers and</tspan>
+                <tspan x="60" y="300">Attenuators, Filters, etc.</tspan>
+                <tspan x="60" y="345">There are 2 main areas:</tspan>
+                <tspan x="60" y="380">Analog - using these for analog signals, such as</tspan>
+                <tspan x="60" y="415">sound, radio transmission/receptions, wave</tspan>
+                <tspan x="60" y="450">analyziation, etc.</tspan>
+                <tspan x="60" y="495">Digital - using these for controllers, logic devices,</tspan>
+                <tspan x="60" y="530">data atorage and transmissions, precise</tspan>
+                <tspan x="60" y="565">measurements, etc.</tspan>
+            </text>
+        </g>
+    </g> <!--page1-->
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <text
+                font-family="Ubuntu"
+                font-size="36"
+                font-weight="bold"
+                fill="#0000ff">
+                <tspan x="30" y="60">Basic terms in Semi-Conductors (1)</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="29"
+                font-weight="norm"
+                fill="#0060a0">
+                <tspan x="30" y="110" font-weight="bold">Diode - Unipolar Junction device</tspan>
+                <tspan x="30" y="140">By using a single P-N junction and controlling the bias</tspan>
+                <tspan x="30" y="170">forward or reversed, the device can cunduct current</tspan>
+                <tspan x="30" y="200">in only one direction: P->N.</tspan>
+                <tspan x="30" y="230">Such device can perform current rectification when</tspan>
+                <tspan x="30" y="260">used with alternating current - turning AC into DC.</tspan>
+                <tspan x="30" y="300" font-weight="bold">BJT - Bidpolar Junction Transistor</tspan>
+                <tspan x="30" y="330">By merging two P-N junctios, either P-N-P or N-P-N, this</tspan>
+                <tspan x="30" y="360">device becomes a controlled current flow device.</tspan>
+                <tspan x="30" y="390">In N-P-N, applying a positive bias to the P-N junction</tspan>
+                <tspan x="30" y="420">(right), enables current flow from first N to the second.</tspan>
+                <tspan x="30" y="450">In P-N-P, applying a positive bias to the P-N junction</tspan>
+                <tspan x="30" y="480">(left), enables current flow from first P to the second.</tspan>
+                <tspan x="30" y="510">This is possible by carefully controlling doping with</tspan>
+                <tspan x="30" y="540">majority carriers in each region.</tspan>
+            </text>
+        </g>
+    </g> <!--page1-->
+</svg>

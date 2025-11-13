@@ -19,19 +19,6 @@
             fill="#0000ff">
             <tspan x="60" y="0">Zener Diode V-I Curve - Passive, Non-Linear</tspan>
         </text>
-        <text
-            id="headline2"
-            font-family="Ubuntu"
-            font-size="20"
-            font-weight="bold"
-            fill="#0000ff">
-            <tspan x="0" y="0">By carefull control in the doping stage,</tspan>
-            <tspan x="0" y="20">it is possible to create the Zener diode,</tspan>
-            <tspan x="0" y="40">which conducts current at the Zener</tspan>
-            <tspan x="0" y="60">point without burning out.</tspan>
-            <tspan x="0" y="80">This point can be very accurately</tspan>
-            <tspan x="0" y="100">controlled (less than 1% tolerance).</tspan>
-        </text>
         <marker
             id="arrow_head"
             style="overflow:visible"
@@ -104,7 +91,6 @@
             id="layer2"
             style="display:inline">
             <use xlink:href="#headline" x="50" y="45"></use>
-            <use xlink:href="#headline2" x="10" y="90"></use>
             <use xlink:href="#coordinate_system" x="50" y="40"></use>
             <use xlink:href="#curve" x="400" y="340"></use>
             <use xlink:href="#curve2" x="400" y="340"></use>
