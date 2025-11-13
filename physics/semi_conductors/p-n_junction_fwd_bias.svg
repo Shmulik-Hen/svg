@@ -67,13 +67,6 @@
             r="5"
             style="fill:#ff0000;fill-opacity:1;stroke:none">
         </circle>
-        <circle
-            id="atom"
-            cx="10"
-            cy="0"
-            r="30"
-            style="fill:none;stroke:#000000;stroke-width:2;stroke-opacity:1">
-        </circle>
         <text
             id="neutral_atom_label"
             font-family="Ubuntu"
@@ -82,36 +75,10 @@
             fill="#000000">
             <tspan x="-5" y="6">0</tspan>
         </text>
-        <text
-            id="boron_ion_label"
-            font-family="Ubuntu"
-            font-size="22"
-            font-weight="norm"
-            fill="#000000">
-            <tspan x="0" y="5">B⁻</tspan>
-        </text>
-        <text
-            id="phosphorus_ion_label"
-            font-family="Ubuntu"
-            font-size="22"
-            font-weight="norm"
-            fill="#000000">
-            <tspan x="0" y="5">P⁺</tspan>
-        </text>
         <g
             id="neutral_atom">
             <use xlink:href="#ion"></use>
             <use xlink:href="#neutral_atom_label"></use>
-        </g>
-        <g
-            id="boron_ion">
-            <use xlink:href="#atom"></use>
-            <use xlink:href="#boron_ion_label"></use>
-        </g>
-        <g
-            id="phosphorus_ion">
-            <use xlink:href="#atom"></use>
-            <use xlink:href="#phosphorus_ion_label"></use>
         </g>
         <circle
             id="ion"
@@ -171,6 +138,15 @@
             <use xlink:href="#neg_ion" x="0" y="200"></use>
             <use xlink:href="#neg_ion" x="0" y="240"></use>
             <use xlink:href="#neg_ion" x="0" y="280"></use>
+        </g>
+        <g
+            id="free_electrons">
+            <use xlink:href="#electron" x="95" y="0"></use>
+            <use xlink:href="#electron" x="185" y="0"></use>
+            <use xlink:href="#electron" x="275" y="0"></use>
+            <use xlink:href="#electron" x="50" y="50"></use>
+            <use xlink:href="#electron" x="140" y="50"></use>
+            <use xlink:href="#electron" x="230" y="50"></use>
         </g>
         <g
             id="holes">
@@ -351,11 +327,35 @@
             <use xlink:href="#hole" x="510" y="625"></use>
             <use xlink:href="#hole" x="480" y="625"></use>
         </g>
+        <rect
+            id="leg_p_side"
+            x="0"
+            y="0"
+            width="30"
+            height="30"
+            style="fill:#ff0000;fill-opacity:0.2;stroke:none">
+        </rect>
+        <rect
+            id="leg_n_side"
+            x="0"
+            y="0"
+            width="30"
+            height="30"
+            style="fill:#00ffff;fill-opacity:0.2;stroke:none">
+        </rect>
+        <rect
+            id="leg_dep_zone"
+            x="0"
+            y="0"
+            width="30"
+            height="30"
+            style="fill:#ffff00;fill-opacity:0.5;stroke:none">
+        </rect>
         <g
             id="legend">
-            <use xlink:href="#p_side" x="0" y="350" transform="scale(0.1)"></use>
-            <use xlink:href="#n_side" x="800" y="350" transform="scale(0.1)"></use>
-            <use xlink:href="#depletion_zone" x="800" y="360" transform="scale(0.2,0.1)"></use>
+            <use xlink:href="#leg_p_side" x="8" y="35"></use>
+            <use xlink:href="#leg_n_side" x="88" y="35"></use>
+            <use xlink:href="#leg_dep_zone" x="159" y="35"></use>
             <use xlink:href="#neutral_atom" x="270" y="50"></use>
             <use xlink:href="#pos_ion" x="360" y="50"></use>
             <use xlink:href="#neg_ion" x="450" y="50"></use>
