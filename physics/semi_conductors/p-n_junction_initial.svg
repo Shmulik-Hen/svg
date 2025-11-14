@@ -25,8 +25,16 @@
             font-size="18"
             font-weight="bold"
             fill="#000000">
-            <tspan x="70" y="60">Neutral Acceptors</tspan>
-            <tspan x="600" y="60">Neutral Donors</tspan>
+            <tspan x="0" y="0">Neutral Acceptors</tspan>
+            <tspan x="530" y="0">Neutral Donors</tspan>
+        </text>
+        <text
+            id="title_2"
+            font-family="Ubuntu"
+            font-size="24"
+            font-weight="bold"
+            fill="#0000ff">
+            <tspan>Lateral Cross Section</tspan>
         </text>
         <circle
             id="hole"
@@ -349,32 +357,32 @@
         </rect>
         <g
             id="legend">
-            <use xlink:href="#leg_p_side" x="8" y="35"></use>
-            <use xlink:href="#leg_n_side" x="88" y="35"></use>
-            <use xlink:href="#leg_dep_zone" x="159" y="35"></use>
-            <use xlink:href="#neutral_atom" x="270" y="50"></use>
-            <use xlink:href="#pos_ion" x="360" y="50"></use>
-            <use xlink:href="#neg_ion" x="450" y="50"></use>
-            <use xlink:href="#hole" x="540" y="50"></use>
-            <use xlink:href="#electron" x="620" y="50"></use>
+            <use xlink:href="#leg_p_side" x="0" y="0"></use>
+            <use xlink:href="#leg_n_side" x="80" y="0"></use>
+            <use xlink:href="#leg_dep_zone" x="151" y="0"></use>
+            <use xlink:href="#neutral_atom" x="262" y="15"></use>
+            <use xlink:href="#pos_ion" x="352" y="15"></use>
+            <use xlink:href="#neg_ion" x="442" y="15"></use>
+            <use xlink:href="#hole" x="532" y="15"></use>
+            <use xlink:href="#electron" x="612" y="15"></use>
             <text
                 font-family="Ubuntu"
                 font-size="12"
                 font-weight="norm"
                 fill="#000000">
-                <tspan x="40" y="55">P-type</tspan>
-                <tspan x="120" y="55">N-type</tspan>
-                <tspan x="190" y="50">Depletion</tspan>
-                <tspan x="200" y="63">Zone</tspan>
-                <tspan x="290" y="50">Neutral</tspan>
-                <tspan x="295" y="63">Atom</tspan>
-                <tspan x="380" y="50">Positive</tspan>
-                <tspan x="395" y="63">Ion</tspan>
-                <tspan x="470" y="50">Negative</tspan>
-                <tspan x="485" y="63">Ion</tspan>
-                <tspan x="550" y="55">Hole</tspan>
-                <tspan x="640" y="50">Free</tspan>
-                <tspan x="630" y="63">Electron</tspan>
+                <tspan x="30" y="20">P-type</tspan>
+                <tspan x="110" y="20">N-type</tspan>
+                <tspan x="181" y="10">Depletion</tspan>
+                <tspan x="195" y="23">Zone</tspan>
+                <tspan x="277" y="10">Neutral</tspan>
+                <tspan x="282" y="23">Atom</tspan>
+                <tspan x="367" y="10">Positive</tspan>
+                <tspan x="377" y="23">Ion</tspan>
+                <tspan x="457" y="10">Negative</tspan>
+                <tspan x="473" y="23">Ion</tspan>
+                <tspan x="537" y="19">Hole</tspan>
+                <tspan x="627" y="10">Free</tspan>
+                <tspan x="617" y="23">Electron</tspan>
             </text>
         </g>
     </defs>
@@ -395,9 +403,10 @@
             id="layer2"
             style="display:inline">
             <use xlink:href="#headline" x="150" y="40"></use>
-            <use xlink:href="#body" x="50" y="60" transform="scale(0.9,0.9)"></use>
-            <use xlink:href="#title_1" x="0" y="70"></use>
-            <use xlink:href="#legend" x="30" y="500"></use>
+            <use xlink:href="#body" x="50" y="90" transform="scale(0.9,0.9)"></use>
+            <use xlink:href="#title_1" x="70" y="160"></use>
+            <use xlink:href="#title_2" x="300" y="75"></use>
+            <use xlink:href="#legend" x="70" y="555"></use>
         </g>
     </g> <!--page1-->
 </svg>
