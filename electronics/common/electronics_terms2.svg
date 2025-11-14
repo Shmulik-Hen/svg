@@ -47,15 +47,12 @@
                 <tspan x="30" y="230">The amount of current flowing through the channel can</tspan>
                 <tspan x="30" y="260">be controlled according to the biasing at the control</tspan>
                 <tspan x="30" y="290">point.</tspan>
-                <tspan x="30" y="320">Field Effect: the Static Electricity voltage between the</tspan>
-                <tspan x="30" y="350">control point and the channel is either widening or</tspan>
-                <tspan x="30" y="380">narrowing the width of the channel.</tspan>
-                <tspan x="30" y="420" font-weight="bold">Zener Diode</tspan>
-                <tspan x="30" y="450">By carefull control in the doping stage, it is possible to</tspan>
-                <tspan x="30" y="480">create the Zener diode, which can conducts current with</tspan>
-                <tspan x="30" y="510">reverse bias at the Zener point without burning out.</tspan>
-                <tspan x="30" y="540">This point can be very accurately controlled with less</tspan>
-                <tspan x="30" y="570">than 1% tolerance.</tspan>
+                <tspan x="30" y="330" font-weight="bold">Zener Diode</tspan>
+                <tspan x="30" y="360">By carefull control in the doping stage, it is possible to</tspan>
+                <tspan x="30" y="390">create the Zener diode, which can conducts current with</tspan>
+                <tspan x="30" y="420">reverse bias at the Zener point without burning out.</tspan>
+                <tspan x="30" y="450">This point can be very accurately controlled with less</tspan>
+                <tspan x="30" y="480">than 1% tolerance.</tspan>
             </text>
         </g>
     </g> <!--page1-->
