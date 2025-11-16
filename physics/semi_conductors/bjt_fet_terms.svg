@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <text
+            id="headline"
+            font-family="Ubuntu"
+            font-size="32"
+            font-weight="bold"
+            text-decoration="underline"
+            fill="#0000ff">
+            <tspan>BJT─JFET Terms</tspan>
+        </text>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#headline" x="230" y="40"></use>
+            <text
+                font-family="Ubuntu"
+                font-size="26"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="10" y="110" font-weight="bold">Vj:</tspan>
+                <tspan x="150" y="110" font-weight="bold">BJT:</tspan>
+                <tspan x="220" y="110" font-weight="bold">Junction Voltage - 0.7(Si), 0.2(Ge).</tspan>
+                <tspan x="10" y="150" font-weight="bold">Ic(max):</tspan>
+                <tspan x="150" y="150" font-weight="bold">BJT:</tspan>
+                <tspan x="220" y="150" font-weight="bold">Maximum C-E Current specified by the</tspan>
+                <tspan x="220" y="190" font-weight="bold">manufacturer.</tspan>
+                <tspan x="10" y="230" font-weight="bold">Pinch-off:</tspan>
+                <tspan x="150" y="230" font-weight="bold">JFET:</tspan>
+                <tspan x="220" y="230" font-weight="bold">Pinched-off doesn't mean Cut-off - it means</tspan>
+                <tspan x="220" y="270" font-weight="bold">the range after Sturation, where the channel</tspan>
+                <tspan x="220" y="310" font-weight="bold">is fully open, Where channel is beggining to</tspan>
+                <tspan x="220" y="350" font-weight="bold">Narrow near the Drain - "Pinched".</tspan>
+                <tspan x="10" y="390" font-weight="bold">Vp:</tspan>
+                <tspan x="150" y="390" font-weight="bold">JFET:</tspan>
+                <tspan x="220" y="390" font-weight="bold">The voltage at which the Pinch-off range</tspan>
+                <tspan x="220" y="420" font-weight="bold">begins - typically 0...-4v.</tspan>
+                <tspan x="10" y="460" font-weight="bold">IDSS:</tspan>
+                <tspan x="150" y="460" font-weight="bold">JFET:</tspan>
+                <tspan x="220" y="460" font-weight="bold">Maximum D-S current specified by the</tspan>
+                <tspan x="220" y="500" font-weight="bold">manufacturer.</tspan>
+            </text>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

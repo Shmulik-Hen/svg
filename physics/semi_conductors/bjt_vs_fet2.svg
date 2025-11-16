@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <text
+            id="headline"
+            font-family="Ubuntu"
+            font-size="32"
+            font-weight="bold"
+            text-decoration="underline"
+            fill="#0000ff">
+            <tspan>BJT─JFET Comparison (cont.)</tspan>
+        </text>
+        <g
+            id="table">
+            <g
+                style="stroke:#000000;stroke-width:1;stroke-opacity:0.8">
+                <path d="m 155,90 v 590"></path>
+                <path d="m 465,90 v 590"></path>
+                <path d="m 0,120 h 800"></path>
+                <path d="m 0,150 h 800"></path>
+                <path d="m 0,200 h 800"></path>
+                <path d="m 0,250 h 800"></path>
+                <path d="m 0,300 h 800"></path>
+                <path d="m 0,350 h 800"></path>
+                <path d="m 0,475 h 800"></path>
+            </g>
+            <text
+                font-family="Ubuntu"
+                font-size="26"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="250" y="115" font-weight="bold">BJT</tspan>
+                <tspan x="600" y="115" font-weight="bold">FET</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="24"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="1" y="140">Doping</tspan>
+                <tspan x="158" y="140">Complex</tspan>
+                <tspan x="468" y="140">Even</tspan>
+                <tspan x="1" y="170">Input</tspan>
+                <tspan x="1" y="190">Impedance</tspan>
+                <tspan x="158" y="170">Low</tspan>
+                <tspan x="468" y="170">Very High</tspan>
+                <tspan x="1" y="220">Channel</tspan>
+                <tspan x="1" y="240">Impedance</tspan>
+                <tspan x="158" y="220">Non-Linear</tspan>
+                <tspan x="468" y="220">Ohmic, then Constant</tspan>
+                <tspan x="1" y="270">Switching</tspan>
+                <tspan x="1" y="290">Speed</tspan>
+                <tspan x="158" y="270">Slower</tspan>
+                <tspan x="468" y="270">Faster</tspan>
+                <tspan x="1" y="320">Power</tspan>
+                <tspan x="1" y="340">Consumption</tspan>
+                <tspan x="158" y="320">Higher</tspan>
+                <tspan x="468" y="320">Lower</tspan>
+                <tspan x="1" y="370">Noise</tspan>
+                <tspan x="1" y="390">Level</tspan>
+                <tspan x="158" y="370">High</tspan>
+                <tspan x="468" y="370">Very Low</tspan>
+                <tspan x="1" y="500">Applications</tspan>
+                <tspan x="158" y="500"></tspan>
+                <tspan x="468" y="500"></tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="575" y="370">(typical 1-5nV)</tspan>
+                <tspan x="468" y="390">No electron-hole recombinations</tspan>
+                <tspan x="468" y="410">No Gate-Channel Current</tspan>
+                <tspan x="468" y="430">No Bias Resistors Contribution</tspan>
+                <tspan x="468" y="450">No Charge Storage → Low Flicker</tspan>
+                <tspan x="675" y="470">Noise</tspan>
+
+                <tspan x="160" y="495">-Handel Large Currents, Good</tspan>
+                <tspan x="165" y="515">Linearity, Predictable β.</tspan>
+                <tspan x="160" y="535">-Large Current Gain and Precise</tspan>
+                <tspan x="165" y="555">Current and Power Control</tspan>
+                <tspan x="160" y="575">-Darlington and Realy Drivers,</tspan>
+                <tspan x="165" y="595">Power Amplifiers, Linear</tspan>
+                <tspan x="165" y="615">Regulators, Low-Frequencies</tspan>
+                <tspan x="165" y="635">Analog Amplifiers.</tspan>
+
+                <tspan x="468" y="495">-Very High Input Impedance, Very</tspan>
+                <tspan x="473" y="515">Low Gate Current, Very Low Noise,</tspan>
+                <tspan x="473" y="535">Low Capacitance, Good Linearity</tspan>
+                <tspan x="473" y="555">at High Frequencies, Predictable</tspan>
+                <tspan x="473" y="575">Current at IDSS Region.</tspan>
+                <tspan x="468" y="595">-Preamps, Audio/RF Front-Ends,</tspan>
+                <tspan x="473" y="615">Precision Measurement Equip.,</tspan>
+                <tspan x="473" y="635">Constant-Current Sources.</tspan>
+            </text>
+        </g>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#headline" x="180" y="30"></use>
+            <use xlink:href="#table" x="0" y="-50"></use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>

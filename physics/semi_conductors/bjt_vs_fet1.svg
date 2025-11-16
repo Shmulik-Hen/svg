@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    id="svg1"
+    version="1.1"
+    viewBox="0 0 800 600"
+    width="800"
+    height="600"
+    preserveAspectRatio="xMidYMid"
+    fill-rule="evenodd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <text
+            id="headline"
+            font-family="Ubuntu"
+            font-size="32"
+            font-weight="bold"
+            text-decoration="underline"
+            fill="#0000ff">
+            <tspan>BJT─JFET Terms</tspan>
+        </text>
+        <g
+            id="table">
+            <g
+                style="stroke:#000000;stroke-width:1;stroke-opacity:0.8">
+                <path d="m 120,80 v 600"></path>
+                <path d="m 465,80 v 600"></path>
+                <path d="m 0,120 h 800"></path>
+                <path d="m 0,150 h 800"></path>
+                <path d="m 0,180 h 800"></path>
+                <path d="m 0,210 h 800"></path>
+                <path d="m 0,240 h 800"></path>
+                <path d="m 0,310 h 800"></path>
+                <path d="m 0,370 h 800"></path>
+                <path d="m 0,400 h 800"></path>
+                <path d="m 15,447 h 800"></path>
+                <path d="m 15,489 h 800"></path>
+                <path d="m 0,520 h 800"></path>
+                <path d="m 0,550 h 800"></path>
+            </g>
+            <text
+                font-family="Ubuntu"
+                font-size="26"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="250" y="110" font-weight="bold">BJT</tspan>
+                <tspan x="600" y="110" font-weight="bold">FET</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="24"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="1" y="140">Types</tspan>
+                <tspan x="123" y="140">NPN, PNP</tspan>
+                <tspan x="468" y="140">N-Cannel, P-Channel</tspan>
+                <tspan x="1" y="170">Junctions</tspan>
+                <tspan x="123" y="170">Dual Junction</tspan>
+                <tspan x="468" y="170">Single Junction</tspan>
+                <tspan x="1" y="200">Flow</tspan>
+                <tspan x="123" y="200">Majority and Minority charges</tspan>
+                <tspan x="468" y="200">Majority charges only</tspan>
+                <tspan x="1" y="230">State</tspan>
+                <tspan x="123" y="230">Normally OFF</tspan>
+                <tspan x="468" y="230">Normally ON</tspan>
+                <tspan x="1" y="260">Terminals</tspan>
+                <tspan x="123" y="260">Base:</tspan>
+                <tspan x="123" y="280">Collector:</tspan>
+                <tspan x="123" y="300">Emitter:</tspan>
+                <tspan x="468" y="260">Gate:</tspan>
+                <tspan x="468" y="280">Drain:</tspan>
+                <tspan x="468" y="300">Source:</tspan>
+                <tspan x="1" y="330">Current</tspan>
+                <tspan x="1" y="360">Direction</tspan>
+                <tspan x="123" y="350">Always C ⇒ E</tspan>
+                <tspan x="468" y="350">D ⇒ S or D ⇐ S</tspan>
+                <tspan x="1" y="390">Bias</tspan>
+                <tspan x="123" y="390">Positive</tspan>
+                <tspan x="468" y="390">Negative</tspan>
+                <tspan x="1" y="420">Ranges</tspan>
+                <tspan x="123" y="420">NPN</tspan>
+                <tspan x="413" y="420">PNP</tspan>
+                <tspan x="470" y="420">N-Channel</tspan>
+                <tspan x="680" y="420">P-Channel</tspan>
+                <tspan x="1" y="540">Control</tspan>
+                <tspan x="123" y="540">Current Controlled</tspan>
+                <tspan x="468" y="540">Voltage Controlled</tspan>
+                <tspan x="1" y="570">Device</tspan>
+                <tspan x="1" y="600">Type</tspan>
+                <tspan x="123" y="590">Active, Saturation, Cut-off</tspan>
+                <tspan x="468" y="590">Depletion Mode</tspan>
+            </text>
+            <text
+                font-family="Ubuntu"
+                font-size="20"
+                font-weight="bold"
+                fill="#0060a0">
+                <tspan x="240" y="260">Control - Vbe/Vcb</tspan>
+                <tspan x="240" y="280">Charges Intake</tspan>
+                <tspan x="240" y="300">Charges Outtake</tspan>
+                <tspan x="555" y="260">Control - Vgs</tspan>
+                <tspan x="555" y="280">Higher Potential</tspan>
+                <tspan x="555" y="300">Lower Potential</tspan>
+                <tspan x="55" y="440">Cutoff</tspan>
+                <tspan x="123" y="440">Vbe &lt; Vj</tspan>
+                <tspan x="280" y="440">Ic=0</tspan>
+                <tspan x="383" y="440">Vcb &lt; Vj</tspan>
+                <tspan x="470" y="440">Vgs &lt; -Vp</tspan>
+                <tspan x="610" y="440">Id=0</tspan>
+                <tspan x="703" y="440">Vgs &gt; +Vp</tspan>
+                <tspan x="55" y="475">Active</tspan>
+                <tspan x="123" y="475">Vbe ≥ Vj</tspan>
+                <tspan x="280" y="475">Ic>0</tspan>
+                <tspan x="383" y="475">Vcb ≥ Vj</tspan>
+                <tspan x="470" y="465">-Vp ≤ Vgs &lt; 0</tspan>
+                <tspan x="615" y="475">Id>0</tspan>
+                <tspan x="470" y="485">"Pinched-Off"</tspan>
+                <tspan x="670" y="465">0 &gt; Vgs ≤ +Vp</tspan>
+                <tspan x="665" y="485">"Pinched-Off"</tspan>
+                <tspan x="55" y="510">Satur.</tspan>
+                <tspan x="123" y="510">Vbe ≫ Vj</tspan>
+                <tspan x="260" y="510">Ic=Ic(Sat)</tspan>
+                <tspan x="383" y="510">Vcb ≫ Vj</tspan>
+                <tspan x="470" y="510">Vgs ≥ 0</tspan>
+                <tspan x="610" y="510">Id=IDSS</tspan>
+                <tspan x="730" y="510">Vgs ≤ 0</tspan>
+            </text>
+        </g>
+    </defs>
+    <g
+        id="page1">
+        <g
+            id="layer1"
+            style="display:inline">
+            <rect
+                x="0"
+                y="0"
+                width="800"
+                height="600"
+                fill="white">
+            </rect>
+        </g>
+        <g
+            id="layer2"
+            style="display:inline">
+            <use xlink:href="#headline" x="230" y="40"></use>
+            <use xlink:href="#table" x="0" y="-20"></use>
+        </g> <!--layer2-->
+    </g> <!--page1-->
+</svg>
