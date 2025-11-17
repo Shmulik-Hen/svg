@@ -4,7 +4,7 @@
 rdir=$PWD/releases
 rm -rf $rdir
 
-dirs=$(ls -l $PWD |  grep -v tmp | awk '/^d/ {print $NF}')
+dirs=$(ls -l $PWD |  grep -Ev "tmp|scripts|templates" | awk '/^d/ {print $NF}')
 
 for dir in $dirs; do
 	pd=${dir}_presentation
