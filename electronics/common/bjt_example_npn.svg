@@ -48,8 +48,8 @@
             font-size="22"
             font-weight="bold"
             fill="#000000">
-            <tspan x="-50" y="0">Vce > Vbe</tspan>
-            <tspan x="-50" y="22">Vbe > 0.7v(Si) / 0.2v(Ge)</tspan>
+            <tspan x="-50" y="0">Vce &gt; Vbe</tspan>
+            <tspan x="-50" y="22">Vbe &gt; 0.7v(Si) / 0.2v(Ge)</tspan>
         </text>
         <text
             id="bottom_line3"

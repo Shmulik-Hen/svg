@@ -226,7 +226,7 @@
                 font-size="16"
                 font-weight="norm"
                 fill="#000000">
-                <tspan>E > 0</tspan>
+                <tspan>E &gt; 0</tspan>
             </text>
             <text
                 x="200"
@@ -269,7 +269,7 @@
                 font-size="16"
                 font-weight="norm"
                 fill="#000000">
-                <tspan>E > 0</tspan>
+                <tspan>E &gt; 0</tspan>
             </text>
             <text
                 x="460"
